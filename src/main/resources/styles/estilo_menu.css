@@ -1,0 +1,89 @@
+@font-face {
+    src: url('../fonts/Montserrat-Bold.ttf');
+}
+
+.backgroundMain{
+    -fx-background-color: black;
+}
+
+.paneBotoes{
+    -fx-background-color: black;
+    -fx-background-insets: 0, 1;
+}
+
+.logo{
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-effect: dropshadow( three-pass-box , black , 5, 0.0 , 0 , 1 );
+    -fx-background-insets: 0;
+}
+
+.avatar{
+    -fx-background-image: url("../img/kratos-avatar.jpg");
+    -fx-effect: dropshadow( three-pass-box , black , 5, 0.0 , 0 , 1 );
+    -fx-background-insets: 0;
+}
+
+.menu{
+    -fx-background-color: white;
+    -fx-background-insets: 0;
+    -fx-border-color: white;
+    -fx-text-fill: black;
+    -fx-font: 18px Montserrat;
+}
+
+.github{
+    -fx-background-image: url("../img/btn-menu-github-white.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-insets: 0;
+    -fx-background-position: 5,20;
+    -fx-background-color: black;
+    -fx-border-color: white;
+    -fx-text-alignment: right;
+    -fx-text-fill: white;
+    -fx-font: 18px Montserrat;
+    -fx-effect: dropshadow( three-pass-box , black , 5, 0.0 , 0 , 1 );
+}
+
+.btnOpcoesMenu{
+    -fx-border-color: white;
+    -fx-background-color: black;
+    -fx-background-insets: 0;
+    -fx-text-fill: white;
+    -fx-font: 18px Montserrat;
+    -fx-effect: dropshadow( three-pass-box , black , 5, 0.0 , 0 , 1 );
+}
+
+.imagem{
+    -fx-background-image: url("../img/logo.png  ");
+    -fx-background-repeat: no-repeat;
+}
+
+.labelInfoPlayer{
+    -fx-text-fill: white;
+    -fx-font: 18px Montserrat;
+}
+
+.imagem:hover{
+
+}
+
+.imagem:hover{
+    -fx-background-image: url("../img/back.jpg");
+}
+
+
+.button:hover{
+    -fx-background-color: white;
+    -fx-text-fill: black;
+    -fx-effect:innershadow( three-pass-box , white , 5, 0.0 , 0 , 1 );
+}
+
+
+.github:hover{
+    -fx-background-image: url("../img/btn-menu-github-white.png");
+    -fx-background-color: white;
+    -fx-background-insets: 0;
+    -fx-text-fill: black;
+
+}

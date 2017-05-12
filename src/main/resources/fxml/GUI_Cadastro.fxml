@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane id="AnchorPane" fx:id="pane" prefHeight="680.0" prefWidth="1280.0" styleClass="background" stylesheets="@../styles/estilo_cadastro.css" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.sixtechsolutions.controller.CadastrarController">
+   <children>
+      <VBox fx:id="vbox" layoutX="68.0" layoutY="341.0" prefHeight="157.0" prefWidth="447.0">
+         <children>
+            <HBox fx:id="hbox" alignment="CENTER">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </HBox>
+            <GridPane prefHeight="156.0" prefWidth="539.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+               <children>
+                  <Button fx:id="btnPersonagem2" mnemonicParsing="false" onAction="#actionBtnPersonagem2" prefHeight="62.0" prefWidth="62.0" styleClass="btn-avatar-crash" stylesheets="@../styles/estilo_button.css" text="" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+                  <Button fx:id="btnPersonagem3" mnemonicParsing="false" onAction="#actionBtnPersonagem3" prefHeight="62.0" prefWidth="62.0" styleClass="btn-avatar-donkeykong" stylesheets="@../styles/estilo_button.css" text="" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+                  <Button fx:id="btnPersonagem4" mnemonicParsing="false" onAction="#actionBtnPersonagem4" prefHeight="62.0" prefWidth="62.0" styleClass="btn-avatar-dukenukem" stylesheets="@../styles/estilo_button.css" text="" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+                  <Button fx:id="btnPersonagem7" mnemonicParsing="false" onAction="#actionBtnPersonagem7" prefHeight="62.0" prefWidth="62.0" styleClass="btn-avatar-magaman" stylesheets="@../styles/estilo_button.css" text="" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+                     <GridPane.margin>
+                        <Insets top="10.0" />
+                     </GridPane.margin>
+                  </Button>
+                  <Button fx:id="btnPersonagem5" mnemonicParsing="false" onAction="#actionBtnPersonagem5" prefHeight="62.0" prefWidth="62.0" styleClass="btn-avatar-kratos" stylesheets="@../styles/estilo_button.css" text="" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+                  <Button fx:id="btnPersonagem8" mnemonicParsing="false" onAction="#actionBtnPersonagem8" prefHeight="62.0" prefWidth="62.0" styleClass="btn-avatar-mario" stylesheets="@../styles/estilo_button.css" text="" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+                     <GridPane.margin>
+                        <Insets top="10.0" />
+                     </GridPane.margin>
+                  </Button>
+                  <Button fx:id="btnPersonagem6" mnemonicParsing="false" onAction="#actionBtnPersonagem6" prefHeight="62.0" prefWidth="62.0" styleClass="btn-avatar-laracroft" stylesheets="@../styles/estilo_button.css" text="" GridPane.columnIndex="5" GridPane.halignment="CENTER" />
+                  <Button fx:id="btnPersonagem9" mnemonicParsing="false" onAction="#actionBtnPersonagem9" prefHeight="62.0" prefWidth="62.0" styleClass="btn-avatar-pacman" stylesheets="@../styles/estilo_button.css" text="" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+                     <GridPane.margin>
+                        <Insets top="10.0" />
+                     </GridPane.margin>
+                  </Button>
+                  <Button fx:id="btnPersonagem10" mnemonicParsing="false" onAction="#actionBtnPersonagem10" prefHeight="62.0" prefWidth="62.0" styleClass="btn-avatar-ryu" stylesheets="@../styles/estilo_button.css" text="" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+                     <GridPane.margin>
+                        <Insets top="10.0" />
+                     </GridPane.margin>
+                  </Button>
+                  <Button fx:id="btnPersonagem11" mnemonicParsing="false" onAction="#actionBtnPersonagem11" prefHeight="62.0" prefWidth="62.0" styleClass="btn-avatar-sonic" stylesheets="@../styles/estilo_button.css" text="" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+                     <GridPane.margin>
+                        <Insets top="10.0" />
+                     </GridPane.margin>
+                  </Button>
+                  <Button fx:id="btnPersonagem12" mnemonicParsing="false" onAction="#actionBtnPersonagem12" prefHeight="62.0" prefWidth="62.0" styleClass="btn-avatar-zelda" stylesheets="@../styles/estilo_button.css" text="" GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+                     <GridPane.margin>
+                        <Insets top="10.0" />
+                     </GridPane.margin>
+                  </Button>
+                  <Button fx:id="btnPersonagem1" mnemonicParsing="false" onAction="#actionBtnPersonagem1" prefHeight="62.0" prefWidth="62.0" styleClass="btn-avatar-bomberman" stylesheets="@../styles/estilo_button.css" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+               </children>
+            </GridPane>
+         </children>
+      </VBox>
+      <TextField fx:id="textNickname" alignment="CENTER" layoutX="175.0" layoutY="91.0" prefHeight="37.0" prefWidth="285.0" promptText="Insira seu login" styleClass="cadastro-textField" stylesheets="@../styles/estilo_text.css" />
+      <PasswordField fx:id="passwordSenha" alignment="CENTER" layoutX="175.0" layoutY="138.0" prefHeight="37.0" prefWidth="285.0" promptText="Insira uma senha" styleClass="cadastro-passwordField" stylesheets="@../styles/estilo_text.css" />
+      <PasswordField fx:id="passwordConfirma" alignment="CENTER" layoutX="175.0" layoutY="184.0" prefHeight="37.0" prefWidth="285.0" promptText="Confirme sua senha" styleClass="cadastro-confirmPasswordField" stylesheets="@../styles/estilo_text.css" />
+      <Button fx:id="btnCadastro" layoutX="71.0" layoutY="550.0" mnemonicParsing="false" onAction="#actionBtnCadastrar" prefHeight="39.0" prefWidth="447.0" styleClass="cadastrar" stylesheets="@../styles/estilo_button.css" text="CADASTRAR" />
+      <RadioButton fx:id="radioButtonMasculino" layoutX="175.0" layoutY="257.0" mnemonicParsing="false" onAction="#radioActionMasculino" text="Masculino" textFill="WHITE" />
+      <RadioButton fx:id="radioButtonFeminino" layoutX="318.0" layoutY="257.0" mnemonicParsing="false" onAction="#radioActionFeminino" text="Feminino" textFill="WHITE" />
+      <Label fx:id="lblAvatar" layoutX="231.0" layoutY="312.0" styleClass="labelEscolherAvatar" text="Escolha um avatar" textAlignment="CENTER" />
+      <PieChart fx:id="grafico" layoutX="747.0" layoutY="284.0" prefHeight="347.0" prefWidth="434.0" title="Gráfico de Specs do personagem" />
+      <Label alignment="CENTER" layoutX="818.0" layoutY="57.0" prefHeight="115.0" prefWidth="269.0" text="Foto do Personagem" textAlignment="CENTER" textFill="WHITE" />
+      <Button fx:id="voltar" layoutX="602.0" layoutY="613.0" mnemonicParsing="false" onAction="#btnActionVoltar" styleClass="voltar" stylesheets="@../styles/estilo_button.css" text="LOGIN" />
+      <Label fx:id="lblConfirmaNickname" layoutX="433.0" layoutY="98.0" prefHeight="16.0" prefWidth="220.0" textFill="RED" />
+      <Label fx:id="lblConfirmaSenha" layoutX="433.0" layoutY="145.0" prefHeight="15.0" prefWidth="220.0" textFill="RED" />
+      <Label fx:id="lblConfirmaSexo" layoutX="433.0" layoutY="258.0" prefHeight="15.0" prefWidth="150.0" textFill="RED" />
+      <Label fx:id="lblConfirmaPersonagem" layoutX="433.0" layoutY="312.0" prefHeight="16.0" prefWidth="195.0" textFill="RED" />
+   </children>
+</AnchorPane>

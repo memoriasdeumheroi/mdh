@@ -1,0 +1,71 @@
+.background {
+    -fx-background-color: black;
+}
+
+.textField{
+    -fx-background-image:  url("../img/txt-login-usuario.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: 15,10;
+    -fx-border-color: white;
+    -fx-background-color: black;
+    -fx-background-insets: 0;
+    -fx-text-fill: white;
+    -fx-font: 18px Montserrat;
+    -fx-font-align: center;
+    -fx-effect: dropshadow( three-pass-box , black , 5, 0.0 , 0 , 1 );
+    -fx-font-align: center;
+}
+
+.passwordField{
+    -fx-background-image:  url("../img/txt-login-senha.png") ;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: 15,10;
+    -fx-border-color: white;
+    -fx-background-color: black;
+    -fx-background-insets: 0;
+    -fx-text-fill: white;
+    -fx-font: 18px Montserrat;
+    -fx-font-align: center;
+    -fx-effect: dropshadow( three-pass-box , black , 5, 0.0 , 0 , 1 );
+    -fx-font-align: center;
+}
+
+.button.cadastrar{
+    -fx-background-color: white;
+    -fx-background-insets: 0;
+    -fx-border-color: white;
+    -fx-text-fill: black;
+    -fx-font: 18px Montserrat;
+    -fx-effect: dropshadow( three-pass-box , black , 5, 0.0 , 0 , 1 );
+}
+
+.voltar{
+    -fx-border-color: white;
+    -fx-background-color: black;
+    -fx-background-insets: 0;
+    -fx-text-fill: white;
+    -fx-font: 18px Montserrat;
+    -fx-effect: dropshadow( three-pass-box , black , 5, 0.0 , 0 , 1 );
+}
+
+.labelEscolherAvatar {
+    -fx-text-alignment: center;
+    -fx-text-fill: white;
+}
+
+.botoesPersonagemGeral {
+    -fx-background-color: black;
+    -fx-background-radius: 10;
+    -fx-background-insets: 0;
+}
+
+.cadastrar:hover{
+    -fx-scale-x: 1.05;
+    -fx-scale-y: 1.05;
+    -fx-opacity: 1.0;
+}
+
+.voltar:hover{
+    -fx-background-color: white;
+    -fx-text-fill: black;
+}

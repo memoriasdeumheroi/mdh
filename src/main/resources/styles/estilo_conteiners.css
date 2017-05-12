@@ -1,0 +1,13 @@
+.anchorpane {
+    -fx-background-color: black;
+}
+
+.pane {
+    -fx-background-color: black;
+}
+
+.logo {
+    -fx-background-image: url("../img/logo.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+}
