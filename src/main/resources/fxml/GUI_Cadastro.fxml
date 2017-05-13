@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.geometry.Insets?>
-<?import javafx.scene.chart.PieChart?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.PasswordField?>
@@ -13,8 +12,9 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" fx:id="pane" prefHeight="680.0" prefWidth="1280.0" styleClass="background" stylesheets="@../styles/estilo_cadastro.css" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.sixtechsolutions.controller.CadastrarController">
+<AnchorPane id="AnchorPane" fx:id="pane" prefHeight="680.0" prefWidth="1280.0" styleClass="anchorpane" stylesheets="@../styles/estilo_conteiners.css" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.sixtechsolutions.controller.CadastrarController">
    <children>
       <VBox fx:id="vbox" layoutX="68.0" layoutY="341.0" prefHeight="157.0" prefWidth="447.0">
          <children>
@@ -43,7 +43,7 @@
                   <Button fx:id="btnPersonagem2" mnemonicParsing="false" onAction="#actionBtnPersonagem2" prefHeight="62.0" prefWidth="62.0" styleClass="btn-avatar-crash" stylesheets="@../styles/estilo_button.css" text="" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
                   <Button fx:id="btnPersonagem3" mnemonicParsing="false" onAction="#actionBtnPersonagem3" prefHeight="62.0" prefWidth="62.0" styleClass="btn-avatar-donkeykong" stylesheets="@../styles/estilo_button.css" text="" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
                   <Button fx:id="btnPersonagem4" mnemonicParsing="false" onAction="#actionBtnPersonagem4" prefHeight="62.0" prefWidth="62.0" styleClass="btn-avatar-dukenukem" stylesheets="@../styles/estilo_button.css" text="" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
-                  <Button fx:id="btnPersonagem7" mnemonicParsing="false" onAction="#actionBtnPersonagem7" prefHeight="62.0" prefWidth="62.0" styleClass="btn-avatar-magaman" stylesheets="@../styles/estilo_button.css" text="" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+                  <Button fx:id="btnPersonagem7" mnemonicParsing="false" onAction="#actionBtnPersonagem7" prefHeight="62.0" prefWidth="62.0" styleClass="btn-avatar-megaman" stylesheets="@../styles/estilo_button.css" text="" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
                      <GridPane.margin>
                         <Insets top="10.0" />
                      </GridPane.margin>
@@ -80,19 +80,22 @@
             </GridPane>
          </children>
       </VBox>
-      <TextField fx:id="textNickname" alignment="CENTER" layoutX="175.0" layoutY="91.0" prefHeight="37.0" prefWidth="285.0" promptText="Insira seu login" styleClass="cadastro-textField" stylesheets="@../styles/estilo_text.css" />
-      <PasswordField fx:id="passwordSenha" alignment="CENTER" layoutX="175.0" layoutY="138.0" prefHeight="37.0" prefWidth="285.0" promptText="Insira uma senha" styleClass="cadastro-passwordField" stylesheets="@../styles/estilo_text.css" />
-      <PasswordField fx:id="passwordConfirma" alignment="CENTER" layoutX="175.0" layoutY="184.0" prefHeight="37.0" prefWidth="285.0" promptText="Confirme sua senha" styleClass="cadastro-confirmPasswordField" stylesheets="@../styles/estilo_text.css" />
-      <Button fx:id="btnCadastro" layoutX="71.0" layoutY="550.0" mnemonicParsing="false" onAction="#actionBtnCadastrar" prefHeight="39.0" prefWidth="447.0" styleClass="cadastrar" stylesheets="@../styles/estilo_button.css" text="CADASTRAR" />
-      <RadioButton fx:id="radioButtonMasculino" layoutX="175.0" layoutY="257.0" mnemonicParsing="false" onAction="#radioActionMasculino" text="Masculino" textFill="WHITE" />
-      <RadioButton fx:id="radioButtonFeminino" layoutX="318.0" layoutY="257.0" mnemonicParsing="false" onAction="#radioActionFeminino" text="Feminino" textFill="WHITE" />
-      <Label fx:id="lblAvatar" layoutX="231.0" layoutY="312.0" styleClass="labelEscolherAvatar" text="Escolha um avatar" textAlignment="CENTER" />
-      <PieChart fx:id="grafico" layoutX="747.0" layoutY="284.0" prefHeight="347.0" prefWidth="434.0" title="Gráfico de Specs do personagem" />
+      <TextField fx:id="textNickname" alignment="CENTER" layoutX="143.0" layoutY="122.0" prefHeight="37.0" prefWidth="285.0" promptText="Insira seu login" styleClass="cadastro-textField" stylesheets="@../styles/estilo_text.css" />
+      <PasswordField fx:id="passwordSenha" alignment="CENTER" layoutX="143.0" layoutY="169.0" prefHeight="37.0" prefWidth="285.0" promptText="Insira uma senha" styleClass="cadastro-passwordField" stylesheets="@../styles/estilo_text.css" />
+      <PasswordField fx:id="passwordConfirma" alignment="CENTER" layoutX="143.0" layoutY="215.0" prefHeight="37.0" prefWidth="285.0" promptText="Confirme sua senha" styleClass="cadastro-confirmPasswordField" stylesheets="@../styles/estilo_text.css" />
+      <Button fx:id="btnCadastro" layoutX="148.0" layoutY="543.0" mnemonicParsing="false" onAction="#actionBtnCadastrar" prefHeight="33.0" prefWidth="280.0" styleClass="cadastrar" stylesheets="@../styles/estilo_button.css" text="CADASTRAR" />
+      <RadioButton fx:id="radioButtonMasculino" layoutX="167.0" layoutY="272.0" mnemonicParsing="false" onAction="#radioActionMasculino" text="MASCULINO" textFill="WHITE" />
+      <RadioButton fx:id="radioButtonFeminino" layoutX="314.0" layoutY="272.0" mnemonicParsing="false" onAction="#radioActionFeminino" text="FEMININO" textFill="WHITE" />
+      <Label fx:id="lblAvatar" layoutX="116.0" layoutY="313.0" styleClass="labelEscolherAvatar" text="ESCOLHA UM PERSONAGEM" textAlignment="CENTER">
+         <font>
+            <Font size="25.0" />
+         </font></Label>
       <Label alignment="CENTER" layoutX="818.0" layoutY="57.0" prefHeight="115.0" prefWidth="269.0" text="Foto do Personagem" textAlignment="CENTER" textFill="WHITE" />
-      <Button fx:id="voltar" layoutX="602.0" layoutY="613.0" mnemonicParsing="false" onAction="#btnActionVoltar" styleClass="voltar" stylesheets="@../styles/estilo_button.css" text="LOGIN" />
-      <Label fx:id="lblConfirmaNickname" layoutX="433.0" layoutY="98.0" prefHeight="16.0" prefWidth="220.0" textFill="RED" />
-      <Label fx:id="lblConfirmaSenha" layoutX="433.0" layoutY="145.0" prefHeight="15.0" prefWidth="220.0" textFill="RED" />
+      <Button fx:id="voltar" layoutX="148.0" layoutY="589.0" mnemonicParsing="false" onAction="#btnActionVoltar" prefHeight="33.0" prefWidth="280.0" styleClass="btn-voltar" stylesheets="@../styles/estilo_button.css" text="VOLTAR" />
+      <Label fx:id="lblConfirmaNickname" layoutX="473.0" layoutY="90.0" prefHeight="40.0" prefWidth="220.0" textFill="RED" />
+      <Label fx:id="lblConfirmaSenha" layoutX="473.0" layoutY="149.0" prefHeight="18.0" prefWidth="220.0" textFill="RED" />
       <Label fx:id="lblConfirmaSexo" layoutX="433.0" layoutY="258.0" prefHeight="15.0" prefWidth="150.0" textFill="RED" />
       <Label fx:id="lblConfirmaPersonagem" layoutX="433.0" layoutY="312.0" prefHeight="16.0" prefWidth="195.0" textFill="RED" />
+      <TextField fx:id="textNickname1" alignment="CENTER" layoutX="143.0" layoutY="75.0" prefHeight="37.0" prefWidth="285.0" promptText="Insira seu nome" styleClass="cadastro-textField" stylesheets="@../styles/estilo_text.css" />
    </children>
 </AnchorPane>

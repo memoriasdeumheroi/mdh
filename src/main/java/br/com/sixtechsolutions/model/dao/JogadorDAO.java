@@ -19,10 +19,8 @@ public class JogadorDAO {
         this.connection = connection;
     }
 
-    public boolean inserir(Jogador jogador) throws SQLException {
-        String comandoSQL = "insert into jogador"
-                + "(nome, sexo, login, senha)"
-                + "values(?,?,?,?)";
+    public boolean inserir(Jogador jogador) {
+        String comandoSQL = "INSERT INTO jogador(nome, sexo, login, senha) values (?,?,?,?)";
         try {
             PreparedStatement stmt = connection.prepareStatement(comandoSQL);
             stmt.setString(1, jogador.getNome());
@@ -32,7 +30,6 @@ public class JogadorDAO {
             stmt.execute();
             stmt.close();
             return true;
-
         } catch (SQLException ex) {
             Logger.getLogger(JogadorDAO.class.getName()).log(Level.SEVERE, null, ex);
             return false;
@@ -40,7 +37,7 @@ public class JogadorDAO {
     }
 
     public boolean alterar(Jogador jogador) throws SQLException {
-        String comandoSQL = "UPDATE mdh SET nome=?, login=?, senha=? WHERE jogador=?";
+        String comandoSQL = "UPDATE jogador SET nome=?, login=?, senha=? WHERE login=?";
         try {
             PreparedStatement stmt = connection.prepareStatement(comandoSQL);
             stmt.setString(1, jogador.getNome());
@@ -54,4 +51,5 @@ public class JogadorDAO {
             return false;
         }
     }
+
 }

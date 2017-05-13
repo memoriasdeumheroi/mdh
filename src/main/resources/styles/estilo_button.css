@@ -1,125 +1,244 @@
-@font-face {
-    src: url('../fonts/Montserrat-Bold.ttf');
-}
-
-.github {
-    -fx-background-image: url("../img/btn-login-github-white.jpg");
-    -fx-background-repeat: no-repeat;
-    -fx-background-position: left 0px, right 15px;
-    -fx-background-color: black;
-    -fx-background-insets: 0;
-    -fx-padding: 5;
-    -fx-border-color: white;
-    -fx-text-fill: white;
-    -fx-font: 18px Montserrat;
-    -fx-font-align: center;
-    -fx-effect: dropshadow( three-pass-box, black, 5, 0.0, 0, 1);
-    -fx-font-align: center;
-}
-
-.cadastrar {
-    -fx-background-color: white;
-    -fx-background-insets: 0;
-    -fx-border-color: white;
-    -fx-text-fill: black;
-    -fx-font: 18px Montserrat;
-    -fx-effect: dropshadow( three-pass-box, black, 5, 0.0, 0, 1);
-}
-
-.entrar {
-    -fx-border-color: white;
-    -fx-background-color: black;
-    -fx-background-insets: 0;
-    -fx-text-fill: white;
-    -fx-font: 18px Montserrat;
-    -fx-effect: dropshadow( three-pass-box, black, 5, 0.0, 0, 1);
-}
-
-.esqueci-minha-senha {
-    -fx-background-color: black;
-    -fx-background-insets: 0;
-    -fx-text-fill: white;
-    -fx-font: 18px Montserrat;
-    -fx-effect: dropshadow( three-pass-box, black, 5, 0.0, 0, 1);
-}
-
-.voltar {
-    -fx-border-color: white;
-    -fx-background-color: black;
-    -fx-background-insets: 0;
-    -fx-text-fill: white;
-    -fx-font: 18px Montserrat;
-    -fx-effect: dropshadow( three-pass-box, black, 5, 0.0, 0, 1);
-}
-
-.btn-avatar-bomberman {
-    -fx-background-image: url("../img/btn-avatar-bomberman.jpg ");
-    -fx-background-repeat: no-repeat;
-    -fx-background-position: center;
-}
-
-.btn-avatar-crash {
-    -fx-background-image: url("../img/btn-avatar-crash.png ");
-    -fx-background-repeat: no-repeat;
-    -fx-background-position: center;
-}
-
-.btn-avatar-donkeykong {
-    -fx-background-image: url("../img/btn-avatar-donkeykong.png ");
-    -fx-background-repeat: no-repeat;
-    -fx-background-position: center;
-}
-
-.btn-avatar-dukenukem {
-    -fx-background-image: url("../img/btn-avatar-dukenukem.png");
-    -fx-background-repeat: no-repeat;
-    -fx-background-position: center;
-}
-
-.btn-avatar-kratos {
-    -fx-background-image: url("../img/btn-avatar-kratos.jpg ");
-    -fx-background-repeat: no-repeat;
-    -fx-background-position: center;
-}
-
-.btn-avatar-laracroft {
-    -fx-background-image: url("../img/btn-avatar-laracroft.png ");
-    -fx-background-repeat: no-repeat;
-    -fx-background-position: center;
-}
-
-.btn-avatar-mario {
-    -fx-background-image: url("../img/btn-avatar-mario.png");
-    -fx-background-repeat: no-repeat;
-    -fx-background-position: center;
-}
-
-.btn-avatar-magaman {
-    -fx-background-image: url("../img/btn-avatar-megaman.png ");
-    -fx-background-repeat: no-repeat;
-    -fx-background-position: center;
-}
-
-.btn-avatar-pacman {
-    -fx-background-image: url("../img/btn-avatar-pacman.png");
-    -fx-background-repeat: no-repeat;
-    -fx-background-position: center;
-}
-
-.btn-avatar-ryu {
-    -fx-background-image: url("../img/btn-avatar-ryu.png ");
-    -fx-background-repeat: no-repeat;
-    -fx-background-position: center;
-}
-
-.btn-avatar-sonic {
-    -fx-background-image: url("../img/btn-avatar-sonic.png");
-    -fx-background-repeat: no-repeat;
-    -fx-background-position: center;
-}
-
-.btn-avatar-zelda {
-    -fx-background-image: url("../img/btn-avatar-zelda.png ");
-    -fx-background-repeat: no-repeat;
-    -fx-background-position: center;
-}
+    @font-face {
+        src: url('../fonts/Montserrat-Bold.ttf');
+    }
+    
+    .github {
+        -fx-background-image: url("../img/btn-login-github-white.jpg");
+        -fx-background-repeat: no-repeat;
+        -fx-background-position: left 0px, right 15px;
+        -fx-background-color: black;
+        -fx-background-insets: 0;
+        -fx-padding: 5;
+        -fx-border-color: white;
+        -fx-text-fill: white;
+        -fx-font: 18px Montserrat;
+        -fx-font-align: center;
+        -fx-effect: dropshadow( three-pass-box, black, 5, 0.0, 0, 1);
+        -fx-font-align: center;
+    }
+    
+    .cadastrar {
+        -fx-background-image: url("../img/btn-login-cadastrar-white.png");
+        -fx-background-repeat: no-repeat;
+        -fx-background-position: 15, 10;
+        -fx-border-color: white;
+        -fx-background-color: black;
+        -fx-background-insets: 0;
+        -fx-text-fill: white;
+        -fx-font: 18px Montserrat;
+        -fx-effect: dropshadow( three-pass-box, black, 5, 0.0, 0, 1);
+    }
+    
+    .entrar {
+        -fx-background-color: white;
+        -fx-background-insets: 0;
+        -fx-border-color: white;
+        -fx-text-fill: black;
+        -fx-font: 18px Montserrat;
+        -fx-effect: dropshadow( three-pass-box, black, 5, 0.0, 0, 1);
+    }
+    
+    .esqueci-minha-senha {
+        -fx-background-color: black;
+        -fx-background-insets: 0;
+        -fx-text-fill: white;
+        -fx-font: 18px Montserrat;
+        -fx-effect: dropshadow( three-pass-box, black, 5, 0.0, 0, 1);
+    }
+    
+    .btn-voltar {
+        -fx-border-color: white;
+        -fx-background-color: black;
+        -fx-background-insets: 0;
+        -fx-text-fill: white;
+        -fx-font: 18px Montserrat;
+        -fx-effect: dropshadow( three-pass-box, black, 5, 0.0, 0, 1);
+    }
+    
+    .btn-menu-sidebar-selecionado {
+        -fx-background-color: white;
+        -fx-background-insets: 0;
+        -fx-text-fill: black;
+        -fx-font: 18px Montserrat;
+        -fx-effect: dropshadow( three-pass-box, black, 5, 0.0, 0, 1);
+    }
+    
+    .btn-menu-sidebar-nao-selecionado {
+        -fx-border-color: white;
+        -fx-background-color: black;
+        -fx-background-insets: 0;
+        -fx-text-fill: white;
+        -fx-font: 18px Montserrat;
+        -fx-effect: dropshadow( three-pass-box, black, 5, 0.0, 0, 1);
+    }
+    
+    .cadastrar:hover {
+        -fx-background-image: url("../img/btn-login-cadastrar-black.png");
+        -fx-background-repeat: no-repeat;
+        -fx-background-position: 15, 10;
+        -fx-background-color: white;
+        -fx-text-fill: black;
+    }
+    
+    .btn-voltar:hover {
+        -fx-background-color: white;
+        -fx-background-insets: 0;
+        -fx-text-fill: black;
+        -fx-font: 18px Montserrat;
+        -fx-effect: dropshadow( three-pass-box, black, 5, 0.0, 0, 1);
+    }
+    
+    .btn-menu-sidebar-nao-selecionado:hover {
+        -fx-background-color: white;
+        -fx-background-insets: 0;
+        -fx-text-fill: black;
+        -fx-font: 18px Montserrat;
+        -fx-effect: dropshadow( three-pass-box, black, 5, 0.0, 0, 1);
+    }
+    /*
+        ABAIXO BUTTONS RELACIONADO AO AVATAR
+    */
+    
+    .btn-avatar-bomberman {
+        -fx-background-image: url("../img/btn-avatar-bomberman.jpg ");
+        -fx-background-repeat: no-repeat;
+        -fx-background-position: center;
+    }
+    
+    .btn-avatar-crash {
+        -fx-background-image: url("../img/btn-avatar-crash.png ");
+        -fx-background-repeat: no-repeat;
+        -fx-background-position: center;
+    }
+    
+    .btn-avatar-donkeykong {
+        -fx-background-image: url("../img/btn-avatar-donkeykong.png ");
+        -fx-background-repeat: no-repeat;
+        -fx-background-position: center;
+    }
+    
+    .btn-avatar-dukenukem {
+        -fx-background-image: url("../img/btn-avatar-dukenukem.png");
+        -fx-background-repeat: no-repeat;
+        -fx-background-position: center;
+    }
+    
+    .btn-avatar-kratos {
+        -fx-background-image: url("../img/btn-avatar-kratos.jpg ");
+        -fx-background-repeat: no-repeat;
+        -fx-background-position: center;
+    }
+    
+    .btn-avatar-laracroft {
+        -fx-background-image: url("../img/btn-avatar-laracroft.png ");
+        -fx-background-repeat: no-repeat;
+        -fx-background-position: center;
+    }
+    
+    .btn-avatar-mario {
+        -fx-background-image: url("../img/btn-avatar-mario.png");
+        -fx-background-repeat: no-repeat;
+        -fx-background-position: center;
+    }
+    
+    .btn-avatar-megaman {
+        -fx-background-image: url("../img/btn-avatar-megaman.png ");
+        -fx-background-repeat: no-repeat;
+        -fx-background-position: center;
+    }
+    
+    .btn-avatar-pacman {
+        -fx-background-image: url("../img/btn-avatar-pacman.png");
+        -fx-background-repeat: no-repeat;
+        -fx-background-position: center;
+    }
+    
+    .btn-avatar-ryu {
+        -fx-background-image: url("../img/btn-avatar-ryu.png ");
+        -fx-background-repeat: no-repeat;
+        -fx-background-position: center;
+    }
+    
+    .btn-avatar-sonic {
+        -fx-background-image: url("../img/btn-avatar-sonic.png");
+        -fx-background-repeat: no-repeat;
+        -fx-background-position: center;
+    }
+    
+    .btn-avatar-zelda {
+        -fx-background-image: url("../img/btn-avatar-zelda.png ");
+        -fx-background-repeat: no-repeat;
+        -fx-background-position: center;
+    }
+    
+    .btn-avatar-bomberman:hover {
+        -fx-scale-x: 1.05;
+        -fx-scale-y: 1.05;
+        -fx-opacity: 1.0;
+    }
+    
+    .btn-avatar-crash:hover {
+        -fx-scale-x: 1.05;
+        -fx-scale-y: 1.05;
+        -fx-opacity: 1.0;
+    }
+    
+    .btn-avatar-donkeykong:hover {
+        -fx-scale-x: 1.05;
+        -fx-scale-y: 1.05;
+        -fx-opacity: 1.0;
+    }
+    
+    .btn-avatar-dukenukem:hover {
+        -fx-scale-x: 1.05;
+        -fx-scale-y: 1.05;
+        -fx-opacity: 1.0;
+    }
+    
+    .btn-avatar-kratos:hover {
+        -fx-scale-x: 1.05;
+        -fx-scale-y: 1.05;
+        -fx-opacity: 1.0;
+    }
+    
+    .btn-avatar-laracroft:hover {
+        -fx-scale-x: 1.05;
+        -fx-scale-y: 1.05;
+        -fx-opacity: 1.0;
+    }
+    
+    .btn-avatar-megaman:hover {
+        -fx-scale-x: 1.05;
+        -fx-scale-y: 1.05;
+        -fx-opacity: 1.0;
+    }
+    
+    .btn-avatar-mario:hover {
+        -fx-scale-x: 1.05;
+        -fx-scale-y: 1.05;
+        -fx-opacity: 1.0;
+    }
+    
+    .btn-avatar-pacman:hover {
+        -fx-scale-x: 1.05;
+        -fx-scale-y: 1.05;
+        -fx-opacity: 1.0;
+    }
+    
+    .btn-avatar-ryu:hover {
+        -fx-scale-x: 1.05;
+        -fx-scale-y: 1.05;
+        -fx-opacity: 1.0;
+    }
+    
+    .btn-avatar-sonic:hover {
+        -fx-scale-x: 1.05;
+        -fx-scale-y: 1.05;
+        -fx-opacity: 1.0;
+    }
+    
+    .btn-avatar-zelda:hover {
+        -fx-scale-x: 1.05;
+        -fx-scale-y: 1.05;
+        -fx-opacity: 1.0;
+    }
