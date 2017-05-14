@@ -7,7 +7,23 @@
 }
 
 .logo {
-    -fx-background-image: url("../img/logo.png");
+    -fx-background-image: url("../img/lbl-login-logo.png");
     -fx-background-repeat: no-repeat;
     -fx-background-position: center;
+}
+
+.progress-bar-cadastro .bar {
+    -fx-background-color: black;
+}
+
+.progress-bar-cadastro {
+    -fx-background-color: white;
+}
+
+.progress-bar.bar {
+    -fx-background-color: black;
+}
+
+.progress-bar .track {
+    -fx-background-color: white;
 }

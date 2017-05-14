@@ -26,6 +26,20 @@
     -fx-font-align: center;
 }
 
+.cadastro-nome {
+    -fx-background-image: url("../img/txt-cadastro-nome.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: 15, 10;
+    -fx-border-color: white;
+    -fx-background-color: black;
+    -fx-background-insets: 0;
+    -fx-text-fill: white;
+    -fx-font: 18px Montserrat;
+    -fx-font-align: center;
+    -fx-effect: dropshadow( three-pass-box, black, 5, 0.0, 0, 1);
+    -fx-font-align: center;
+}
+
 .cadastro-textField {
     -fx-background-image: url("../img/txt-login-usuario.png");
     -fx-background-repeat: no-repeat;
@@ -51,11 +65,30 @@
     -fx-font: 18px Montserrat;
     -fx-font-align: center;
     -fx-effect: dropshadow( three-pass-box, black, 5, 0.0, 0, 1);
-    -fx-font-align: center;
+}
+
+.lbl-cadastro-titulo-detalhes-personagem {
+    -fx-text-fill: white;
+    -fx-font: 17px Montserrat;
+}
+
+.lbl-cadastro-titulo-sexo {
+    -fx-text-fill: white;
+    -fx-font: 14px Montserrat;
+}
+
+.lbl-cadastro-titulo {
+    -fx-text-fill: white;
+    -fx-font: 20px Montserrat;
+}
+
+.lbl-alert-text {
+    -fx-text-fill: white;
+    -fx-font: 16px Montserrat;
 }
 
 .cadastro-confirmPasswordField {
-    -fx-background-image: url("../img/txt-login-senha.png");
+    -fx-background-image: url("../img/txt-cadastro-confirma-senha.png");
     -fx-background-repeat: no-repeat;
     -fx-background-position: 15, 10;
     -fx-border-color: white;
@@ -66,4 +99,22 @@
     -fx-font-align: center;
     -fx-effect: dropshadow( three-pass-box, black, 5, 0.0, 0, 1);
     -fx-font-align: center;
+}
+
+.lbl-certo {
+    -fx-background-image: url("../img/lbl-cadastro-correto.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+}
+
+.lbl-errado {
+    -fx-background-image: url("../img/lbl-cadastro-erro.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+}
+
+.lbl-nulo {
+    -fx-background-image: url("../img/lbl-nulo-transparente.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
 }
