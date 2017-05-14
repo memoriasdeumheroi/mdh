@@ -11,12 +11,12 @@
 
 <AnchorPane id="AnchorPane" fx:id="anchorPane" prefHeight="680.0" prefWidth="1200.0" styleClass="anchorpane" stylesheets="@../styles/estilo_conteiners.css" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.sixtechsolutions.controller.LoginController">
     <children>
-      <Label fx:id="logo" layoutX="314.0" layoutY="30.0" prefHeight="338.0" prefWidth="600.0" styleClass="logo">
+      <Label fx:id="logo" layoutX="227.0" layoutY="-30.0" prefHeight="460.0" prefWidth="737.0" styleClass="logo">
          <stylesheets>
             <URL value="@../styles/estilo_conteiners.css" />
             <URL value="@../styles/estilo_button.css" />
          </stylesheets></Label>
-        <Pane fx:id="pane" layoutX="355.0" layoutY="332.0" prefHeight="303.0" prefWidth="491.0" styleClass="pane">
+        <Pane fx:id="pane" layoutX="347.0" layoutY="354.0" prefHeight="303.0" prefWidth="491.0" styleClass="pane">
             <children>
                 <TextField fx:id="txtNomeJogador" alignment="CENTER" layoutX="106.0" layoutY="52.0" prefHeight="33.0" prefWidth="280.0" promptText="usuário" styleClass="login-textField" stylesheets="@../styles/estilo_text.css">
                <font>

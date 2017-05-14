@@ -6,6 +6,7 @@ import br.com.sixtechsolutions.Main;
 import br.com.sixtechsolutions.model.dao.JogadorDAO;
 import br.com.sixtechsolutions.model.database.Database;
 import br.com.sixtechsolutions.model.database.DatabaseFactory;
+import br.com.sixtechsolutions.model.dominio.Jogador;
 import java.io.IOException;
 import java.net.URL;
 import java.sql.Connection;
@@ -27,6 +28,7 @@ public class LoginController implements Initializable, CenaControlada {
     private final Database database = DatabaseFactory.getDatabase("mysql");
     private final Connection connection = database.conectar();
     private final JogadorDAO jogadorDAO = new JogadorDAO();
+    private final Jogador jogador = new Jogador();
 
     @FXML
     private TextField txtNomeJogador;
@@ -66,6 +68,7 @@ public class LoginController implements Initializable, CenaControlada {
 
     @FXML
     public void btnEntrarNoJogo(ActionEvent event) throws IOException {
+
         meuControlador.setScreen(Main.cenaMenu);
     }
 
