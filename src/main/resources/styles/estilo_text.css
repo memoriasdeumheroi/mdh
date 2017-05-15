@@ -9,7 +9,6 @@
     -fx-font: 18px Montserrat;
     -fx-font-align: center;
     -fx-effect: dropshadow( three-pass-box, black, 5, 0.0, 0, 1);
-    -fx-font-align: center;
 }
 
 .login-passwordField {
@@ -23,7 +22,6 @@
     -fx-font: 18px Montserrat;
     -fx-font-align: center;
     -fx-effect: dropshadow( three-pass-box, black, 5, 0.0, 0, 1);
-    -fx-font-align: center;
 }
 
 .cadastro-nome {
@@ -37,7 +35,6 @@
     -fx-font: 18px Montserrat;
     -fx-font-align: center;
     -fx-effect: dropshadow( three-pass-box, black, 5, 0.0, 0, 1);
-    -fx-font-align: center;
 }
 
 .cadastro-textField {
@@ -51,7 +48,6 @@
     -fx-font: 18px Montserrat;
     -fx-font-align: center;
     -fx-effect: dropshadow( three-pass-box, black, 5, 0.0, 0, 1);
-    -fx-font-align: center;
 }
 
 .cadastro-passwordField {
@@ -98,7 +94,6 @@
     -fx-font: 18px Montserrat;
     -fx-font-align: center;
     -fx-effect: dropshadow( three-pass-box, black, 5, 0.0, 0, 1);
-    -fx-font-align: center;
 }
 
 .lbl-certo {
@@ -117,4 +112,19 @@
     -fx-background-image: url("../img/lbl-nulo-transparente.png");
     -fx-background-repeat: no-repeat;
     -fx-background-position: center;
+}
+
+.lbl-sobre-txt-grande{
+    -fx-text-fill: white;
+    -fx-font: 17px Montserrat; 
+}
+
+.lbl-sobre-txt-pequeno{
+    -fx-text-fill: white;
+    -fx-font: 14px Tahoma 
+}
+
+.lbl-conteudo-txt-extra-pequeno{
+    -fx-text-fill: white;
+    -fx-font: 13px Montserrat 
 }

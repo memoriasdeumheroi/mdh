@@ -81,3 +81,33 @@
     -fx-background-repeat: no-repeat;
     -fx-background-position: center;
 }
+
+.lbl-contribua-no-git{
+    -fx-background-image: url("../img/github_social_coding.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: 150px;
+}
+
+.lbl-fork-projeto{
+    -fx-background-image: url("../img/fork_icon.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: 50px;
+}
+
+.lbl-star-projeto{
+    -fx-background-image: url("../img/star_icon.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: 50px;
+}
+
+.lbl-book{
+    -fx-background-image: url("../img/books_icon.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: 130px;
+}
+
+.lbl-conectado-no-site{
+    -fx-background-image: url("../img/conectado_site_mdh.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: 250px;
+}
