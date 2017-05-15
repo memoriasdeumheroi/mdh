@@ -3,25 +3,90 @@
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.Pane?>
 
-<AnchorPane id="AnchorPane" prefHeight="680.0" prefWidth="1200.0" styleClass="backgroundMain" stylesheets="@../css/estilo_conteudo.css" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.sixtechsolutions.controller.ConteudoController">
+<AnchorPane id="AnchorPane" prefHeight="680.0" prefWidth="1200.0" styleClass="pane" stylesheets="@../styles/estilo_conteiners.css" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.sixtechsolutions.controller.ConteudoController">
    <children>
-      <Pane fx:id="pane" prefHeight="680.0" prefWidth="270.0" styleClass="paneBotoes">
+      <Pane fx:id="pane" layoutX="24.0" prefHeight="680.0" prefWidth="270.0" styleClass="paneBotoes">
          <children>
-            <Button fx:id="btnPerfil" layoutX="100.0" layoutY="42.0" mnemonicParsing="false" onAction="#actionBtnPerfil" prefHeight="62.0" prefWidth="62.0" styleClass="avatar" />
-            <Button fx:id="btnMenu" layoutX="-17.0" layoutY="203.0" mnemonicParsing="false" onAction="#actionBtnMenu" prefHeight="35.0" prefWidth="300.0" styleClass="btnOpcoesMenu" text="Menu" />
-            <Button fx:id="btnJogar" layoutX="-17.0" layoutY="255.0" mnemonicParsing="false" onAction="#actionBtnJogar" prefHeight="35.0" prefWidth="300.0" styleClass="btnOpcoesMenu" text="Jogar" />
-            <Button fx:id="btnConquistas" layoutX="-17.0" layoutY="308.0" mnemonicParsing="false" onAction="#actionBtnConquistas" prefHeight="35.0" prefWidth="300.0" styleClass="btnOpcoesMenu" text="Conquistas" />
-            <Button fx:id="btnConteudo" layoutX="-17.0" layoutY="360.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="300.0" styleClass="conteudo" text="Conteúdo Extra" />
-            <Button fx:id="btnMelhoresScores" layoutX="-17.0" layoutY="412.0" mnemonicParsing="false" onAction="#actionBtnMelhoresScores" prefHeight="35.0" prefWidth="300.0" styleClass="btnOpcoesMenu" text="Melhores Pontuações" />
-            <Button fx:id="btnConfigs" layoutX="-17.0" layoutY="464.0" mnemonicParsing="false" onAction="#actionBtnConfigs" prefHeight="35.0" prefWidth="300.0" styleClass="btnOpcoesMenu" text="Configurações" />
-            <Button fx:id="btnSobre" layoutX="-17.0" layoutY="516.0" mnemonicParsing="false" onAction="#actionBtnSobre" prefHeight="35.0" prefWidth="300.0" styleClass="btnOpcoesMenu" text="Sobre" />
+            <Button fx:id="btnPerfil" layoutX="100.0" layoutY="42.0" mnemonicParsing="false" onAction="#actionBtnPerfil" prefHeight="62.0" prefWidth="62.0" styleClass="avatar" stylesheets="@../styles/estilo_button.css" />
+            <Button fx:id="btnMenu" layoutY="203.0" mnemonicParsing="false" onAction="#actionBtnMenu" prefHeight="45.0" prefWidth="270.0" styleClass="btn-menu-sidebar-selecionado" stylesheets="@../styles/estilo_button.css" text="MENU" />
+            <Button fx:id="btnJogar" layoutY="255.0" mnemonicParsing="false" onAction="#actionBtnJogar" prefHeight="45.0" prefWidth="270.0" styleClass="btn-menu-sidebar-nao-selecionado" stylesheets="@../styles/estilo_button.css" text="JOGAR" />
+            <Button fx:id="btnConquistas" layoutY="308.0" mnemonicParsing="false" onAction="#actionBtnConquistas" prefHeight="45.0" prefWidth="270.0" styleClass="btn-menu-sidebar-nao-selecionado" stylesheets="@../styles/estilo_button.css" text="CONQUISTAS" />
+            <Button fx:id="btnConteudo" layoutY="360.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="270.0" styleClass="btn-menu-sidebar-nao-selecionado" stylesheets="@../styles/estilo_button.css" text="CONTEÚDO EXTRA" />
+            <Button fx:id="btnMelhoresScores" layoutY="412.0" mnemonicParsing="false" onAction="#actionBtnMelhoresScores" prefHeight="45.0" prefWidth="270.0" styleClass="btn-menu-sidebar-nao-selecionado" stylesheets="@../styles/estilo_button.css" text="MELHORES PONTUAÇÕES" />
+            <Button fx:id="btnConfigs" layoutY="464.0" mnemonicParsing="false" onAction="#actionBtnConfigs" prefHeight="45.0" prefWidth="270.0" styleClass="btn-menu-sidebar-nao-selecionado" stylesheets="@../styles/estilo_button.css" text="CONFIGURAÇÕES" />
+            <Button fx:id="btnSobre" layoutY="516.0" mnemonicParsing="false" onAction="#actionBtnSobre" prefHeight="45.0" prefWidth="270.0" styleClass="btn-menu-sidebar-nao-selecionado" stylesheets="@../styles/estilo_button.css" text="SOBRE" />
             <Label fx:id="lblNomedoPlayer" alignment="CENTER" layoutX="42.0" layoutY="115.0" prefHeight="25.0" prefWidth="178.0" styleClass="labelInfoPlayer" text="felipefrancischetto" textAlignment="CENTER" textFill="WHITE" />
             <Label fx:id="lblNvDoPlayer" layoutX="70.0" layoutY="148.0" styleClass="labelInfoPlayer" text="Nv. 99" textFill="WHITE" />
             <Label fx:id="lblExperiencia" layoutX="120.0" layoutY="147.0" styleClass="labelInfoPlayer" text="Xp. 2310050" textFill="WHITE" />
+            <Button fx:id="btnGitHub" layoutY="608.0" mnemonicParsing="false" onAction="#actionBtnGitHub" prefHeight="41.0" prefWidth="145.0" styleClass="github" stylesheets="@../styles/estilo_button.css" text="    GitHub" textAlignment="RIGHT" textFill="WHITE" />
          </children>
       </Pane>
-      <Button fx:id="btnGitHub" layoutX="21.0" layoutY="625.0" mnemonicParsing="false" onAction="#actionBtnGitHub" prefHeight="41.0" prefWidth="145.0" styleClass="github" text="GitHub" textFill="WHITE" />
+      <HBox layoutX="324.0" layoutY="138.0" prefHeight="76.0" prefWidth="819.0" spacing="10.0">
+         <children>
+            <Button mnemonicParsing="false" prefHeight="69.0" prefWidth="68.0" styleClass="btn-cadeado-fechado" stylesheets="@../styles/estilo_button.css" />
+            <Button mnemonicParsing="false" prefHeight="69.0" prefWidth="68.0" styleClass="btn-cadeado-fechado" stylesheets="@../styles/estilo_button.css" />
+            <Button mnemonicParsing="false" prefHeight="69.0" prefWidth="68.0" styleClass="btn-cadeado-fechado" stylesheets="@../styles/estilo_button.css" />
+            <Button mnemonicParsing="false" prefHeight="69.0" prefWidth="68.0" styleClass="btn-cadeado-fechado" stylesheets="@../styles/estilo_button.css" />
+            <Button mnemonicParsing="false" prefHeight="69.0" prefWidth="68.0" styleClass="btn-cadeado-fechado" stylesheets="@../styles/estilo_button.css" />
+            <Button mnemonicParsing="false" prefHeight="69.0" prefWidth="68.0" styleClass="btn-cadeado-fechado" stylesheets="@../styles/estilo_button.css" />
+            <Button mnemonicParsing="false" prefHeight="69.0" prefWidth="68.0" styleClass="btn-cadeado-fechado" stylesheets="@../styles/estilo_button.css" />
+            <Button mnemonicParsing="false" prefHeight="69.0" prefWidth="68.0" styleClass="btn-cadeado-fechado" stylesheets="@../styles/estilo_button.css" />
+            <Button mnemonicParsing="false" prefHeight="69.0" prefWidth="68.0" styleClass="btn-cadeado-fechado" stylesheets="@../styles/estilo_button.css" />
+            <Button mnemonicParsing="false" prefHeight="69.0" prefWidth="68.0" styleClass="btn-cadeado-fechado" stylesheets="@../styles/estilo_button.css" />
+            <Button mnemonicParsing="false" prefHeight="69.0" prefWidth="68.0" styleClass="btn-cadeado-fechado" stylesheets="@../styles/estilo_button.css" />
+            <Button mnemonicParsing="false" prefHeight="69.0" prefWidth="68.0" styleClass="btn-cadeado-fechado" stylesheets="@../styles/estilo_button.css" />
+         </children>
+      </HBox>
+      <HBox layoutX="331.0" layoutY="214.0" prefHeight="25.0" prefWidth="828.0" spacing="19.0">
+         <children>
+            <Label styleClass="lbl-conteudo-txt-extra-pequeno" stylesheets="@../styles/estilo_text.css" text="Aula 01" />
+            <Label styleClass="lbl-conteudo-txt-extra-pequeno" stylesheets="@../styles/estilo_text.css" text="Aula 02" />
+            <Label styleClass="lbl-conteudo-txt-extra-pequeno" stylesheets="@../styles/estilo_text.css" text="Aula 03" />
+            <Label styleClass="lbl-conteudo-txt-extra-pequeno" stylesheets="@../styles/estilo_text.css" text="Aula 04" />
+            <Label styleClass="lbl-conteudo-txt-extra-pequeno" stylesheets="@../styles/estilo_text.css" text="Aula 05" />
+            <Label styleClass="lbl-conteudo-txt-extra-pequeno" stylesheets="@../styles/estilo_text.css" text="Aula 06" />
+            <Label styleClass="lbl-conteudo-txt-extra-pequeno" stylesheets="@../styles/estilo_text.css" text="Aula 07" />
+            <Label styleClass="lbl-conteudo-txt-extra-pequeno" stylesheets="@../styles/estilo_text.css" text="Aula 08" />
+            <Label styleClass="lbl-conteudo-txt-extra-pequeno" stylesheets="@../styles/estilo_text.css" text="Aula 09" />
+            <Label styleClass="lbl-conteudo-txt-extra-pequeno" stylesheets="@../styles/estilo_text.css" text="Aula 10" />
+            <Label styleClass="lbl-conteudo-txt-extra-pequeno" stylesheets="@../styles/estilo_text.css" text="Aula 11" />
+            <Label styleClass="lbl-conteudo-txt-extra-pequeno" stylesheets="@../styles/estilo_text.css" text="Aula 12" />
+         </children>
+      </HBox>
+      <HBox layoutX="324.0" layoutY="253.0" prefHeight="76.0" prefWidth="819.0" spacing="10.0">
+         <children>
+            <Button mnemonicParsing="false" prefHeight="69.0" prefWidth="68.0" styleClass="btn-cadeado-aberto" stylesheets="@../styles/estilo_button.css" />
+            <Button mnemonicParsing="false" prefHeight="69.0" prefWidth="68.0" styleClass="btn-cadeado-aberto" stylesheets="@../styles/estilo_button.css" />
+            <Button mnemonicParsing="false" prefHeight="69.0" prefWidth="68.0" styleClass="btn-cadeado-aberto" stylesheets="@../styles/estilo_button.css" />
+            <Button mnemonicParsing="false" prefHeight="69.0" prefWidth="68.0" styleClass="btn-cadeado-aberto" stylesheets="@../styles/estilo_button.css" />
+            <Button mnemonicParsing="false" prefHeight="69.0" prefWidth="68.0" styleClass="btn-cadeado-aberto" stylesheets="@../styles/estilo_button.css" />
+            <Button mnemonicParsing="false" prefHeight="69.0" prefWidth="68.0" styleClass="btn-cadeado-aberto" stylesheets="@../styles/estilo_button.css" />
+            <Button mnemonicParsing="false" prefHeight="69.0" prefWidth="68.0" styleClass="btn-cadeado-aberto" stylesheets="@../styles/estilo_button.css" />
+            <Button mnemonicParsing="false" prefHeight="69.0" prefWidth="68.0" styleClass="btn-cadeado-aberto" stylesheets="@../styles/estilo_button.css" />
+            <Button mnemonicParsing="false" prefHeight="69.0" prefWidth="68.0" styleClass="btn-cadeado-aberto" stylesheets="@../styles/estilo_button.css" />
+            <Button mnemonicParsing="false" prefHeight="69.0" prefWidth="68.0" styleClass="btn-cadeado-aberto" stylesheets="@../styles/estilo_button.css" />
+            <Button mnemonicParsing="false" prefHeight="69.0" prefWidth="68.0" styleClass="btn-cadeado-aberto" stylesheets="@../styles/estilo_button.css" />
+            <Button mnemonicParsing="false" prefHeight="69.0" prefWidth="68.0" styleClass="btn-cadeado-aberto" stylesheets="@../styles/estilo_button.css" />
+         </children>
+      </HBox>
+      <HBox layoutX="335.0" layoutY="326.0" prefHeight="25.0" prefWidth="828.0" spacing="21.0">
+         <children>
+            <Label styleClass="lbl-conteudo-txt-extra-pequeno" stylesheets="@../styles/estilo_text.css" text="Aula 13" />
+            <Label styleClass="lbl-conteudo-txt-extra-pequeno" stylesheets="@../styles/estilo_text.css" text="Aula 14" />
+            <Label styleClass="lbl-conteudo-txt-extra-pequeno" stylesheets="@../styles/estilo_text.css" text="Aula 15" />
+            <Label styleClass="lbl-conteudo-txt-extra-pequeno" stylesheets="@../styles/estilo_text.css" text="Aula 16" />
+            <Label styleClass="lbl-conteudo-txt-extra-pequeno" stylesheets="@../styles/estilo_text.css" text="Aula 17" />
+            <Label styleClass="lbl-conteudo-txt-extra-pequeno" stylesheets="@../styles/estilo_text.css" text="Aula 18" />
+            <Label styleClass="lbl-conteudo-txt-extra-pequeno" stylesheets="@../styles/estilo_text.css" text="Aula 19" />
+            <Label styleClass="lbl-conteudo-txt-extra-pequeno" stylesheets="@../styles/estilo_text.css" text="Aula 20" />
+            <Label styleClass="lbl-conteudo-txt-extra-pequeno" stylesheets="@../styles/estilo_text.css" text="Aula 21" />
+            <Label styleClass="lbl-conteudo-txt-extra-pequeno" stylesheets="@../styles/estilo_text.css" text="Aula 22" />
+            <Label styleClass="lbl-conteudo-txt-extra-pequeno" stylesheets="@../styles/estilo_text.css" text="Aula 23" />
+            <Label styleClass="lbl-conteudo-txt-extra-pequeno" stylesheets="@../styles/estilo_text.css" text="Aula 24" />
+         </children>
+      </HBox>
    </children>
 </AnchorPane>
