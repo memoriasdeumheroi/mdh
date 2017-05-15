@@ -5,9 +5,9 @@ import javafx.scene.control.Label;
 
 public class Jogada {
 
-    Exibe exibe = new Exibe();
-    Resultado resultado = new Resultado();
-    Personagem personagem = new Personagem();
+    public Exibe exibe = new Exibe();
+    public Resultado resultado = new Resultado();
+    public Personagem personagem = new Personagem();
 
     public void exibirTodosBotoes(Button[] btnA) {
         for (int i = 0; i < personagem.getReferencia().length; i++) {

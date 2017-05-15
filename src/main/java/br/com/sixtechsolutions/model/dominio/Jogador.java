@@ -8,6 +8,10 @@ public class Jogador {
     private String senha;
     private String personagem;
 
+    public Jogador() {
+
+    }
+
     public Jogador(String nome, String sexo, String login, String senha) {
         this.nome = nome;
         this.sexo = sexo;

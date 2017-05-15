@@ -1,0 +1,83 @@
+.lbl-cadastro-personagem-nulo {
+    -fx-background-image: url("../img/lbl-nulo-transparente.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+}
+
+.lbl-cadastro-personagem-bomberman {
+    -fx-background-image: url("../img/lbl-cadastro-bomberman.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+}
+
+.lbl-cadastro-personagem-crash {
+    -fx-background-image: url("../img/lbl-cadastro-crash.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+}
+
+.lbl-cadastro-personagem-donkeykong {
+    -fx-background-image: url("../img/lbl-cadastro-donkeykong.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+}
+
+.lbl-cadastro-personagem-dukenukem {
+    -fx-background-image: url("../img/lbl-cadastro-dukenukem.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+}
+
+.lbl-cadastro-personagem-kratos {
+    -fx-background-image: url("../img/lbl-cadastro-kratos.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+}
+
+.lbl-cadastro-personagem-laracroft {
+    -fx-background-image: url("../img/lbl-cadastro-laracroft.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+}
+
+.lbl-cadastro-personagem-megaman {
+    -fx-background-image: url("../img/lbl-cadastro-megaman.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+}
+
+.lbl-cadastro-personagem-mario {
+    -fx-background-image: url("../img/lbl-cadastro-mario.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+}
+
+.lbl-cadastro-personagem-pacman {
+    -fx-background-image: url("../img/lbl-cadastro-pacman.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+}
+
+.lbl-cadastro-personagem-ryu {
+    -fx-background-image: url("../img/lbl-cadastro-ryu.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+}
+
+.lbl-cadastro-personagem-sonic {
+    -fx-background-image: url("../img/lbl-cadastro-sonic.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+}
+
+.lbl-cadastro-personagem-zelda {
+    -fx-background-image: url("../img/lbl-cadastro-zelda.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+}
+
+.lbl-alert-erro{
+    -fx-background-image: url("../img/lbl-alert-erro.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+}

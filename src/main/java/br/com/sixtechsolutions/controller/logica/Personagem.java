@@ -5,7 +5,7 @@ import java.util.Random;
 public class Personagem {
 
     private static final int[] referencia = new int[12];
-    private static String personagem = "mario";
+    private static String personagem;
 
     Random random = new Random();
 
