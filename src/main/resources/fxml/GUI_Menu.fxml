@@ -20,7 +20,7 @@
             <Label fx:id="lblNomedoPlayer" alignment="CENTER" layoutX="42.0" layoutY="115.0" prefHeight="25.0" prefWidth="178.0" styleClass="labelInfoPlayer" text="felipefrancischetto" textAlignment="CENTER" textFill="WHITE" />
             <Label fx:id="lblNvDoPlayer" layoutX="70.0" layoutY="148.0" styleClass="labelInfoPlayer" text="Nv. 99" textFill="WHITE" />
             <Label fx:id="lblExperiencia" layoutX="120.0" layoutY="147.0" styleClass="labelInfoPlayer" text="Xp. 2310050" textFill="WHITE" />
-            <Button fx:id="btnGitHub" layoutX="21.0" layoutY="625.0" mnemonicParsing="false" onAction="#actionBtnGitHub" prefHeight="41.0" prefWidth="145.0" styleClass="github" stylesheets="@../styles/estilo_button.css" text="GITHUB" textFill="WHITE" />
+            <Button fx:id="btnGitHub" layoutY="608.0" mnemonicParsing="false" onAction="#actionBtnGitHub" prefHeight="41.0" prefWidth="145.0" styleClass="github" stylesheets="@../styles/estilo_button.css" text="    GitHub" textFill="WHITE" />
          </children>
       </Pane>
       <Label fx:id="lblLogo" layoutX="406.0" layoutY="100.0" prefHeight="481.0" prefWidth="616.0" styleClass="logo" />
