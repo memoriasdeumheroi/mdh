@@ -74,9 +74,6 @@ public class MenuController implements Initializable, CenaControlada {
     private Label lblLogo;
 
     @FXML
-    private Button btnGitHub;
-
-    @FXML
     void actionBtnConfigs(ActionEvent event) {
         meuControlador.setScreen(Main.cenaConfiguracoes);
     }
@@ -114,11 +111,13 @@ public class MenuController implements Initializable, CenaControlada {
     @FXML
     void actionBtnGitHub(ActionEvent event) {
         if (Desktop.isDesktopSupported()) {
-            try {
-                Desktop.getDesktop().browse(new URI("https://github.com/memoriasdeumheroi/mdh"));
-            } catch (IOException | URISyntaxException e1) {
-                e1.printStackTrace();
-            }
+            new Thread(() -> {
+                try {
+                    Desktop.getDesktop().browse(new URI("https://github.com/memoriasdeumheroi/mdh"));
+                } catch (IOException | URISyntaxException e1) {
+                    e1.printStackTrace();
+                }
+            }).start();
         }
     }
 }

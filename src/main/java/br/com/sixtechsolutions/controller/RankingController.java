@@ -174,12 +174,13 @@ public class RankingController implements Initializable, CenaControlada {
     @FXML
     void actionBtnGitHub(ActionEvent event) {
         if (Desktop.isDesktopSupported()) {
-            try {
-                Desktop.getDesktop().browse(new URI("https://github.com/memoriasdeumheroi/mdh"));
-            } catch (IOException | URISyntaxException e1) {
-                e1.printStackTrace();
-            }
+            new Thread(() -> {
+                try {
+                    Desktop.getDesktop().browse(new URI("https://github.com/memoriasdeumheroi/mdh"));
+                } catch (IOException | URISyntaxException e1) {
+                    e1.printStackTrace();
+                }
+            }).start();
         }
     }
-
 }

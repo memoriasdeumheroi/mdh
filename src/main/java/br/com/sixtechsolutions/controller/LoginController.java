@@ -64,6 +64,22 @@ public class LoginController implements Initializable, CenaControlada {
     private Label lblEsqueciSenha;
 
     @FXML
+    private Button github;
+
+    @FXML
+    private void actionGithub(ActionEvent event) {
+        if (Desktop.isDesktopSupported()) {
+            new Thread(() -> {
+                try {
+                    Desktop.getDesktop().browse(new URI("https://github.com/memoriasdeumheroi/mdh"));
+                } catch (IOException | URISyntaxException e1) {
+                    e1.printStackTrace();
+                }
+            }).start();
+        }
+    }
+
+    @FXML
     public void btnCadastrarHeroi(ActionEvent event) throws IOException, SQLException {
         meuControlador.setScreen(Main.cenaCadastro);
     }
