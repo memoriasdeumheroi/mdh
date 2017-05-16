@@ -36,6 +36,6 @@
                 
             </children>
         </Pane>
-      <Button alignment="TOP_RIGHT" layoutX="1085.0" layoutY="631.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="101.0" styleClass="github" stylesheets="@../styles/estilo_button.css" text="GitHub" />
+      <Button alignment="BASELINE_CENTER" layoutX="1044.0" layoutY="625.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="145.0" styleClass="github" stylesheets="@../styles/estilo_button.css" text="    GitHub" />
     </children>
 </AnchorPane>

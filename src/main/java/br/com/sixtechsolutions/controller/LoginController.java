@@ -7,7 +7,10 @@ import br.com.sixtechsolutions.model.dao.JogadorDAO;
 import br.com.sixtechsolutions.model.database.Database;
 import br.com.sixtechsolutions.model.database.DatabaseFactory;
 import br.com.sixtechsolutions.model.dominio.Jogador;
+import java.awt.Desktop;
 import java.io.IOException;
+import java.net.URI;
+import java.net.URISyntaxException;
 import java.net.URL;
 import java.sql.Connection;
 import java.sql.SQLException;
@@ -28,7 +31,16 @@ public class LoginController implements Initializable, CenaControlada {
     private final Database database = DatabaseFactory.getDatabase("mysql");
     private final Connection connection = database.conectar();
     private final JogadorDAO jogadorDAO = new JogadorDAO();
-    private final Jogador jogador = new Jogador();
+
+    @Override
+    public void initialize(URL url, ResourceBundle rb) {
+        jogadorDAO.setConnection(connection);
+    }
+
+    @Override
+    public void defineCenaPai(ControladorDeCenas screenParent) {
+        meuControlador = screenParent;
+    }
 
     @FXML
     private TextField txtNomeJogador;
@@ -51,16 +63,6 @@ public class LoginController implements Initializable, CenaControlada {
     @FXML
     private Label lblEsqueciSenha;
 
-    @Override
-    public void initialize(URL url, ResourceBundle rb) {
-        jogadorDAO.setConnection(connection);
-    }
-
-    @Override
-    public void defineCenaPai(ControladorDeCenas screenParent) {
-        meuControlador = screenParent;
-    }
-
     @FXML
     public void btnCadastrarHeroi(ActionEvent event) throws IOException, SQLException {
         meuControlador.setScreen(Main.cenaCadastro);
@@ -68,8 +70,18 @@ public class LoginController implements Initializable, CenaControlada {
 
     @FXML
     public void btnEntrarNoJogo(ActionEvent event) throws IOException {
+        Jogador jogador = new Jogador();
+        jogador.setLogin(txtNomeJogador.getText());
+        jogador.setSenha(txtSenhaJogador.getText());
+        Jogador j = jogadorDAO.buscar(jogador);
+        System.out.println(j.getLogin());
+        System.out.println(j.getSenha());
+        if (jogadorDAO.buscar(jogador).getLogin() == jogador.getLogin()) {
+            meuControlador.setScreen(Main.cenaMenu);
+        } else {
+            System.out.println("Senha errada!");
+        }
 
-        meuControlador.setScreen(Main.cenaMenu);
     }
 
 }
