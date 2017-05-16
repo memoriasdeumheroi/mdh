@@ -21,7 +21,7 @@ public class JogadorDAO {
     }
 
     public boolean inserir(Jogador jogador) {
-        String comandoSQL = "INSERT INTO jogador(login, senha, nome, sexo) values (?,?,?,?)";
+        String comandoSQL = "INSERT INTO jogador(usuario, senha, nome, sexo) values (?,?,?,?)";
         try {
             PreparedStatement stmt = connection.prepareStatement(comandoSQL);
             stmt.setString(1, jogador.getLogin());
@@ -38,7 +38,7 @@ public class JogadorDAO {
     }
 
     public boolean alterar(Jogador jogador) throws SQLException {
-        String comandoSQL = "UPDATE jogador SET nome=?, login=?, senha=? WHERE login=?";
+        String comandoSQL = "UPDATE jogador SET usuario=?, login=?, senha=? WHERE login=?";
         try {
             PreparedStatement stmt = connection.prepareStatement(comandoSQL);
             stmt.setString(1, jogador.getNome());
@@ -54,14 +54,17 @@ public class JogadorDAO {
     }
 
     public Jogador buscar(Jogador jogador) {
-        String sql = "SELECT * FROM clientes WHERE cdCliente=?";
+        String sql = "SELECT * FROM jogador WHERE usuario=? and senha=?";
         Jogador retorno = new Jogador();
         try {
             PreparedStatement stmt = connection.prepareStatement(sql);
+            System.out.println(jogador.getLogin());
+            System.out.println(jogador.getSenha());
             stmt.setString(1, jogador.getLogin());
+            stmt.setString(2, jogador.getSenha());
             ResultSet resultado = stmt.executeQuery();
             if (resultado.next()) {
-                jogador.setLogin(resultado.getString("login"));
+                jogador.setLogin(resultado.getString("usuario"));
                 jogador.setSenha(resultado.getString("senha"));
                 retorno = jogador;
             }
