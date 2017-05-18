@@ -58,8 +58,6 @@ public class JogadorDAO {
         Jogador retorno = new Jogador();
         try {
             PreparedStatement stmt = connection.prepareStatement(sql);
-            System.out.println(jogador.getLogin());
-            System.out.println(jogador.getSenha());
             stmt.setString(1, jogador.getLogin());
             stmt.setString(2, jogador.getSenha());
             ResultSet resultado = stmt.executeQuery();

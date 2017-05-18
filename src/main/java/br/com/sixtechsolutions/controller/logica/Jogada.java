@@ -13,26 +13,26 @@ public class Jogada {
         for (int i = 0; i < personagem.getReferencia().length; i++) {
             btnA[i].setDisable(true);
             if (personagem.getReferencia(i) == 1) {
-                btnA[i].getStyleClass().set(1, "c1_" + personagem.getPersonagem());
+                btnA[i].getStyleClass().set(1, "c1-" + personagem.getPersonagem());
             } else {
-                btnA[i].getStyleClass().set(1, "c2_" + personagem.getPersonagem());
+                btnA[i].getStyleClass().set(1, "c2-" + personagem.getPersonagemRival());
             }
         }
     }
 
     public void exibirUmBotao(Button btnA, int btn) {
         if (personagem.getReferencia(btn) == 1) {
-            btnA.getStyleClass().set(1, "c1_" + personagem.getPersonagem());
+            btnA.getStyleClass().set(1, "c1-" + personagem.getPersonagem());
             btnA.setDisable(true);
         } else {
-            btnA.getStyleClass().set(1, "c2_" + personagem.getPersonagem());
+            btnA.getStyleClass().set(1, "c2-" + personagem.getPersonagemRival());
             btnA.setDisable(true);
         }
     }
 
     public void esconderBotoes(Button[] btnA) {
         for (int i = 0; i < personagem.getReferencia().length; i++) {
-            btnA[i].getStyleClass().set(1, "c0");
+            btnA[i].getStyleClass().set(1, "c0-fundo-transparente");
             btnA[i].setDisable(false);
         }
     }

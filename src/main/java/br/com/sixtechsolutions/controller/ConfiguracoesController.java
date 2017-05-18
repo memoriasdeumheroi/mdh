@@ -70,49 +70,50 @@ public class ConfiguracoesController implements Initializable, CenaControlada {
     private Label lblExperiencia;
 
     @FXML
-    void actionBtnMenu(ActionEvent event) {
+    private void actionBtnMenu(ActionEvent event) {
         meuControlador.setScreen(Main.cenaMenu);
     }
 
     @FXML
-    void actionBtnConquistas(ActionEvent event) {
+    private void actionBtnConquistas(ActionEvent event) {
         meuControlador.setScreen(Main.cenaConquistas);
     }
 
     @FXML
-    void actionBtnConteudo(ActionEvent event) {
+    private void actionBtnConteudo(ActionEvent event) {
         meuControlador.setScreen(Main.cenaConteudo);
     }
 
     @FXML
-    void actionBtnJogar(ActionEvent event) {
+    private void actionBtnJogar(ActionEvent event) {
         meuControlador.setScreen(Main.cenaJogada);
     }
 
     @FXML
-    void actionBtnMelhoresScores(ActionEvent event) {
+    private void actionBtnMelhoresScores(ActionEvent event) {
         meuControlador.setScreen(Main.cenaRanking);
     }
 
     @FXML
-    void actionBtnPerfil(ActionEvent event) {
+    private void actionBtnPerfil(ActionEvent event) {
 
     }
 
     @FXML
-    void actionBtnSobre(ActionEvent event) {
+    private void actionBtnSobre(ActionEvent event) {
         meuControlador.setScreen(Main.cenaSobre);
     }
 
     @FXML
-    void actionBtnGitHub(ActionEvent event) {
+    private void actionBtnGitHub(ActionEvent event) {
         if (Desktop.isDesktopSupported()) {
-            try {
-                Desktop.getDesktop().browse(new URI("https://github.com/memoriasdeumheroi/mdh"));
-            } catch (IOException | URISyntaxException e1) {
-                e1.printStackTrace();
-            }
+            new Thread(() -> {
+                try {
+                    Desktop.getDesktop().browse(new URI("https://github.com/memoriasdeumheroi/mdh"));
+                } catch (IOException | URISyntaxException e1) {
+                    e1.printStackTrace();
+                }
+            }).start();
         }
     }
-
 }
