@@ -86,6 +86,21 @@
     -fx-effect: dropshadow( three-pass-box, black, 5, 0.0, 0, 1);
 }
 
+.btn-dificuldade-jogar{
+    -fx-background-color: white;
+    -fx-border-color: white;
+    -fx-background-insets: 0;
+    -fx-text-fill: black;
+    -fx-font: 18px Montserrat;
+    -fx-effect: dropshadow( three-pass-box, black, 5, 0.0, 0, 1);
+}
+
+.btn-dificuldade-jogar:hover{
+    -fx-scale-x: 1.05;
+    -fx-scale-y: 1.05;
+    -fx-opacity: 1.0;
+}
+
 .btn-dificuldade-nivel:hover{
     -fx-background-color: white;
     -fx-background-insets: 0;

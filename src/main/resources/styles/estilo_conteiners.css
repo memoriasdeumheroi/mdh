@@ -6,6 +6,11 @@
     -fx-background-color: black;
 }
 
+.pane-borda{
+    -fx-background-color: black;
+    -fx-border-color: white;
+}
+
 .logo {
     -fx-background-image: url("../img/lbl-login-logo.png");
     -fx-background-repeat: no-repeat;
