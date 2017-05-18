@@ -10,6 +10,9 @@ public class Main extends Application {
     public static String cenaMenu = "menu";
     public static String cenaMenuLocal = "/fxml/GUI_Menu.fxml";
 
+    public static String cenaIntro = "intro";
+    public static String cenaIntroLocal = "/fxml/GUI_Intro.fxml";
+
     public static String cenaSobre = "sobre";
     public static String cenaSobreLocal = "/fxml/GUI_Sobre.fxml";
 
@@ -43,6 +46,7 @@ public class Main extends Application {
         ControladorDeCenas mainContainer = new ControladorDeCenas();
         mainContainer.loadScreen(Main.cenaMenu, Main.cenaMenuLocal);
         mainContainer.loadScreen(Main.cenaSobre, Main.cenaSobreLocal);
+        mainContainer.loadScreen(Main.cenaIntro, Main.cenaIntroLocal);
         mainContainer.loadScreen(Main.cenaJogada, Main.cenaJogadaLocal);
         mainContainer.loadScreen(Main.cenaRanking, Main.cenaRankingLocal);
         mainContainer.loadScreen(Main.cenaEscolha, Main.cenaEscolhaLocal);
@@ -52,7 +56,7 @@ public class Main extends Application {
         mainContainer.loadScreen(Main.cenaConquistas, Main.cenaConquistasLocal);
         mainContainer.loadScreen(Main.cenaConfiguracoes, Main.cenaConfiguracoesLocal);
 
-        mainContainer.setScreen(cenaPrincipal);
+        mainContainer.setScreen(cenaIntro);
 
         Group root = new Group();
         root.getChildren().addAll(mainContainer);

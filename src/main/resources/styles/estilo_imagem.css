@@ -1,3 +1,8 @@
+/*
+    ESTILOS RELACIONADOS AO CADASTRO
+*/
+
+
 .lbl-cadastro-personagem-nulo {
     -fx-background-image: url("../img/lbl-nulo-transparente.png");
     -fx-background-repeat: no-repeat;
@@ -76,6 +81,81 @@
     -fx-background-position: center;
 }
 
+/*
+    AVATARES DOS JOGADORES GUI_JODADOR
+*/
+
+.lbl-jogador-avatar-bomberman{
+    -fx-background-image: url("../img/btn-avatar-bomberman.jpg");
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+}
+
+.lbl-jogador-avatar-crash{
+    -fx-background-image: url("../img/btn-avatar-crash.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+}
+
+.lbl-jogador-avatar-donkeykong{
+    -fx-background-image: url("../img/btn-avatar-donkeykong.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+}
+
+.lbl-jogador-avatar-dukenukem{
+    -fx-background-image: url("../img/btn-avatar-dukenukem.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+}
+
+.lbl-jogador-avatar-kratos{
+    -fx-background-image: url("../img/btn-avatar-kratos.jpg");
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+}
+
+.lbl-jogador-avatar-laracroft{
+    -fx-background-image: url("../img/btn-avatar-laracroft.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+}
+.lbl-jogador-avatar-mario{
+    -fx-background-image: url("../img/btn-avatar-mario.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+}
+
+.lbl-jogador-avatar-megaman{
+    -fx-background-image: url("../img/btn-avatar-megaman.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+}
+
+.lbl-jogador-avatar-pacman{
+    -fx-background-image: url("../img/btn-avatar-pacman.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+}
+
+.lbl-jogador-avatar-ryu{
+    -fx-background-image: url("../img/btn-avatar-ryu.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+}
+
+.lbl-jogador-avatar-sonic{
+    -fx-background-image: url("../img/btn-avatar-sonic.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+}
+
+.lbl-jogador-avatar-zelda{
+    -fx-background-image: url("../img/btn-avatar-zelda.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+}
+
 .lbl-alert-erro{
     -fx-background-image: url("../img/lbl-alert-erro.png");
     -fx-background-repeat: no-repeat;
@@ -110,4 +190,14 @@
     -fx-background-image: url("../img/conectado_site_mdh.png");
     -fx-background-repeat: no-repeat;
     -fx-background-size: 250px;
+}
+
+/*
+
+*/
+
+.lbl-intro-logo{
+    -fx-background-image: url("../img/lbl-intro-logo.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
 }

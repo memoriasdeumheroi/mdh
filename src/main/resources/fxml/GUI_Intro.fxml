@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" fx:id="anchorPane" prefHeight="680.0" prefWidth="1200.0" styleClass="anchorpane" stylesheets="@../styles/estilo_conteiners.css" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.sixtechsolutions.controller.IntroController">
+   <children>
+      <Button fx:id="btnIniciar" layoutX="146.0" layoutY="497.0" mnemonicParsing="false" onAction="#actionBtnIniciar" prefHeight="104.0" prefWidth="921.0" styleClass="btn-intro-clique" stylesheets="@../styles/estilo_button.css" />
+      <Label fx:id="lblLogo" layoutX="364.0" layoutY="90.0" prefHeight="422.0" prefWidth="485.0" styleClass="lbl-intro-logo" stylesheets="@../styles/estilo_imagem.css" />
+   </children>
+</AnchorPane>
