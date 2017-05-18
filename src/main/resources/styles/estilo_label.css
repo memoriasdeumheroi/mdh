@@ -1,0 +1,11 @@
+.lbl-versus-vs {
+    -fx-background-image: url("../img/lbl-versus-vs.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+}
+
+.lbl-versus-bomberman{
+    -fx-background-image: url("../img/lbl-cadastro-mario.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+}
