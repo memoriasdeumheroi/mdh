@@ -1,0 +1,19 @@
+.progress-bar-vida {
+    -fx-background-color: white;
+}
+
+.progress-bar-vida .bar {
+    -fx-background-color: #00BA1B;
+}
+
+.progress-bar-estamina {
+    -fx-background-color: white;
+}
+
+.progress-bar-estamina .bar {
+    -fx-background-color: #4AA9ED;
+}
+
+
+
+

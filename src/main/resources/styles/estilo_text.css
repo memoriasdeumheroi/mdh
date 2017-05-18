@@ -63,6 +63,13 @@
     -fx-effect: dropshadow( three-pass-box, black, 5, 0.0, 0, 1);
 }
 
+.lbl-dificuldade-nivel{
+    -fx-text-fill: white;
+    -fx-text-alignment: center;
+    -fx-font: 21px Montserrat;
+
+}
+
 .lbl-cadastro-titulo-detalhes-personagem {
     -fx-text-fill: white;
     -fx-font: 17px Montserrat;
@@ -116,15 +123,15 @@
 
 .lbl-sobre-txt-grande{
     -fx-text-fill: white;
-    -fx-font: 17px Montserrat; 
+    -fx-font: 17px Montserrat;
 }
 
 .lbl-sobre-txt-pequeno{
     -fx-text-fill: white;
-    -fx-font: 14px Tahoma 
+    -fx-font: 14px Tahoma
 }
 
 .lbl-conteudo-txt-extra-pequeno{
     -fx-text-fill: white;
-    -fx-font: 13px Montserrat 
+    -fx-font: 13px Montserrat
 }
