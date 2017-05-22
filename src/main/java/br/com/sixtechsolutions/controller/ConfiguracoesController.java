@@ -86,7 +86,7 @@ public class ConfiguracoesController implements Initializable, CenaControlada {
 
     @FXML
     private void actionBtnJogar(ActionEvent event) {
-        meuControlador.setScreen(Main.cenaJogada);
+        meuControlador.setScreen(Main.cenaDificuldade);
     }
 
     @FXML

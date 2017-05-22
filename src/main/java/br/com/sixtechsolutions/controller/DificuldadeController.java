@@ -14,9 +14,13 @@ import javafx.scene.control.ProgressBar;
 
 public class DificuldadeController implements Initializable, CenaControlada {
 
+    ControladorDeCenas meuControlador;
+    private boolean selecionaNivel = false;
+
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-        // TODO
+        pegaPersonagemPrincipal();
+        bloqueiaBtnPersonagem();
     }
 
     @Override
@@ -24,7 +28,6 @@ public class DificuldadeController implements Initializable, CenaControlada {
         meuControlador = screenParent;
     }
 
-    private ControladorDeCenas meuControlador;
     private final Personagem personagem = new Personagem();
     private boolean personagemSelecionado;
 
@@ -159,74 +162,235 @@ public class DificuldadeController implements Initializable, CenaControlada {
 
     @FXML
     void actionBtnBomberman(ActionEvent event) {
-        personagem.setPersonagem("bomberman");
+        personagem.setPersonagemRival("bomberman");
+        lblPersonagem2.getStyleClass().set(1, "btn-personagem-bomberman");
+        selecionaBtn(btnBomberman, "bomberman");
         personagemSelecionado = true;
+        progressBarAtaque2.setProgress(0.8);
+        progressBarDefesa2.setProgress(0.2);
+        progressBarAgilidade2.setProgress(0.4);
     }
 
     @FXML
     void actionBtnCrash(ActionEvent event) {
-        personagem.setPersonagem("crash");
+        personagem.setPersonagemRival("crash");
+        lblPersonagem2.getStyleClass().set(1, "lbl-personagem-crash");
         personagemSelecionado = true;
+        progressBarAtaque2.setProgress(0.6);
+        progressBarDefesa2.setProgress(0.6);
+        progressBarAgilidade2.setProgress(0.3);
     }
 
     @FXML
     void actionBtnDonkeyKong(ActionEvent event) {
-        personagem.setPersonagem("donkeykong");
+        personagem.setPersonagemRival("donkeykong");
+        lblPersonagem2.getStyleClass().set(1, "lbl-personagem-donkeykong");
         personagemSelecionado = true;
+        progressBarAtaque2.setProgress(0.9);
+        progressBarDefesa2.setProgress(0.4);
+        progressBarAgilidade2.setProgress(0.2);
     }
 
     @FXML
     void actionBtnDukeNukem(ActionEvent event) {
-        personagem.setPersonagem("dukenukem");
+        personagem.setPersonagemRival("dukenukem");
+        lblPersonagem2.getStyleClass().set(1, "lbl-personagem-dukenukem");
         personagemSelecionado = true;
+        progressBarAtaque2.setProgress(0.85);
+        progressBarDefesa2.setProgress(0.55);
+        progressBarAgilidade2.setProgress(0.33);
     }
 
     @FXML
     void actionBtnKratos(ActionEvent event) {
-        personagem.setPersonagem("kratos");
+        personagem.setPersonagemRival("kratos");
+        lblPersonagem2.getStyleClass().set(1, "lbl-personagem-kratos");
         personagemSelecionado = true;
+        progressBarAtaque2.setProgress(0.89);
+        progressBarDefesa2.setProgress(0.77);
+        progressBarAgilidade2.setProgress(0.66);
     }
 
     @FXML
     void actionBtnLaraCroft(ActionEvent event) {
-        personagem.setPersonagem("laracroft");
+        personagem.setPersonagemRival("laracroft");
+        lblPersonagem2.getStyleClass().set(1, "lbl-personagem-laracroft");
         personagemSelecionado = true;
+        progressBarAtaque2.setProgress(0.81);
+        progressBarDefesa2.setProgress(0.44);
+        progressBarAgilidade2.setProgress(0.75);
     }
 
     @FXML
     void actionBtnMario(ActionEvent event) {
-        personagem.setPersonagem("mario");
+        personagem.setPersonagemRival("mario");
+        lblPersonagem2.getStyleClass().set(1, "lbl-personagem-mario");
         personagemSelecionado = true;
+        progressBarAtaque2.setProgress(0.70);
+        progressBarDefesa2.setProgress(0.20);
+        progressBarAgilidade2.setProgress(0.86);
     }
 
     @FXML
     void actionBtnMegaman(ActionEvent event) {
-        personagem.setPersonagem("megaman");
+        personagem.setPersonagemRival("megaman");
+        lblPersonagem2.getStyleClass().set(1, "lbl-personagem-megaman");
         personagemSelecionado = true;
+        progressBarAtaque2.setProgress(0.74);
+        progressBarDefesa2.setProgress(0.33);
+        progressBarAgilidade2.setProgress(0.98);
     }
 
     @FXML
     void actionBtnPacman(ActionEvent event) {
-        personagem.setPersonagem("pacman");
+        personagem.setPersonagemRival("pacman");
+        lblPersonagem2.getStyleClass().set(1, "lbl-personagem-pacman");
         personagemSelecionado = true;
+        progressBarAtaque2.setProgress(0.60);
+        progressBarDefesa2.setProgress(0.07);
+        progressBarAgilidade2.setProgress(0.94);
     }
 
     @FXML
     void actionBtnRyu(ActionEvent event) {
-        personagem.setPersonagem("ryu");
+        personagem.setPersonagemRival("ryu");
+        lblPersonagem2.getStyleClass().set(1, "lbl-personagem-ryu");
         personagemSelecionado = true;
+        progressBarAtaque2.setProgress(0.84);
+        progressBarDefesa2.setProgress(0.75);
+        progressBarAgilidade2.setProgress(0.70);
     }
 
     @FXML
     void actionBtnSonic(ActionEvent event) {
-        personagem.setPersonagem("sonic");
+        personagem.setPersonagemRival("sonic");
+        lblPersonagem2.getStyleClass().set(1, "lbl-personagem-sonic");
         personagemSelecionado = true;
+        progressBarAtaque2.setProgress(0.39);
+        progressBarDefesa2.setProgress(0.33);
+        progressBarAgilidade2.setProgress(0.99);
     }
 
     @FXML
     void actionBtnZelda(ActionEvent event) {
-        personagem.setPersonagem("zelda");
+        personagem.setPersonagemRival("zelda");
+        lblPersonagem2.getStyleClass().set(1, "lbl-personagem-zelda");
         personagemSelecionado = true;
+        progressBarAtaque2.setProgress(0.75);
+        progressBarDefesa2.setProgress(0.69);
+        progressBarAgilidade2.setProgress(0.74);
     }
 
+    public void pegaPersonagemPrincipal() {
+        lblPersonagem1.getStyleClass().set(1, "lbl-personagem-" + personagem.getPersonagem());
+    }
+
+    public void selecionaBtn(Button clicado, String nome) {
+        btnBomberman.getStyleClass().set(1, "btn-avatar-selecionado-bomberman");
+        btnCrash.getStyleClass().set(1, "btn-avatar-selecionado-bomberman");
+        btnDonkeyKong.getStyleClass().set(1, "btn-avatar-selecionado-bomberman");
+        btnDukeNukem.getStyleClass().set(1, "btn-avatar-selecionado-bomberman");
+        btnKratos.getStyleClass().set(1, "btn-avatar-selecionado-bomberman");
+        btnLaraCroft.getStyleClass().set(1, "btn-avatar-selecionado-bomberman");
+        btnMario.getStyleClass().set(1, "btn-avatar-selecionado-bomberman");
+        btnMegaman.getStyleClass().set(1, "btn-avatar-selecionado-bomberman");
+        btnPacman.getStyleClass().set(1, "btn-avatar-selecionado-bomberman");
+        btnRyu.getStyleClass().set(1, "btn-avatar-selecionado-bomberman");
+        btnSonic.getStyleClass().set(1, "btn-avatar-selecionado-bomberman");
+        btnZelda.getStyleClass().set(1, "btn-avatar-selecionado-bomberman");
+        clicado.getStyleClass().set(1, "btn-avatar-selecionado-" + nome);
+    }
+
+    public void bloqueiaBtnPersonagem() {
+        if (null != personagem.getPersonagem()) {
+            switch (personagem.getPersonagem()) {
+                case "bomberman":
+                    btnBomberman.getStyleClass().set(1, "btn-avatar-selecionado-bomberman");
+                    progressBarAtaque1.setProgress(0.8);
+                    progressBarDefesa1.setProgress(0.2);
+                    progressBarAgilidade1.setProgress(0.4);
+                    btnBomberman.setDisable(true);
+                    break;
+                case "crash":
+                    btnCrash.getStyleClass().set(1, "btn-avatar-selecionado");
+                    progressBarAtaque1.setProgress(0.6);
+                    progressBarDefesa1.setProgress(0.6);
+                    progressBarAgilidade1.setProgress(0.3);
+                    btnCrash.setDisable(true);
+                    break;
+                case "donkeykong":
+                    btnDonkeyKong.getStyleClass().set(1, "btn-avatar-selecionado");
+                    progressBarAtaque1.setProgress(0.9);
+                    progressBarDefesa1.setProgress(0.4);
+                    progressBarAgilidade1.setProgress(0.2);
+                    btnDonkeyKong.setDisable(true);
+                    break;
+                case "dukenukem":
+                    btnDukeNukem.getStyleClass().set(1, "btn-avatar-selecionado");
+                    progressBarAtaque1.setProgress(0.85);
+                    progressBarDefesa1.setProgress(0.55);
+                    progressBarAgilidade1.setProgress(0.33);
+                    btnDukeNukem.setDisable(true);
+                    break;
+                case "kratos":
+                    btnKratos.getStyleClass().set(1, "btn-avatar-selecionado");
+                    progressBarAtaque1.setProgress(0.89);
+                    progressBarDefesa1.setProgress(0.77);
+                    progressBarAgilidade1.setProgress(0.66);
+                    btnKratos.setDisable(true);
+                    break;
+                case "laracroft":
+                    btnLaraCroft.getStyleClass().set(1, "btn-avatar-selecionado");
+                    progressBarAtaque1.setProgress(0.81);
+                    progressBarDefesa1.setProgress(0.44);
+                    progressBarAgilidade1.setProgress(0.75);
+                    btnLaraCroft.setDisable(true);
+                    break;
+                case "mario":
+                    btnMario.getStyleClass().set(1, "btn-avatar-selecionado");
+                    progressBarAtaque1.setProgress(0.70);
+                    progressBarDefesa1.setProgress(0.20);
+                    progressBarAgilidade1.setProgress(0.86);
+                    btnMario.setDisable(true);
+                    break;
+                case "megaman":
+                    btnMegaman.getStyleClass().set(1, "btn-avatar-selecionado");
+                    progressBarAtaque1.setProgress(0.74);
+                    progressBarDefesa1.setProgress(0.33);
+                    progressBarAgilidade1.setProgress(0.98);
+                    btnMegaman.setDisable(true);
+                    break;
+                case "pacman":
+                    btnPacman.getStyleClass().set(1, "btn-avatar-selecionado");
+                    progressBarAtaque1.setProgress(0.60);
+                    progressBarDefesa1.setProgress(0.07);
+                    progressBarAgilidade1.setProgress(0.94);
+                    btnPacman.setDisable(true);
+                    break;
+                case "ryu":
+                    btnRyu.getStyleClass().set(1, "btn-avatar-selecionado");
+                    progressBarAtaque1.setProgress(0.84);
+                    progressBarDefesa1.setProgress(0.75);
+                    progressBarAgilidade1.setProgress(0.70);
+                    btnRyu.setDisable(true);
+                    break;
+                case "sonic":
+                    btnSonic.getStyleClass().set(1, "btn-avatar-selecionado");
+                    progressBarAtaque1.setProgress(0.39);
+                    progressBarDefesa1.setProgress(0.33);
+                    progressBarAgilidade1.setProgress(0.99);
+                    btnSonic.setDisable(true);
+                    break;
+                case "zelda":
+                    btnZelda.getStyleClass().set(1, "btn-avatar-selecionado");
+                    progressBarAtaque1.setProgress(0.75);
+                    progressBarDefesa1.setProgress(0.69);
+                    progressBarAgilidade1.setProgress(0.74);
+                    btnZelda.setDisable(true);
+                    break;
+                default:
+                    break;
+            }
+        }
+    }
 }

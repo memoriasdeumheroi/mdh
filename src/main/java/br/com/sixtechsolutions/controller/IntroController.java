@@ -37,7 +37,7 @@ public class IntroController implements Initializable, CenaControlada {
 
     @FXML
     public void actionBtnIniciar(ActionEvent event) {
-        meuControlador.setScreen(Main.cenaPrincipal);
+        meuControlador.setScreen(Main.cenaLogin);
     }
 
 }

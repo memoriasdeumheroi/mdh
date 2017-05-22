@@ -10,20 +10,23 @@ public class Main extends Application {
     public static String cenaMenu = "menu";
     public static String cenaMenuLocal = "/fxml/GUI_Menu.fxml";
 
+    public static String cenaLogin = "login";
+    public static String cenaLoginLocal = "/fxml/GUI_Login.fxml";
+
     public static String cenaIntro = "intro";
     public static String cenaIntroLocal = "/fxml/GUI_Intro.fxml";
 
     public static String cenaSobre = "sobre";
     public static String cenaSobreLocal = "/fxml/GUI_Sobre.fxml";
 
+    public static String cenaVersus = "versus";
+    public static String cenaMenuVersus = "/fxml/GUI_Versus.fxml";
+
     public static String cenaJogada = "jogada";
     public static String cenaJogadaLocal = "/fxml/GUI_Jogada.fxml";
 
     public static String cenaRanking = "ranking";
     public static String cenaRankingLocal = "/fxml/GUI_Ranking.fxml";
-
-    public static String cenaPrincipal = "login";
-    public static String cenaPrincipalLocal = "/fxml/GUI_Login.fxml";
 
     public static String cenaConteudo = "conteudo";
     public static String cenaConteudoLocal = "/fxml/GUI_Conteudo.fxml";
@@ -37,6 +40,9 @@ public class Main extends Application {
     public static String cenaConquistas = "conquistas";
     public static String cenaConquistasLocal = "/fxml/GUI_Conquistas.fxml";
 
+    public static String cenaDificuldade = "dificuldade";
+    public static String cenaDificuldadeLocal = "/fxml/GUI_Dificuldade.fxml";
+
     public static String cenaConfiguracoes = "configuracoes";
     public static String cenaConfiguracoesLocal = "/fxml/GUI_Configuracoes.fxml";
 
@@ -45,6 +51,7 @@ public class Main extends Application {
 
         ControladorDeCenas mainContainer = new ControladorDeCenas();
         mainContainer.loadScreen(Main.cenaMenu, Main.cenaMenuLocal);
+        mainContainer.loadScreen(Main.cenaLogin, Main.cenaLoginLocal);
         mainContainer.loadScreen(Main.cenaSobre, Main.cenaSobreLocal);
         mainContainer.loadScreen(Main.cenaIntro, Main.cenaIntroLocal);
         mainContainer.loadScreen(Main.cenaJogada, Main.cenaJogadaLocal);
@@ -52,8 +59,8 @@ public class Main extends Application {
         mainContainer.loadScreen(Main.cenaEscolha, Main.cenaEscolhaLocal);
         mainContainer.loadScreen(Main.cenaConteudo, Main.cenaConteudoLocal);
         mainContainer.loadScreen(Main.cenaCadastro, Main.cenaCadastroLocal);
-        mainContainer.loadScreen(Main.cenaPrincipal, Main.cenaPrincipalLocal);
         mainContainer.loadScreen(Main.cenaConquistas, Main.cenaConquistasLocal);
+        mainContainer.loadScreen(Main.cenaDificuldade, Main.cenaDificuldadeLocal);
         mainContainer.loadScreen(Main.cenaConfiguracoes, Main.cenaConfiguracoesLocal);
 
         mainContainer.setScreen(cenaIntro);

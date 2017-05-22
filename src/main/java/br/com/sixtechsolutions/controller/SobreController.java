@@ -86,7 +86,7 @@ public class SobreController implements Initializable, CenaControlada {
 
     @FXML
     void actionBtnJogar(ActionEvent event) {
-        meuControlador.setScreen(Main.cenaJogada);
+        meuControlador.setScreen(Main.cenaDificuldade);
     }
 
     @FXML
