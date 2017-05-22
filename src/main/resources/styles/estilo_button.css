@@ -248,13 +248,13 @@
 */
 
 .btn-cadeado-fechado{
-    -fx-background-image: url("../img/lock_icon.png");
+    -fx-background-image: url("../img/lbl-conteudo-icone-cadeado.png");
     -fx-background-color: black;
     -fx-background-repeat: no-repeat;
 }
 
 .btn-cadeado-aberto{
-    -fx-background-image: url("../img/unlock_icon.png");
+    -fx-background-image: url("../img/lbl-conteudo-icone-liberado.png");
     -fx-background-color: black;
     -fx-background-repeat: no-repeat;
 }
@@ -441,320 +441,297 @@
 }
 
 /*
-   BUTTONS RELACIONADO AO AVATAR / CADASTRO
+   BUTTONS RELACIONADO AO CADASTRO / DIFICULDADE
 */
 
-.btn-avatar-bomberman {
-    -fx-background-image: url("../img/btn-avatar-bomberman.jpg ");
-    -fx-background-repeat: no-repeat;
-    -fx-background-position: center;
+.btn-avatar-selecionado{
+    -fx-border-color: red;
 }
 
-.btn-avatar-crash {
-    -fx-background-image: url("../img/btn-avatar-crash.png ");
-    -fx-background-repeat: no-repeat;
-    -fx-background-position: center;
-}
-
-.btn-avatar-donkeykong {
-    -fx-background-image: url("../img/btn-avatar-donkeykong.png ");
-    -fx-background-repeat: no-repeat;
-    -fx-background-position: center;
-}
-
-.btn-avatar-dukenukem {
-    -fx-background-image: url("../img/btn-avatar-dukenukem.png");
-    -fx-background-repeat: no-repeat;
-    -fx-background-position: center;
-}
-
-.btn-avatar-kratos {
-    -fx-background-image: url("../img/btn-avatar-kratos.jpg ");
-    -fx-background-repeat: no-repeat;
-    -fx-background-position: center;
-}
-
-.btn-avatar-laracroft {
-    -fx-background-image: url("../img/btn-avatar-laracroft.png ");
-    -fx-background-repeat: no-repeat;
-    -fx-background-position: center;
-}
-
-.btn-avatar-mario {
-    -fx-background-image: url("../img/btn-avatar-mario.png");
-    -fx-background-repeat: no-repeat;
-    -fx-background-position: center;
-}
-
-.btn-avatar-megaman {
-    -fx-background-image: url("../img/btn-avatar-megaman.png ");
-    -fx-background-repeat: no-repeat;
-    -fx-background-position: center;
-}
-
-.btn-avatar-pacman {
-    -fx-background-image: url("../img/btn-avatar-pacman.png");
-    -fx-background-repeat: no-repeat;
-    -fx-background-position: center;
-}
-
-.btn-avatar-ryu {
-    -fx-background-image: url("../img/btn-avatar-ryu.png ");
-    -fx-background-repeat: no-repeat;
-    -fx-background-position: center;
-}
-
-.btn-avatar-sonic {
-    -fx-background-image: url("../img/btn-avatar-sonic.png");
-    -fx-background-repeat: no-repeat;
-    -fx-background-position: center;
-}
-
-.btn-avatar-zelda {
-    -fx-background-image: url("../img/btn-avatar-zelda.png ");
-    -fx-background-repeat: no-repeat;
-    -fx-background-position: center;
-}
-
-.btn-avatar-bomberman:hover {
-    -fx-scale-x: 1.05;
-    -fx-scale-y: 1.05;
-    -fx-opacity: 1.0;
-}
-
-.btn-avatar-crash:hover {
-    -fx-scale-x: 1.05;
-    -fx-scale-y: 1.05;
-    -fx-opacity: 1.0;
-}
-
-.btn-avatar-donkeykong:hover {
-    -fx-scale-x: 1.05;
-    -fx-scale-y: 1.05;
-    -fx-opacity: 1.0;
-}
-
-.btn-avatar-dukenukem:hover {
-    -fx-scale-x: 1.05;
-    -fx-scale-y: 1.05;
-    -fx-opacity: 1.0;
-}
-
-.btn-avatar-kratos:hover {
-    -fx-scale-x: 1.05;
-    -fx-scale-y: 1.05;
-    -fx-opacity: 1.0;
-}
-
-.btn-avatar-laracroft:hover {
-    -fx-scale-x: 1.05;
-    -fx-scale-y: 1.05;
-    -fx-opacity: 1.0;
-}
-
-.btn-avatar-megaman:hover {
-    -fx-scale-x: 1.05;
-    -fx-scale-y: 1.05;
-    -fx-opacity: 1.0;
-}
-
-.btn-avatar-mario:hover {
-    -fx-scale-x: 1.05;
-    -fx-scale-y: 1.05;
-    -fx-opacity: 1.0;
-}
-
-.btn-avatar-pacman:hover {
-    -fx-scale-x: 1.05;
-    -fx-scale-y: 1.05;
-    -fx-opacity: 1.0;
-}
-
-.btn-avatar-ryu:hover {
-    -fx-scale-x: 1.05;
-    -fx-scale-y: 1.05;
-    -fx-opacity: 1.0;
-}
-
-.btn-avatar-sonic:hover {
-    -fx-scale-x: 1.05;
-    -fx-scale-y: 1.05;
-    -fx-opacity: 1.0;
-}
-
-.btn-avatar-zelda:hover {
-    -fx-scale-x: 1.05;
-    -fx-scale-y: 1.05;
-    -fx-opacity: 1.0;
-}
-
-
-/*
-   BUTTONS RELACIONADO AO AVATAR / DIFIVULDADE
-*/
-
-.btn-avatar-bomberman {
-    -fx-background-image: url("../img/btn-avatar-bomberman.jpg ");
-    -fx-background-repeat: no-repeat;
-    -fx-background-position: center;
-}
-
-.btn-avatar-crash {
-    -fx-background-image: url("../img/btn-avatar-crash.png ");
-    -fx-background-repeat: no-repeat;
-    -fx-background-position: center;
-}
-
-.btn-avatar-donkeykong {
-    -fx-background-image: url("../img/btn-avatar-donkeykong.png ");
-    -fx-background-repeat: no-repeat;
-    -fx-background-position: center;
-}
-
-.btn-avatar-dukenukem {
-    -fx-background-image: url("../img/btn-avatar-dukenukem.png");
-    -fx-background-repeat: no-repeat;
-    -fx-background-position: center;
-}
-
-.btn-avatar-kratos {
-    -fx-background-image: url("../img/btn-avatar-kratos.jpg ");
-    -fx-background-repeat: no-repeat;
-    -fx-background-position: center;
-}
-
-.btn-avatar-laracroft {
-    -fx-background-image: url("../img/btn-avatar-laracroft.png ");
-    -fx-background-repeat: no-repeat;
-    -fx-background-position: center;
-}
-
-.btn-avatar-mario {
-    -fx-background-image: url("../img/btn-avatar-mario.png");
-    -fx-background-repeat: no-repeat;
-    -fx-background-position: center;
-}
-
-.btn-avatar-megaman {
-    -fx-background-image: url("../img/btn-avatar-megaman.png ");
-    -fx-background-repeat: no-repeat;
-    -fx-background-position: center;
-}
-
-.btn-avatar-pacman {
-    -fx-background-image: url("../img/btn-avatar-pacman.png");
-    -fx-background-repeat: no-repeat;
-    -fx-background-position: center;
-}
-
-.btn-avatar-ryu {
-    -fx-background-image: url("../img/btn-avatar-ryu.png ");
-    -fx-background-repeat: no-repeat;
-    -fx-background-position: center;
-}
-
-.btn-avatar-sonic {
-    -fx-background-image: url("../img/btn-avatar-sonic.png");
-    -fx-background-repeat: no-repeat;
-    -fx-background-position: center;
-}
-
-.btn-avatar-zelda {
-    -fx-background-image: url("../img/btn-avatar-zelda.png ");
-    -fx-background-repeat: no-repeat;
-    -fx-background-position: center;
-}
-
-.btn-avatar-zelda {
-    -fx-background-image: url("../img/btn-avatar-zelda.png ");
-    -fx-background-repeat: no-repeat;
-    -fx-background-position: center;
-}
-
-.btn-avatar-aleatorio{
-    -fx-background-image: url("../img/lbl-selecao-personagem-black.png");
+.btn-avatar-aleatorio {
+    -fx-background-image: url("../img/avatar-aleatorio.gif");
     -fx-background-color: white;
     -fx-background-repeat: no-repeat;
     -fx-background-position: center;
 }
 
-.btn-avatar-bomberman:hover {
-    -fx-scale-x: 1.05;
-    -fx-scale-y: 1.05;
-    -fx-opacity: 1.0;
+.btn-avatar-bomberman {
+    -fx-background-image: url("../img/avatar-bomberman.jpg");
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
 }
 
-.btn-avatar-crash:hover {
-    -fx-scale-x: 1.05;
-    -fx-scale-y: 1.05;
-    -fx-opacity: 1.0;
+.btn-avatar-crash {
+    -fx-background-image: url("../img/avatar-crash.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
 }
 
-.btn-avatar-donkeykong:hover {
-    -fx-scale-x: 1.05;
-    -fx-scale-y: 1.05;
-    -fx-opacity: 1.0;
+.btn-avatar-donkeykong {
+    -fx-background-image: url("../img/avatar-donkeykong.png ");
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
 }
 
-.btn-avatar-dukenukem:hover {
-    -fx-scale-x: 1.05;
-    -fx-scale-y: 1.05;
-    -fx-opacity: 1.0;
+.btn-avatar-dukenukem {
+    -fx-background-image: url("../img/avatar-dukenukem.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
 }
 
-.btn-avatar-kratos:hover {
-    -fx-scale-x: 1.05;
-    -fx-scale-y: 1.05;
-    -fx-opacity: 1.0;
+.btn-avatar-kratos {
+    -fx-background-image: url("../img/avatar-kratos.jpg ");
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
 }
 
-.btn-avatar-laracroft:hover {
-    -fx-scale-x: 1.05;
-    -fx-scale-y: 1.05;
-    -fx-opacity: 1.0;
+.btn-avatar-laracroft {
+    -fx-background-image: url("../img/avatar-laracroft.png ");
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
 }
 
-.btn-avatar-megaman:hover {
-    -fx-scale-x: 1.05;
-    -fx-scale-y: 1.05;
-    -fx-opacity: 1.0;
+.btn-avatar-mario {
+    -fx-background-image: url("../img/avatar-mario.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
 }
 
-.btn-avatar-mario:hover {
-    -fx-scale-x: 1.05;
-    -fx-scale-y: 1.05;
-    -fx-opacity: 1.0;
+.btn-avatar-megaman {
+    -fx-background-image: url("../img/avatar-megaman.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
 }
 
-.btn-avatar-pacman:hover {
-    -fx-scale-x: 1.05;
-    -fx-scale-y: 1.05;
-    -fx-opacity: 1.0;
+.btn-avatar-pacman {
+    -fx-background-image: url("../img/avatar-pacman.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
 }
 
-.btn-avatar-ryu:hover {
-    -fx-scale-x: 1.05;
-    -fx-scale-y: 1.05;
-    -fx-opacity: 1.0;
+.btn-avatar-ryu {
+    -fx-background-image: url("../img/avatar-ryu.png ");
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
 }
 
-.btn-avatar-sonic:hover {
-    -fx-scale-x: 1.05;
-    -fx-scale-y: 1.05;
-    -fx-opacity: 1.0;
+.btn-avatar-sonic {
+    -fx-background-image: url("../img/avatar-sonic.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
 }
 
-.btn-avatar-zelda:hover {
-    -fx-scale-x: 1.05;
-    -fx-scale-y: 1.05;
-    -fx-opacity: 1.0;
+.btn-avatar-zelda {
+    -fx-background-image: url("../img/avatar-zelda.png ");
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
 }
 
 .btn-avatar-aleatorio:hover {
-    -fx-background-image: url("../img/lbl-selecao-personagem.gif");
+    -fx-scale-x: 1.05;
+    -fx-scale-y: 1.05;
+    -fx-opacity: 1.0;
+}
+
+.btn-avatar-bomberman:hover {
+    -fx-scale-x: 1.05;
+    -fx-scale-y: 1.05;
+    -fx-opacity: 1.0;
+}
+
+.btn-avatar-crash:hover {
+    -fx-scale-x: 1.05;
+    -fx-scale-y: 1.05;
+    -fx-opacity: 1.0;
+}
+
+.btn-avatar-donkeykong:hover {
+    -fx-scale-x: 1.05;
+    -fx-scale-y: 1.05;
+    -fx-opacity: 1.0;
+}
+
+.btn-avatar-dukenukem:hover {
+    -fx-scale-x: 1.05;
+    -fx-scale-y: 1.05;
+    -fx-opacity: 1.0;
+}
+
+.btn-avatar-kratos:hover {
+    -fx-scale-x: 1.05;
+    -fx-scale-y: 1.05;
+    -fx-opacity: 1.0;
+}
+
+.btn-avatar-laracroft:hover {
+    -fx-scale-x: 1.05;
+    -fx-scale-y: 1.05;
+    -fx-opacity: 1.0;
+}
+
+.btn-avatar-megaman:hover {
+    -fx-scale-x: 1.05;
+    -fx-scale-y: 1.05;
+    -fx-opacity: 1.0;
+}
+
+.btn-avatar-mario:hover {
+    -fx-scale-x: 1.05;
+    -fx-scale-y: 1.05;
+    -fx-opacity: 1.0;
+}
+
+.btn-avatar-pacman:hover {
+    -fx-scale-x: 1.05;
+    -fx-scale-y: 1.05;
+    -fx-opacity: 1.0;
+}
+
+.btn-avatar-ryu:hover {
+    -fx-scale-x: 1.05;
+    -fx-scale-y: 1.05;
+    -fx-opacity: 1.0;
+}
+
+.btn-avatar-sonic:hover {
+    -fx-scale-x: 1.05;
+    -fx-scale-y: 1.05;
+    -fx-opacity: 1.0;
+}
+
+.btn-avatar-zelda:hover {
+    -fx-scale-x: 1.05;
+    -fx-scale-y: 1.05;
+    -fx-opacity: 1.0;
+}
+
+.btn-avatar-selecionado-bomberman {
+    -fx-background-image: url("../img/avatar-bomberman.jpg");
     -fx-background-repeat: no-repeat;
     -fx-background-position: center;
-    -fx-background-color: white;
+    -fx-border-radius: 0;
+    -fx-border-width: 4.0;
+    -fx-scale-x: 1.05;
+    -fx-scale-y: 1.05;
+    -fx-opacity: 1.0;
+}
+
+.btn-avatar-selecionado-crash {
+    -fx-background-image: url("../img/avatar-crash.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-border-radius: 0;
+    -fx-border-width: 4.0;
+    -fx-scale-x: 1.05;
+    -fx-scale-y: 1.05;
+    -fx-opacity: 1.0;
+}
+
+.btn-avatar-selecionado-donkeykong {
+    -fx-background-image: url("../img/avatar-donkeykong.png ");
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-border-radius: 0;
+    -fx-border-width: 4.0;
+    -fx-scale-x: 1.05;
+    -fx-scale-y: 1.05;
+    -fx-opacity: 1.0;
+}
+
+.btn-avatar-selecionado-dukenukem {
+    -fx-background-image: url("../img/avatar-dukenukem.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-border-radius: 0;
+    -fx-border-width: 4.0;
+    -fx-scale-x: 1.05;
+    -fx-scale-y: 1.05;
+    -fx-opacity: 1.0;
+}
+
+.btn-avatar-selecionado-kratos {
+    -fx-background-image: url("../img/avatar-kratos.jpg ");
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-border-radius: 0;
+    -fx-border-width: 4.0;
+    -fx-scale-x: 1.05;
+    -fx-scale-y: 1.05;
+    -fx-opacity: 1.0;
+}
+
+.btn-avatar-selecionado-laracroft {
+    -fx-background-image: url("../img/avatar-laracroft.png ");
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-border-radius: 0;
+    -fx-border-width: 4.0;
+    -fx-scale-x: 1.05;
+    -fx-scale-y: 1.05;
+    -fx-opacity: 1.0;
+}
+
+.btn-avatar-selecionado-mario {
+    -fx-background-image: url("../img/avatar-mario.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-border-radius: 0;
+    -fx-border-width: 4.0;
+    -fx-scale-x: 1.05;
+    -fx-scale-y: 1.05;
+    -fx-opacity: 1.0;
+}
+
+.btn-avatar-selecionado-megaman {
+    -fx-background-image: url("../img/avatar-megaman.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-border-radius: 0;
+    -fx-border-width: 4.0;
+    -fx-scale-x: 1.05;
+    -fx-scale-y: 1.05;
+    -fx-opacity: 1.0;
+}
+
+.btn-avatar-selecionado-pacman {
+    -fx-background-image: url("../img/avatar-pacman.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-border-radius: 0;
+    -fx-border-width: 4.0;
+    -fx-scale-x: 1.05;
+    -fx-scale-y: 1.05;
+    -fx-opacity: 1.0;
+}
+
+.btn-avatar-selecionado-ryu {
+    -fx-background-image: url("../img/avatar-ryu.png ");
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-border-radius: 0;
+    -fx-border-width: 4.0;
+    -fx-scale-x: 1.05;
+    -fx-scale-y: 1.05;
+    -fx-opacity: 1.0;
+}
+
+.btn-avatar-selecionado-sonic {
+    -fx-background-image: url("../img/avatar-sonic.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-border-radius: 0;
+    -fx-border-width: 4.0;
+    -fx-scale-x: 1.05;
+    -fx-scale-y: 1.05;
+    -fx-opacity: 1.0;
+}
+
+.btn-avatar-selecionado-zelda {
+    -fx-background-image: url("../img/avatar-zelda.png ");
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-border-radius: 0;
+    -fx-border-width: 4.0;
     -fx-scale-x: 1.05;
     -fx-scale-y: 1.05;
     -fx-opacity: 1.0;

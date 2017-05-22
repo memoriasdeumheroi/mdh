@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.sixtechsolutions.controller.VersusController">
-    
+<AnchorPane id="AnchorPane" fx:id="anchorPane" prefHeight="680.0" prefWidth="1200.0" styleClass="anchorpane" stylesheets="@../styles/estilo_conteiners.css" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.sixtechsolutions.controller.VersusController">
+   <children>
+      <Label fx:id="lblPersonagem1" layoutY="7.0" prefHeight="680.0" prefWidth="600.0" styleClass="lbl-versus-mario" stylesheets="@../styles/estilo_label.css" />
+      <Label fx:id="lblPersonagem2" layoutX="708.0" layoutY="7.0" prefHeight="680.0" prefWidth="600.0" styleClass="lbl-versus-megaman" stylesheets="@../styles/estilo_label.css" />
+      <Label layoutX="526.0" layoutY="293.0" prefHeight="256.0" prefWidth="256.0" styleClass="lbl-versus-vs" stylesheets="@../styles/estilo_label.css" />
+   </children>
 </AnchorPane>
