@@ -6,17 +6,23 @@ public class Jogador {
     private String sexo;
     private String login;
     private String senha;
-    private String personagem;
+    private int nivel;
+    private int experiencia;
+    private int idPersonagem;
 
     public Jogador() {
 
     }
 
-    public Jogador(String nome, String sexo, String login, String senha) {
+    public Jogador(String nome, String sexo, String login, String senha,
+            int nivel, int experiencia, int idPersonagem) {
         this.nome = nome;
         this.sexo = sexo;
         this.login = login;
         this.senha = senha;
+        this.nivel = nivel;
+        this.experiencia = experiencia;
+        this.idPersonagem = idPersonagem;
     }
 
     public String getNome() {
@@ -51,12 +57,28 @@ public class Jogador {
         this.senha = senha;
     }
 
-    public String getPersonagem() {
-        return personagem;
+    public int getNivel() {
+        return nivel;
     }
 
-    public void setPersonagem(String personagem) {
-        this.personagem = personagem;
+    public void setNivel(int nivel) {
+        this.nivel = nivel;
+    }
+
+    public int getExperiencia() {
+        return experiencia;
+    }
+
+    public void setExperiencia(int experiencia) {
+        this.experiencia = experiencia;
+    }
+
+    public int getIdPersonagem() {
+        return idPersonagem;
+    }
+
+    public void setIdPersonagem(int idPersonagem) {
+        this.idPersonagem = idPersonagem;
     }
 
 }

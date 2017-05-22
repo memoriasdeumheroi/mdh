@@ -4,23 +4,34 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
 
 <AnchorPane id="AnchorPane" fx:id="anchorPane" prefHeight="680.0" prefWidth="1200.0" styleClass="anchorpane" stylesheets="@../styles/estilo_conteiners.css" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.sixtechsolutions.controller.MenuController">
    <children>
       <Pane fx:id="pane" layoutX="24.0" prefHeight="680.0" prefWidth="270.0" styleClass="paneBotoes">
          <children>
-            <Button fx:id="btnPerfil" layoutX="100.0" layoutY="42.0" mnemonicParsing="false" onAction="#actionBtnPerfil" prefHeight="62.0" prefWidth="62.0" styleClass="avatar" />
-            <Button fx:id="btnMenu" layoutY="208.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="270.0" styleClass="btn-menu-sidebar-selecionado" stylesheets="@../styles/estilo_button.css" text="MENU" />
-            <Button fx:id="btnJogar" layoutY="260.0" mnemonicParsing="false" onAction="#actionBtnJogar" prefHeight="45.0" prefWidth="270.0" styleClass="btn-menu-sidebar-nao-selecionado" stylesheets="@../styles/estilo_button.css" text="JOGAR" />
-            <Button fx:id="btnConquistas" layoutY="313.0" mnemonicParsing="false" onAction="#actionBtnConquistas" prefHeight="45.0" prefWidth="270.0" styleClass="btn-menu-sidebar-nao-selecionado" stylesheets="@../styles/estilo_button.css" text="CONQUISTAS" />
-            <Button fx:id="btnConteudo" layoutY="365.0" mnemonicParsing="false" onAction="#actionBtnConteudo" prefHeight="45.0" prefWidth="270.0" styleClass="btn-menu-sidebar-nao-selecionado" stylesheets="@../styles/estilo_button.css" text="CONTEÚDO EXTRA" />
-            <Button fx:id="btnMelhoresScores" layoutY="417.0" mnemonicParsing="false" onAction="#actionBtnMelhoresScores" prefHeight="45.0" prefWidth="270.0" styleClass="btn-menu-sidebar-nao-selecionado" stylesheets="@../styles/estilo_button.css" text="MELHORES PONTUAÇÕES" />
-            <Button fx:id="btnConfigs" layoutY="469.0" mnemonicParsing="false" onAction="#actionBtnConfigs" prefHeight="45.0" prefWidth="270.0" styleClass="btn-menu-sidebar-nao-selecionado" stylesheets="@../styles/estilo_button.css" text="CONFIGURAÇÕES" />
-            <Button fx:id="btnSobre" layoutY="521.0" mnemonicParsing="false" onAction="#actionBtnSobre" prefHeight="45.0" prefWidth="270.0" styleClass="btn-menu-sidebar-nao-selecionado" stylesheets="@../styles/estilo_button.css" text="SOBRE" />
-            <Label fx:id="lblNomedoPlayer" alignment="CENTER" layoutX="42.0" layoutY="115.0" prefHeight="25.0" prefWidth="178.0" styleClass="labelInfoPlayer" text="felipefrancischetto" textAlignment="CENTER" textFill="WHITE" />
-            <Label fx:id="lblNvDoPlayer" layoutX="70.0" layoutY="148.0" styleClass="labelInfoPlayer" text="Nv. 99" textFill="WHITE" />
-            <Label fx:id="lblExperiencia" layoutX="120.0" layoutY="147.0" styleClass="labelInfoPlayer" text="Xp. 2310050" textFill="WHITE" />
-            <Button fx:id="btnGitHub" layoutY="608.0" mnemonicParsing="false" onAction="#actionBtnGitHub" prefHeight="41.0" prefWidth="145.0" styleClass="github" stylesheets="@../styles/estilo_button.css" text="    GitHub" textFill="WHITE" />
+            <Button fx:id="btnPerfil" layoutX="100.0" layoutY="42.0" mnemonicParsing="false" onAction="#actionBtnPerfil" prefHeight="62.0" prefWidth="62.0" styleClass="lbl-jogador-avatar-bomberman" stylesheets="@../styles/estilo_label.css" />
+            <Button fx:id="btnMenu" layoutY="185.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="270.0" styleClass="btn-menu-sidebar-selecionado" stylesheets="@../styles/estilo_button.css" text="MENU" />
+            <Button fx:id="btnJogar" layoutY="237.0" mnemonicParsing="false" onAction="#actionBtnJogar" prefHeight="45.0" prefWidth="270.0" styleClass="btn-menu-sidebar-nao-selecionado" stylesheets="@../styles/estilo_button.css" text="JOGAR" />
+            <Button fx:id="btnConquistas" layoutY="290.0" mnemonicParsing="false" onAction="#actionBtnConquistas" prefHeight="45.0" prefWidth="270.0" styleClass="btn-menu-sidebar-nao-selecionado" stylesheets="@../styles/estilo_button.css" text="CONQUISTAS" />
+            <Button fx:id="btnConteudo" layoutY="342.0" mnemonicParsing="false" onAction="#actionBtnConteudo" prefHeight="45.0" prefWidth="270.0" styleClass="btn-menu-sidebar-nao-selecionado" stylesheets="@../styles/estilo_button.css" text="CONTEÚDO EXTRA" />
+            <Button fx:id="btnMelhoresScores" layoutY="394.0" mnemonicParsing="false" onAction="#actionBtnMelhoresScores" prefHeight="45.0" prefWidth="270.0" styleClass="btn-menu-sidebar-nao-selecionado" stylesheets="@../styles/estilo_button.css" text="MELHORES PONTUAÇÕES" />
+            <Button fx:id="btnConfigs" layoutY="446.0" mnemonicParsing="false" onAction="#actionBtnConfigs" prefHeight="45.0" prefWidth="270.0" styleClass="btn-menu-sidebar-nao-selecionado" stylesheets="@../styles/estilo_button.css" text="CONFIGURAÇÕES" />
+            <Button fx:id="btnSobre" layoutY="498.0" mnemonicParsing="false" onAction="#actionBtnSobre" prefHeight="45.0" prefWidth="270.0" styleClass="btn-menu-sidebar-nao-selecionado" stylesheets="@../styles/estilo_button.css" text="SOBRE" />
+            <Label fx:id="lblNomedoPlayer" alignment="CENTER" layoutX="42.0" layoutY="115.0" prefHeight="25.0" prefWidth="178.0" styleClass="labelInfoPlayer" text="memoriasdeumheroi" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Montserrat Bold" size="16.0" />
+               </font></Label>
+            <Label fx:id="lblNvDoPlayer" layoutX="70.0" layoutY="148.0" styleClass="labelInfoPlayer" text="Nv. 99" textFill="WHITE">
+               <font>
+                  <Font name="Montserrat Bold" size="13.0" />
+               </font></Label>
+            <Label fx:id="lblExperiencia" layoutX="120.0" layoutY="147.0" styleClass="labelInfoPlayer" text="Xp. 999999" textFill="WHITE">
+               <font>
+                  <Font name="Montserrat Bold" size="13.0" />
+               </font></Label>
+            <Button fx:id="btnGitHub" layoutX="60.0" layoutY="608.0" mnemonicParsing="false" onAction="#actionBtnGitHub" prefHeight="41.0" prefWidth="145.0" styleClass="github" stylesheets="@../styles/estilo_button.css" text="    GitHub" textFill="WHITE" />
+            <Button fx:id="btnSobre1" layoutY="553.0" mnemonicParsing="false" onAction="#actionBtnSobre" prefHeight="45.0" prefWidth="270.0" styleClass="btn-menu-sidebar-nao-selecionado" stylesheets="@../styles/estilo_button.css" text="SAIR" />
          </children>
       </Pane>
       <Label fx:id="lblLogo" layoutX="406.0" layoutY="100.0" prefHeight="481.0" prefWidth="616.0" styleClass="logo" />

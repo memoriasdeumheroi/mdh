@@ -15,9 +15,6 @@ CREATE TABLE JOGADOR (
   SEXO CHAR,
   NIVEL INT,
   EXPERIENCIA INT,
-  TOTAL_ERROS INT,
-  TOTAL_ACERTOS INT,
-  TOTAL_PONTOS INT,
   ID_PERSONAGEM INT,
   CONSTRAINT PK_USUARIO PRIMARY KEY(USUARIO),
   CONSTRAINT FK_ID_PERSONAGEM FOREIGN KEY (ID_PERSONAGEM) REFERENCES PERSONAGEM(ID) 
@@ -48,37 +45,31 @@ INSERT INTO PERSONAGEM (NOME) VALUES ("sonic");
 INSERT INTO PERSONAGEM (NOME) VALUES ("zelda");
 
 /*variáveis de ambiente, usuários do ranking inicial*/
-INSERT INTO JOGADOR (USUARIO, SENHA, NOME, SEXO, NIVEL, EXPERIENCIA, TOTAL_ERROS, TOTAL_ACERTOS, TOTAL_PONTOS, ID_PERSONAGEM) VALUES 
-('usuarioranking1', 'usuariorankingsixtechsolutions','Balin', 'm', 0, 0, 0, 0, 0, 1);
-INSERT INTO JOGADOR (USUARIO, SENHA, NOME, SEXO, NIVEL, EXPERIENCIA, TOTAL_ERROS, TOTAL_ACERTOS, TOTAL_PONTOS, ID_PERSONAGEM) VALUES 
-('usuarioranking2', 'usuariorankingsixtechsolutions','Bombur', 'm', 0, 0, 0, 0, 0, 2);
-INSERT INTO JOGADOR (USUARIO, SENHA, NOME, SEXO, NIVEL, EXPERIENCIA, TOTAL_ERROS, TOTAL_ACERTOS, TOTAL_PONTOS, ID_PERSONAGEM) VALUES 
-('usuarioranking3', 'usuariorankingsixtechsolutions','Borin', 'm', 0, 0, 0, 0, 0, 3);
-INSERT INTO JOGADOR (USUARIO, SENHA, NOME, SEXO, NIVEL, EXPERIENCIA, TOTAL_ERROS, TOTAL_ACERTOS, TOTAL_PONTOS, ID_PERSONAGEM) VALUES 
-('usuarioranking4', 'usuariorankingsixtechsolutions','Durin', 'm', 0, 0, 0, 0, 0, 4);
-INSERT INTO JOGADOR (USUARIO, SENHA, NOME, SEXO, NIVEL, EXPERIENCIA, TOTAL_ERROS, TOTAL_ACERTOS, TOTAL_PONTOS, ID_PERSONAGEM) VALUES 
-('usuarioranking5', 'usuariorankingsixtechsolutions','Óin', 'm', 0, 0, 0, 0, 0, 5);
-INSERT INTO JOGADOR (USUARIO, SENHA, NOME, SEXO, NIVEL, EXPERIENCIA, TOTAL_ERROS, TOTAL_ACERTOS, TOTAL_PONTOS, ID_PERSONAGEM) VALUES 
-('usuarioranking6', 'usuariorankingsixtechsolutions','Ori', 'm', 0, 0, 0, 0, 0, 6);
-INSERT INTO JOGADOR (USUARIO, SENHA, NOME, SEXO, NIVEL, EXPERIENCIA, TOTAL_ERROS, TOTAL_ACERTOS, TOTAL_PONTOS, ID_PERSONAGEM) VALUES 
-('usuarioranking7', 'usuariorankingsixtechsolutions','Thorin', 'm', 0, 0, 0, 0, 0, 7);
-INSERT INTO JOGADOR (USUARIO, SENHA, NOME, SEXO, NIVEL, EXPERIENCIA, TOTAL_ERROS, TOTAL_ACERTOS, TOTAL_PONTOS, ID_PERSONAGEM) VALUES 
-('usuarioranking8', 'usuariorankingsixtechsolutions','Durin', 'm', 0, 0, 0, 0, 0, 8);
-INSERT INTO JOGADOR (USUARIO, SENHA, NOME, SEXO, NIVEL, EXPERIENCIA, TOTAL_ERROS, TOTAL_ACERTOS, TOTAL_PONTOS, ID_PERSONAGEM) VALUES 
-('usuarioranking9', 'usuariorankingsixtechsolutions','Gróin', 'm', 0, 0, 0, 0, 0, 9);
-INSERT INTO JOGADOR (USUARIO, SENHA, NOME, SEXO, NIVEL, EXPERIENCIA, TOTAL_ERROS, TOTAL_ACERTOS, TOTAL_PONTOS, ID_PERSONAGEM) VALUES 
-('usuarioranking10', 'usuariorankingsixtechsolutions','Bifur', 'm', 0, 0, 0, 0, 0, 10);
-INSERT INTO JOGADOR (USUARIO, SENHA, NOME, SEXO, NIVEL, EXPERIENCIA, TOTAL_ERROS, TOTAL_ACERTOS, TOTAL_PONTOS, ID_PERSONAGEM) VALUES 
-('usuarioranking11', 'usuariorankingsixtechsolutions','Bofur', 'm', 0, 0, 0, 0, 0, 11);
-INSERT INTO JOGADOR (USUARIO, SENHA, NOME, SEXO, NIVEL, EXPERIENCIA, TOTAL_ERROS, TOTAL_ACERTOS, TOTAL_PONTOS, ID_PERSONAGEM) VALUES 
-('usuarioranking12', 'usuariorankingsixtechsolutions','Glóin', 'm', 0, 0, 0, 0, 0, 12);
+INSERT INTO JOGADOR (USUARIO, SENHA, NOME, SEXO, NIVEL, EXPERIENCIA, ID_PERSONAGEM) VALUES 
+('usuarioranking1', 'usuariorankingsixtechsolutions','Balin', 'm', 0, 0, 1);
+INSERT INTO JOGADOR (USUARIO, SENHA, NOME, SEXO, NIVEL, EXPERIENCIA, ID_PERSONAGEM) VALUES 
+('usuarioranking2', 'usuariorankingsixtechsolutions','Bombur', 'm', 0, 0, 2);
+INSERT INTO JOGADOR (USUARIO, SENHA, NOME, SEXO, NIVEL, EXPERIENCIA, ID_PERSONAGEM) VALUES 
+('usuarioranking3', 'usuariorankingsixtechsolutions','Borin', 'm', 0, 0, 3);
+INSERT INTO JOGADOR (USUARIO, SENHA, NOME, SEXO, NIVEL, EXPERIENCIA, ID_PERSONAGEM) VALUES 
+('usuarioranking4', 'usuariorankingsixtechsolutions','Durin', 'm', 0, 0, 4);
+INSERT INTO JOGADOR (USUARIO, SENHA, NOME, SEXO, NIVEL, EXPERIENCIA, ID_PERSONAGEM) VALUES 
+('usuarioranking5', 'usuariorankingsixtechsolutions','Óin', 'm', 0, 0, 5);
+INSERT INTO JOGADOR (USUARIO, SENHA, NOME, SEXO, NIVEL, EXPERIENCIA, ID_PERSONAGEM) VALUES 
+('usuarioranking6', 'usuariorankingsixtechsolutions','Ori', 'm', 0, 0, 6);
+INSERT INTO JOGADOR (USUARIO, SENHA, NOME, SEXO, NIVEL, EXPERIENCIA, ID_PERSONAGEM) VALUES 
+('usuarioranking7', 'usuariorankingsixtechsolutions','Thorin', 'm', 0, 0, 7);
+INSERT INTO JOGADOR (USUARIO, SENHA, NOME, SEXO, NIVEL, EXPERIENCIA, ID_PERSONAGEM) VALUES 
+('usuarioranking8', 'usuariorankingsixtechsolutions','Durin', 'm', 0, 0, 8);
+INSERT INTO JOGADOR (USUARIO, SENHA, NOME, SEXO, NIVEL, EXPERIENCIA, ID_PERSONAGEM) VALUES 
+('usuarioranking9', 'usuariorankingsixtechsolutions','Gróin', 'm', 0, 0, 9);
+INSERT INTO JOGADOR (USUARIO, SENHA, NOME, SEXO, NIVEL, EXPERIENCIA, ID_PERSONAGEM) VALUES 
+('usuarioranking10', 'usuariorankingsixtechsolutions','Bifur', 'm', 0, 0, 10);
+INSERT INTO JOGADOR (USUARIO, SENHA, NOME, SEXO, NIVEL, EXPERIENCIA, ID_PERSONAGEM) VALUES 
+('usuarioranking11', 'usuariorankingsixtechsolutions','Bofur', 'm', 0, 0, 11);
+INSERT INTO JOGADOR (USUARIO, SENHA, NOME, SEXO, NIVEL, EXPERIENCIA, ID_PERSONAGEM) VALUES 
+('usuarioranking12', 'usuariorankingsixtechsolutions','Glóin', 'm', 0, 0, 12);
 
 /*usuario teste para o desenvolvimento*/
-INSERT INTO JOGADOR (USUARIO, SENHA, NOME, SEXO, NIVEL, EXPERIENCIA, TOTAL_ERROS, TOTAL_ACERTOS, TOTAL_PONTOS, ID_PERSONAGEM) VALUES 
-('teste', 'teste','Glóin', 'm', 0, 0, 0, 0, 0, 12);
-
-
-
-
-
-
+INSERT INTO JOGADOR (USUARIO, SENHA, NOME, SEXO, NIVEL, EXPERIENCIA, ID_PERSONAGEM) VALUES 
+('teste', 'teste','Glóin', 'm', 0, 0, 12);

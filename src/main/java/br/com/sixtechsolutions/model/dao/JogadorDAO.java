@@ -21,13 +21,17 @@ public class JogadorDAO {
     }
 
     public boolean inserir(Jogador jogador) {
-        String comandoSQL = "INSERT INTO jogador(usuario, senha, nome, sexo) values (?,?,?,?)";
+        String comandoSQL = "INSERT INTO JOGADOR(USUARIO, SENHA, NOME, SEXO, NIVEL, EXPERIENCIA, ID_PERSONAGEM)"
+                + " values (?,?,?,?,?,?,?)";
         try {
             PreparedStatement stmt = connection.prepareStatement(comandoSQL);
             stmt.setString(1, jogador.getLogin());
             stmt.setString(2, jogador.getSenha());
             stmt.setString(3, jogador.getNome());
             stmt.setString(4, jogador.getSexo());
+            stmt.setString(5, String.valueOf(jogador.getNivel()));
+            stmt.setString(6, String.valueOf(jogador.getExperiencia()));
+            stmt.setString(7, String.valueOf(jogador.getIdPersonagem()));
             stmt.execute();
             stmt.close();
             return true;
@@ -54,7 +58,7 @@ public class JogadorDAO {
     }
 
     public Jogador buscar(Jogador jogador) {
-        String sql = "SELECT * FROM jogador WHERE usuario=? and senha=?";
+        String sql = "SELECT * FROM JOGADOR WHERE usuario=? and senha=?";
         Jogador retorno = new Jogador();
         try {
             PreparedStatement stmt = connection.prepareStatement(sql);
@@ -64,7 +68,32 @@ public class JogadorDAO {
             if (resultado.next()) {
                 jogador.setLogin(resultado.getString("usuario"));
                 jogador.setSenha(resultado.getString("senha"));
+                jogador.setNome(resultado.getString("nome"));
+                jogador.setSexo("sexo");
+                jogador.setNivel(Integer.parseInt("nivel"));
+                jogador.setExperiencia(Integer.parseInt("experiencia"));
+                jogador.setIdPersonagem(Integer.parseInt("id_personagem"));
                 retorno = jogador;
+            }
+        } catch (SQLException ex) {
+            Logger.getLogger(JogadorDAO.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        return retorno;
+    }
+
+    public boolean usuarioExiste(String usuario) {
+        String sql = "SELECT * FROM JOGADOR WHERE usuario=?";
+        String select = null;
+        boolean retorno = false;
+        try {
+            PreparedStatement stmt = connection.prepareStatement(sql);
+            stmt.setString(1, usuario);
+            ResultSet resultado = stmt.executeQuery();
+            if (resultado.next()) {
+                select = resultado.getString("usuario");
+                if (select.equals(usuario)) {
+                    retorno = true;
+                }
             }
         } catch (SQLException ex) {
             Logger.getLogger(JogadorDAO.class.getName()).log(Level.SEVERE, null, ex);

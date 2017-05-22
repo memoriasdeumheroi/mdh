@@ -3,6 +3,7 @@ package br.com.sixtechsolutions.controller;
 import br.com.sixtechsolutions.CenaControlada;
 import br.com.sixtechsolutions.ControladorDeCenas;
 import br.com.sixtechsolutions.Main;
+import br.com.sixtechsolutions.controller.logica.JogadorEstatico;
 import br.com.sixtechsolutions.model.dao.JogadorDAO;
 import br.com.sixtechsolutions.model.database.Database;
 import br.com.sixtechsolutions.model.database.DatabaseFactory;
@@ -64,6 +65,15 @@ public class LoginController implements Initializable, CenaControlada {
     private Label lblEsqueciSenha;
 
     @FXML
+    private Pane paneAlert;
+
+    @FXML
+    private Label lblImgAlert;
+
+    @FXML
+    private Label lblAlert;
+
+    @FXML
     private Button github;
 
     @FXML
@@ -86,18 +96,25 @@ public class LoginController implements Initializable, CenaControlada {
 
     @FXML
     public void btnEntrarNoJogo(ActionEvent event) throws IOException {
-        Jogador jogador = new Jogador();
-        jogador.setLogin(txtNomeJogador.getText());
-        jogador.setSenha(txtSenhaJogador.getText());
-        Jogador j = jogadorDAO.buscar(jogador);
-        System.out.println(j.getLogin());
-        System.out.println(j.getSenha());
-        if (jogadorDAO.buscar(jogador).getLogin() == jogador.getLogin()) {
-            meuControlador.setScreen(Main.cenaMenu);
-        } else {
-            System.out.println("Senha errada!");
-        }
-
+        validarDados();
     }
 
+    public void validarDados() {
+        if (txtNomeJogador.getText() == null || txtNomeJogador.getText().length() == 0
+                && txtSenhaJogador.getText() == null || txtSenhaJogador.getText().length() == 0) {
+            paneAlert.setVisible(true);
+        } else {
+            Jogador jogador = new Jogador();
+            jogador.setLogin(txtNomeJogador.getText());
+            jogador.setSenha(txtSenhaJogador.getText());
+            Jogador j = jogadorDAO.buscar(jogador);
+            if (jogadorDAO.buscar(jogador).getLogin() == jogador.getLogin()) {
+                meuControlador.setScreen(Main.cenaMenu);
+                JogadorEstatico jogadorEstatico = new JogadorEstatico(jogadorDAO.buscar(jogador));
+                paneAlert.setVisible(false);
+            } else {
+                paneAlert.setVisible(true);
+            }
+        }
+    }
 }

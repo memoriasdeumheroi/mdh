@@ -3,6 +3,7 @@ package br.com.sixtechsolutions.controller;
 import br.com.sixtechsolutions.CenaControlada;
 import br.com.sixtechsolutions.ControladorDeCenas;
 import br.com.sixtechsolutions.Main;
+import br.com.sixtechsolutions.controller.logica.JogadorEstatico;
 import java.awt.Desktop;
 import java.io.IOException;
 import java.net.URI;
@@ -23,7 +24,8 @@ public class MenuController implements Initializable, CenaControlada {
 
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-
+        JogadorEstatico jogadorEstatico = null;
+        System.out.println(jogadorEstatico.getIdPersonagem());
     }
 
     @Override
@@ -90,7 +92,7 @@ public class MenuController implements Initializable, CenaControlada {
 
     @FXML
     void actionBtnJogar(ActionEvent event) {
-        meuControlador.setScreen(Main.cenaJogada);
+        meuControlador.setScreen(Main.cenaDificuldade);
     }
 
     @FXML

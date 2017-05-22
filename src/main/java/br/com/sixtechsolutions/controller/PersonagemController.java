@@ -34,11 +34,10 @@ public class PersonagemController implements Initializable, CenaControlada {
     public void defineCenaPai(ControladorDeCenas screenParent) {
         meuControlador = screenParent;
     }
-    
-      @FXML
-    public void btnVoltarAoInicio (ActionEvent event) throws IOException {
-        meuControlador.setScreen(Main.cenaPrincipal);
+
+    @FXML
+    public void btnVoltarAoInicio(ActionEvent event) throws IOException {
+        meuControlador.setScreen(Main.cenaLogin);
     }
-    
 
 }
