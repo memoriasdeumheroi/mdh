@@ -140,7 +140,7 @@
 
 .btn-jogada-menu{
     -fx-background-color: black;
-    -fx-background-image: url("../img/btn-jogada-menu.png");
+    -fx-background-image: url("../img/btn-jogada-icone-menu.png");
     -fx-background-repeat: no-repeat;
     -fx-background-position: center;
     -fx-border-color: white;
@@ -148,14 +148,14 @@
 
 .btn-jogada-menu:hover{
     -fx-background-color: white;
-    -fx-background-image: url("../img/btn-jogada-menu-black.png");
+    -fx-background-image: url("../img/btn-jogada-icone-menu-black.png");
     -fx-background-repeat: no-repeat;
     -fx-background-position: center;
 }
 
 .btn-jogada-jogar{
     -fx-background-color: black;
-    -fx-background-image: url("../img/btn-jogada-jogar.png");
+    -fx-background-image: url("../img/btn-jogada-icone-jogar.png");
     -fx-background-repeat: no-repeat;
     -fx-background-position: center;
     -fx-border-color: white;
@@ -163,14 +163,14 @@
 
 .btn-jogada-jogar:hover{
     -fx-background-color: white;
-    -fx-background-image: url("../img/btn-jogada-jogar-black.png");
+    -fx-background-image: url("../img/btn-jogada-icone-jogar-black.png");
     -fx-background-repeat: no-repeat;
     -fx-background-position: center;
 }
 
 .btn-jogada-conquistas{
     -fx-background-color: black;
-    -fx-background-image: url("../img/btn-jogada-conquistas.png");
+    -fx-background-image: url("../img/btn-jogada-icone-conquistas.png");
     -fx-background-repeat: no-repeat;
     -fx-background-position: center;
     -fx-border-color: white;
@@ -178,14 +178,14 @@
 
 .btn-jogada-conquistas:hover{
     -fx-background-color: white;
-    -fx-background-image: url("../img/btn-jogada-conquistas-black.png");
+    -fx-background-image: url("../img/btn-jogada-icone-conquistas-black.png");
     -fx-background-repeat: no-repeat;
     -fx-background-position: center;
 }
 
 .btn-jogada-conteudo{
     -fx-background-color: black;
-    -fx-background-image: url("../img/btn-jogada-conteudo.png");
+    -fx-background-image: url("../img/btn-jogada-icone-conteudo.png");
     -fx-background-repeat: no-repeat;
     -fx-background-position: center;
     -fx-border-color: white;
@@ -193,14 +193,14 @@
 
 .btn-jogada-conteudo:hover{
     -fx-background-color: white;
-    -fx-background-image: url("../img/btn-jogada-conteudo-black.png");
+    -fx-background-image: url("../img/btn-jogada-icone-conteudo-black.png");
     -fx-background-repeat: no-repeat;
     -fx-background-position: center;
 }
 
 .btn-jogada-ranking{
     -fx-background-color: black;
-    -fx-background-image: url("../img/btn-jogada-ranking.png");
+    -fx-background-image: url("../img/btn-jogada-icone-ranking.png");
     -fx-background-repeat: no-repeat;
     -fx-background-position: center;
     -fx-border-color: white;
@@ -208,14 +208,14 @@
 
 .btn-jogada-ranking:hover{
     -fx-background-color: white;
-    -fx-background-image: url("../img/btn-jogada-ranking-black.png");
+    -fx-background-image: url("../img/btn-jogada-icone-ranking-black.png");
     -fx-background-repeat: no-repeat;
     -fx-background-position: center;
 }
 
 .btn-jogada-configuracoes{
     -fx-background-color: black;
-    -fx-background-image: url("../img/btn-jogada-configuracoes.png");
+    -fx-background-image: url("../img/btn-jogada-icone-configuracoes.png");
     -fx-background-repeat: no-repeat;
     -fx-background-position: center;
     -fx-border-color: white;
@@ -223,14 +223,14 @@
 
 .btn-jogada-configuracoes:hover{
     -fx-background-color: white;
-    -fx-background-image: url("../img/btn-jogada-configuracoes-black.png");
+    -fx-background-image: url("../img/btn-jogada-icone-configuracoes-black.png");
     -fx-background-repeat: no-repeat;
     -fx-background-position: center;
 }
 
 .btn-jogada-sobre{
     -fx-background-color: black;
-    -fx-background-image: url("../img/btn-jogada-sobre.png");
+    -fx-background-image: url("../img/btn-jogada-icone-sobre.png");
     -fx-background-repeat: no-repeat;
     -fx-background-position: center;
     -fx-border-color: white;
@@ -238,7 +238,7 @@
 
 .btn-jogada-sobre:hover{
     -fx-background-color: white;
-    -fx-background-image: url("../img/btn-jogada-sobre-black.png");
+    -fx-background-image: url("../img/btn-jogada-icone-sobre-black.png");
     -fx-background-repeat: no-repeat;
     -fx-background-position: center;
 }
@@ -265,91 +265,91 @@
 */
 
 .c0-fundo-transparente{
-    -fx-background-image: url("../img/c0.png");
+    -fx-background-image: url("../img/lbl-nulo-transparente.png");
     -fx-background-color: black;
     -fx-border-color: white;
     -fx-opacity: 1.0;
 }
 
 .c1-bomberman{
-    -fx-background-image: url("../img/btn-jogada-bomberman.png");
+    -fx-background-image: url("../img/btn-jogada-personagem-bomberman.png");
     -fx-background-color: black;
     -fx-border-color: white;
     -fx-opacity: 1.0;
 }
 
 .c2-bomberman{
-    -fx-background-image: url("../img/btn-jogada-bomberman.png");
+    -fx-background-image: url("../img/btn-jogada-personagem-bomberman.png");
     -fx-background-color: black;
     -fx-border-color: white;
     -fx-opacity: 1.0;
 }
 
 .c1-crash{
-    -fx-background-image: url("../img/btn-jogada-crash.png");
+    -fx-background-image: url("../img/btn-jogada-personagem-crash.png");
     -fx-background-color: black;
     -fx-border-color: white;
     -fx-opacity: 1.0;
 }
 
 .c2-crash{
-    -fx-background-image: url("../img/btn-jogada-crash.png");
+    -fx-background-image: url("../img/btn-jogada-personagem-crash.png");
     -fx-background-color: black;
     -fx-border-color: white;
     -fx-opacity: 1.0;
 }
 
 .c1-donkeykong{
-    -fx-background-image: url("../img/btn-jogada-donkeykong.png");
+    -fx-background-image: url("../img/btn-jogada-personagem-donkeykong.png");
     -fx-background-color: black;
     -fx-border-color: white;
     -fx-opacity: 1.0;
 }
 
 .c2-donkeykong{
-    -fx-background-image: url("../img/btn-jogada-donkeykong.png");
+    -fx-background-image: url("../img/btn-jogada-personagem-donkeykong.png");
     -fx-background-color: black;
     -fx-border-color: white;
     -fx-opacity: 1.0;
 }
 
 .c1-dukenukem{
-    -fx-background-image: url("../img/btn-jogada-dukenukem.png");
+    -fx-background-image: url("../img/btn-jogada-personagem-dukenukem.png");
     -fx-background-color: black;
     -fx-border-color: white;
     -fx-opacity: 1.0;
 }
 
 .c2-dukenukem{
-    -fx-background-image: url("../img/btn-jogada-dukenukem.png");
+    -fx-background-image: url("../img/btn-jogada-personagem-dukenukem.png");
     -fx-background-color: black;
     -fx-border-color: white;
     -fx-opacity: 1.0;
 }
 
 .c1-kratos{
-    -fx-background-image: url("../img/btn-jogada-kratos.png");
+    -fx-background-image: url("../img/btn-jogada-personagem-kratos.png");
     -fx-background-color: black;
     -fx-border-color: white;
     -fx-opacity: 1.0;
 }
 
 .c2-kratos{
-    -fx-background-image: url("../img/btn-jogada-kratos.png");
+    -fx-background-image: url("../img/btn-jogada-personagem-kratos.png");
     -fx-background-color: black;
     -fx-border-color: white;
     -fx-opacity: 1.0;
 }
 
 .c1-laracroft{
-    -fx-background-image: url("../img/btn-jogada-laracroft.png");
+    -fx-background-image: url("../img/btn-jogada-personagem-laracroft.png");
     -fx-background-color: black;
     -fx-border-color: white;
     -fx-opacity: 1.0;
 }
 
 .c2-laracroft{
-    -fx-background-image: url("../img/btn-jogada-laracroft.png");
+    -fx-background-image: url("../img/btn-jogada-personagem-laracroft.png");
     -fx-background-color: black;
     -fx-border-color: white;
     -fx-opacity: 1.0;
@@ -357,84 +357,84 @@
 
 
 .c1-mario{
-    -fx-background-image: url("../img/btn-jogada-mario.png");
+    -fx-background-image: url("../img/btn-jogada-personagem-mario.png");
     -fx-background-color: black;
     -fx-border-color: white;
     -fx-opacity: 1.0;
 }
 
 .c2-mario{
-    -fx-background-image: url("../img/btn-jogada-mario.png");
+    -fx-background-image: url("../img/btn-jogada-personagem-mario.png");
     -fx-background-color: black;
     -fx-border-color: white;
     -fx-opacity: 1.0;
 }
 
 .c1-megaman{
-    -fx-background-image: url("../img/btn-jogada-megaman.png");
+    -fx-background-image: url("../img/btn-jogada-personagem-megaman.png");
     -fx-background-color: black;
     -fx-border-color: white;
     -fx-opacity: 1.0;
 }
 
 .c2-megaman{
-    -fx-background-image: url("../img/btn-jogada-megaman.png");
+    -fx-background-image: url("../img/btn-jogada-personagem-megaman.png");
     -fx-background-color: black;
     -fx-border-color: white;
     -fx-opacity: 1.0;
 }
 
 .c1-pacman{
-    -fx-background-image: url("../img/btn-jogada-pacman.png");
+    -fx-background-image: url("../img/btn-jogada-personagem-pacman.png");
     -fx-background-color: black;
     -fx-border-color: white;
     -fx-opacity: 1.0;
 }
 
 .c2-pacman{
-    -fx-background-image: url("../img/btn-jogada-pacman.png");
+    -fx-background-image: url("../img/btn-jogada-personagem-pacman.png");
     -fx-background-color: black;
     -fx-border-color: white;
     -fx-opacity: 1.0;
 }
 
 .c1-ryu{
-    -fx-background-image: url("../img/btn-jogada-ryu.png");
+    -fx-background-image: url("../img/btn-jogada-personagem-ryu.png");
     -fx-background-color: black;
     -fx-border-color: white;
     -fx-opacity: 1.0;
 }
 
 .c2-ryu{
-    -fx-background-image: url("../img/btn-jogada-ryu.png");
+    -fx-background-image: url("../img/btn-jogada-personagem-ryu.png");
     -fx-background-color: black;
     -fx-border-color: white;
     -fx-opacity: 1.0;
 }
 
 .c1-sonic{
-    -fx-background-image: url("../img/btn-jogada-sonic.png");
+    -fx-background-image: url("../img/btn-jogada-personagem-sonic.png");
     -fx-background-color: black;
     -fx-border-color: white;
     -fx-opacity: 1.0;;
 }
 
 .c2-sonic{
-    -fx-background-image: url("../img/btn-jogada-sonic.png");
+    -fx-background-image: url("../img/btn-jogada-personagem-sonic.png");
     -fx-background-color: black;
     -fx-border-color: white;
     -fx-opacity: 1.0;
 }
 
 .c1-zelda{
-    -fx-background-image: url("../img/btn-jogada-zelda.png");
+    -fx-background-image: url("../img/btn-jogada-personagem-zelda.png");
     -fx-background-color: black;
     -fx-border-color: white;
     -fx-opacity: 1.0;
 }
 
 .c2-zelda{
-    -fx-background-image: url("../img/btn-jogada-zelda.png");
+    -fx-background-image: url("../img/btn-jogada-personagem-zelda.png");
     -fx-background-color: black;
     -fx-border-color: white;
     -fx-opacity: 1.0;

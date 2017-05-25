@@ -7,6 +7,7 @@ public class Jogador {
     private String login;
     private String senha;
     private int nivel;
+    private int pontos;
     private int experiencia;
     private int idPersonagem;
 
@@ -63,6 +64,14 @@ public class Jogador {
 
     public void setNivel(int nivel) {
         this.nivel = nivel;
+    }
+
+    public int getPontos() {
+        return pontos;
+    }
+
+    public void setPontos(int pontos) {
+        this.pontos = pontos;
     }
 
     public int getExperiencia() {

@@ -6,15 +6,19 @@ public class Resultado {
     static private int totalAcertos = 0;
     static private int totalErros = 0;
     static private int pontos;
+    static private boolean trava = false;
 
     Personagem personagem = new Personagem();
 
     public void verificarSeAcertou(int btn) {
-        if (personagem.getReferencia(btn) == 1) {
-            Resultado.totalAcertos++;
-            pontos += 1250;
-        } else {
-            Resultado.totalErros++;
+        if (trava == false) {
+            if (personagem.getReferencia(btn) == 1) {
+                Resultado.totalAcertos++;
+                pontos += 1250;
+            } else {
+                Resultado.totalErros++;
+
+            }
         }
     }
 
@@ -24,6 +28,14 @@ public class Resultado {
                 Resultado.totalBtnCertos++;
             }
         }
+    }
+
+    public void zeraResultados() {
+        totalBtnCertos = 0;
+        totalAcertos = 0;
+        totalErros = 0;
+        pontos = 0;
+        trava = false;
     }
 
     public int getTotalBtnCertos() {
@@ -42,4 +54,11 @@ public class Resultado {
         return pontos;
     }
 
+    public static void setTrava(boolean trava) {
+        Resultado.trava = trava;
+    }
+
+    public boolean getTrava() {
+        return this.trava;
+    }
 }

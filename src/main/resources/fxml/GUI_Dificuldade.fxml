@@ -53,7 +53,7 @@
                 <Label fx:id="lblAgilidadePersonagem2" layoutX="34.0" layoutY="579.0" prefHeight="30.0" prefWidth="117.0" styleClass="lbl-cadastro-titulo-detalhes-personagem" stylesheets="@../styles/estilo_text.css" text="AGILIDADE" />
             </children>
         </Pane>
-        <Pane layoutX="443.0" layoutY="296.0" prefHeight="303.0" prefWidth="316.0">
+        <Pane layoutX="443.0" layoutY="331.0" prefHeight="303.0" prefWidth="316.0">
             <children>
                 <Button fx:id="btnZelda" layoutX="233.0" layoutY="161.0" mnemonicParsing="false" onAction="#actionBtnZelda" prefHeight="62.0" prefWidth="62.0" styleClass="btn-avatar-zelda" stylesheets="@../styles/estilo_button.css" text="" />
                 <Button fx:id="btnSonic" layoutX="161.0" layoutY="161.0" mnemonicParsing="false" onAction="#actionBtnSonic" prefHeight="62.0" prefWidth="62.0" styleClass="btn-avatar-sonic" stylesheets="@../styles/estilo_button.css" text="" />
@@ -67,10 +67,10 @@
                 <Button fx:id="btnDonkeyKong" layoutX="161.0" layoutY="15.0" mnemonicParsing="false" onAction="#actionBtnDonkeyKong" prefHeight="62.0" prefWidth="62.0" styleClass="btn-avatar-donkeykong" stylesheets="@../styles/estilo_button.css" text="" />
                 <Button fx:id="btnCrash" layoutX="89.0" layoutY="15.0" mnemonicParsing="false" onAction="#actionBtnCrash" prefHeight="62.0" prefWidth="62.0" styleClass="btn-avatar-crash" stylesheets="@../styles/estilo_button.css" text="" />
                 <Button fx:id="btnBomberman" layoutX="17.0" layoutY="15.0" mnemonicParsing="false" onAction="#actionBtnBomberman" prefHeight="62.0" prefWidth="62.0" styleClass="btn-avatar-bomberman" stylesheets="@../styles/estilo_button.css" />
-                <Button fx:id="btnAleatorio" layoutX="124.0" layoutY="234.0" mnemonicParsing="false" onAction="#actionBtnAleatorio" prefHeight="62.0" prefWidth="62.0" styleClass="btn-avatar-aleatorio" stylesheets="@../styles/estilo_button.css" text="" />
+                <Button fx:id="btnAleatorio" layoutX="124.0" layoutY="234.0" mnemonicParsing="false" onAction="#actionBtnAleatorio" prefHeight="62.0" prefWidth="62.0" styleClass="btn-avatar-aleatorio" stylesheets="@../styles/estilo_button.css" text="" visible="false" />
             </children>
         </Pane>
         <Button fx:id="btnJogar" layoutX="459.0" layoutY="618.0" mnemonicParsing="false" onAction="#actionBtnJogar" prefHeight="50.0" prefWidth="280.0" styleClass="btn-dificuldade-jogar" stylesheets="@../styles/estilo_button.css" text="JOGAR" />
-      <Label fx:id="lblOponente" alignment="CENTER" layoutX="453.0" layoutY="266.0" prefHeight="40.0" prefWidth="293.0" styleClass="lbl-dificuldade-nivel" stylesheets="@../styles/estilo_text.css" text="ESCOLHA O OPONENTE" />
+      <Label fx:id="lblOponente" alignment="CENTER" layoutX="453.0" layoutY="301.0" prefHeight="40.0" prefWidth="293.0" styleClass="lbl-dificuldade-nivel" stylesheets="@../styles/estilo_text.css" text="ESCOLHA O OPONENTE" />
     </children>
 </AnchorPane>

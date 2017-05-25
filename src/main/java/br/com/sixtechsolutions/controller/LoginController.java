@@ -3,7 +3,7 @@ package br.com.sixtechsolutions.controller;
 import br.com.sixtechsolutions.CenaControlada;
 import br.com.sixtechsolutions.ControladorDeCenas;
 import br.com.sixtechsolutions.Main;
-import br.com.sixtechsolutions.controller.logica.JogadorEstatico;
+import br.com.sixtechsolutions.controller.logica.DadosJogador;
 import br.com.sixtechsolutions.model.dao.JogadorDAO;
 import br.com.sixtechsolutions.model.database.Database;
 import br.com.sixtechsolutions.model.database.DatabaseFactory;
@@ -36,6 +36,7 @@ public class LoginController implements Initializable, CenaControlada {
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         jogadorDAO.setConnection(connection);
+        System.out.println("entrou");
     }
 
     @Override
@@ -77,6 +78,9 @@ public class LoginController implements Initializable, CenaControlada {
     private Button github;
 
     @FXML
+    private Button esqueciSenha;
+
+    @FXML
     private void actionGithub(ActionEvent event) {
         if (Desktop.isDesktopSupported()) {
             new Thread(() -> {
@@ -90,7 +94,13 @@ public class LoginController implements Initializable, CenaControlada {
     }
 
     @FXML
+    void actionEsqueciSenha(ActionEvent event) {
+        meuControlador.setScreen(Main.cenaEsqueciSenha);
+    }
+
+    @FXML
     public void btnCadastrarHeroi(ActionEvent event) throws IOException, SQLException {
+        meuControlador.loadScreen(Main.cenaCadastro, Main.cenaCadastroLocal);
         meuControlador.setScreen(Main.cenaCadastro);
     }
 
@@ -107,10 +117,13 @@ public class LoginController implements Initializable, CenaControlada {
             Jogador jogador = new Jogador();
             jogador.setLogin(txtNomeJogador.getText());
             jogador.setSenha(txtSenhaJogador.getText());
-            Jogador j = jogadorDAO.buscar(jogador);
             if (jogadorDAO.buscar(jogador).getLogin() == jogador.getLogin()) {
+                DadosJogador dados = new DadosJogador();
+                dados.pegarDadosDoJogador(txtNomeJogador.getText());
+                meuControlador.loadScreen(Main.cenaMenu, Main.cenaMenuLocal);
                 meuControlador.setScreen(Main.cenaMenu);
-                JogadorEstatico jogadorEstatico = new JogadorEstatico(jogadorDAO.buscar(jogador));
+                txtNomeJogador.setText("");
+                txtSenhaJogador.setText("");
                 paneAlert.setVisible(false);
             } else {
                 paneAlert.setVisible(true);

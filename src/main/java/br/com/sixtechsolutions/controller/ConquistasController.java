@@ -117,4 +117,32 @@ public class ConquistasController implements Initializable, CenaControlada {
         }
     }
 
+    public void atualizarAvatarPerfil(int id) {
+        if (id == 1) {
+            btnPerfil.getStyleClass().set(1, "btn-avatar-bomberman");
+        } else if (id == 2) {
+            btnPerfil.getStyleClass().set(1, "btn-avatar-crash");
+        } else if (id == 3) {
+            btnPerfil.getStyleClass().set(1, "btn-avatar-donkeykong");
+        } else if (id == 4) {
+            btnPerfil.getStyleClass().set(1, "btn-avatar-dukenukem");
+        } else if (id == 5) {
+            btnPerfil.getStyleClass().set(1, "btn-avatar-kratos");
+        } else if (id == 6) {
+            btnPerfil.getStyleClass().set(1, "btn-avatar-laracroft");
+        } else if (id == 7) {
+            btnPerfil.getStyleClass().set(1, "btn-avatar-mario");
+        } else if (id == 8) {
+            btnPerfil.getStyleClass().set(1, "btn-avatar-megaman");
+        } else if (id == 9) {
+            btnPerfil.getStyleClass().set(1, "btn-avatar-pacman");
+        } else if (id == 10) {
+            btnPerfil.getStyleClass().set(1, "btn-avatar-ryu");
+        } else if (id == 11) {
+            btnPerfil.getStyleClass().set(1, "btn-avatar-sonic");
+        } else if (id == 12) {
+            btnPerfil.getStyleClass().set(1, "btn-avatar-zelda");
+        }
+    }
+
 }
