@@ -46,30 +46,41 @@ INSERT INTO PERSONAGEM (NOME) VALUES ("zelda");
 
 /*variáveis de ambiente, usuários do ranking inicial*/
 INSERT INTO JOGADOR (USUARIO, SENHA, NOME, SEXO, NIVEL, EXPERIENCIA, ID_PERSONAGEM) VALUES 
-('usuarioranking1', 'usuariorankingsixtechsolutions','Balin', 'm', 0, 0, 1);
+('Balin', 'usuariorankingsixtechsolutions','Balin', 'm', 0, 0, 1);
 INSERT INTO JOGADOR (USUARIO, SENHA, NOME, SEXO, NIVEL, EXPERIENCIA, ID_PERSONAGEM) VALUES 
-('usuarioranking2', 'usuariorankingsixtechsolutions','Bombur', 'm', 0, 0, 2);
+('Bombur', 'usuariorankingsixtechsolutions','Bombur', 'm', 0, 0, 2);
 INSERT INTO JOGADOR (USUARIO, SENHA, NOME, SEXO, NIVEL, EXPERIENCIA, ID_PERSONAGEM) VALUES 
-('usuarioranking3', 'usuariorankingsixtechsolutions','Borin', 'm', 0, 0, 3);
+('Borin', 'usuariorankingsixtechsolutions','Borin', 'm', 0, 0, 3);
 INSERT INTO JOGADOR (USUARIO, SENHA, NOME, SEXO, NIVEL, EXPERIENCIA, ID_PERSONAGEM) VALUES 
-('usuarioranking4', 'usuariorankingsixtechsolutions','Durin', 'm', 0, 0, 4);
+('Durin', 'usuariorankingsixtechsolutions','Durin', 'm', 0, 0, 4);
 INSERT INTO JOGADOR (USUARIO, SENHA, NOME, SEXO, NIVEL, EXPERIENCIA, ID_PERSONAGEM) VALUES 
-('usuarioranking5', 'usuariorankingsixtechsolutions','Óin', 'm', 0, 0, 5);
+('Óin', 'usuariorankingsixtechsolutions','Óin', 'm', 0, 0, 5);
 INSERT INTO JOGADOR (USUARIO, SENHA, NOME, SEXO, NIVEL, EXPERIENCIA, ID_PERSONAGEM) VALUES 
-('usuarioranking6', 'usuariorankingsixtechsolutions','Ori', 'm', 0, 0, 6);
+('Ori', 'usuariorankingsixtechsolutions','Ori', 'm', 0, 0, 6);
 INSERT INTO JOGADOR (USUARIO, SENHA, NOME, SEXO, NIVEL, EXPERIENCIA, ID_PERSONAGEM) VALUES 
-('usuarioranking7', 'usuariorankingsixtechsolutions','Thorin', 'm', 0, 0, 7);
+('Thorin', 'usuariorankingsixtechsolutions','Thorin', 'm', 0, 0, 7);
 INSERT INTO JOGADOR (USUARIO, SENHA, NOME, SEXO, NIVEL, EXPERIENCIA, ID_PERSONAGEM) VALUES 
-('usuarioranking8', 'usuariorankingsixtechsolutions','Durin', 'm', 0, 0, 8);
+('Gróin', 'usuariorankingsixtechsolutions','Gróin', 'm', 0, 0, 9);
 INSERT INTO JOGADOR (USUARIO, SENHA, NOME, SEXO, NIVEL, EXPERIENCIA, ID_PERSONAGEM) VALUES 
-('usuarioranking9', 'usuariorankingsixtechsolutions','Gróin', 'm', 0, 0, 9);
+('Bifur', 'usuariorankingsixtechsolutions','Bifur', 'm', 0, 0, 10);
 INSERT INTO JOGADOR (USUARIO, SENHA, NOME, SEXO, NIVEL, EXPERIENCIA, ID_PERSONAGEM) VALUES 
-('usuarioranking10', 'usuariorankingsixtechsolutions','Bifur', 'm', 0, 0, 10);
+('Bofur', 'usuariorankingsixtechsolutions','Bofur', 'm', 0, 0, 11);
 INSERT INTO JOGADOR (USUARIO, SENHA, NOME, SEXO, NIVEL, EXPERIENCIA, ID_PERSONAGEM) VALUES 
-('usuarioranking11', 'usuariorankingsixtechsolutions','Bofur', 'm', 0, 0, 11);
-INSERT INTO JOGADOR (USUARIO, SENHA, NOME, SEXO, NIVEL, EXPERIENCIA, ID_PERSONAGEM) VALUES 
-('usuarioranking12', 'usuariorankingsixtechsolutions','Glóin', 'm', 0, 0, 12);
+('Glóin', 'usuariorankingsixtechsolutions','Glóin', 'm', 0, 0, 12);
 
 /*usuario teste para o desenvolvimento*/
 INSERT INTO JOGADOR (USUARIO, SENHA, NOME, SEXO, NIVEL, EXPERIENCIA, ID_PERSONAGEM) VALUES 
-('teste', 'teste','Glóin', 'm', 0, 0, 12);
+('teste', 'teste','Glóin', 'm', 1, 0, 12);
+
+
+
+INSERT INTO JOGADA(QTD_ACERTOS, QTD_ERROS, QTD_PONTOS, NOME_USUARIO) VALUES (100, 3, 100000, 'Thorin');
+INSERT INTO JOGADA(QTD_ACERTOS, QTD_ERROS, QTD_PONTOS, NOME_USUARIO) VALUES (20, 3, 90000, 'Balin');
+INSERT INTO JOGADA(QTD_ACERTOS, QTD_ERROS, QTD_PONTOS, NOME_USUARIO) VALUES (100, 3, 80000, 'Durin');
+INSERT INTO JOGADA(QTD_ACERTOS, QTD_ERROS, QTD_PONTOS, NOME_USUARIO) VALUES (100, 3, 70000, 'Gróin');
+INSERT INTO JOGADA(QTD_ACERTOS, QTD_ERROS, QTD_PONTOS, NOME_USUARIO) VALUES (100, 3, 60000, 'Glóin');
+INSERT INTO JOGADA(QTD_ACERTOS, QTD_ERROS, QTD_PONTOS, NOME_USUARIO) VALUES (100, 3, 50000, 'Óin');
+INSERT INTO JOGADA(QTD_ACERTOS, QTD_ERROS, QTD_PONTOS, NOME_USUARIO) VALUES (100, 3, 40000, 'Ori');
+INSERT INTO JOGADA(QTD_ACERTOS, QTD_ERROS, QTD_PONTOS, NOME_USUARIO) VALUES (100, 3, 30000, 'Bofur');
+INSERT INTO JOGADA(QTD_ACERTOS, QTD_ERROS, QTD_PONTOS, NOME_USUARIO) VALUES (100, 3, 20000, 'Bombur');
+INSERT INTO JOGADA(QTD_ACERTOS, QTD_ERROS, QTD_PONTOS, NOME_USUARIO) VALUES (100, 3, 10000, 'Borin');

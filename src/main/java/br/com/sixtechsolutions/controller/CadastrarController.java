@@ -202,7 +202,7 @@ public class CadastrarController implements Initializable, CenaControlada {
             referencia.setSenha(passwordSenha.getText());
             referencia.setNome(txtNome.getText());
             referencia.setSexo(sexo);
-            referencia.setNivel(0);
+            referencia.setNivel(1);
             referencia.setExperiencia(0);
             referencia.setIdPersonagem(idPersonagem);
             jogadorDAO.inserir(referencia);

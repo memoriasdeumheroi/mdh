@@ -47,6 +47,6 @@
             </children>
         </Pane>
       <Button fx:id="github" alignment="BASELINE_CENTER" layoutX="10.0" layoutY="629.0" mnemonicParsing="false" onAction="#actionGithub" prefHeight="41.0" prefWidth="145.0" styleClass="github" stylesheets="@../styles/estilo_button.css" text="    GitHub" />
-      <Button fx:id="esqueciSennha" layoutX="958.0" layoutY="635.0" mnemonicParsing="false" styleClass="esqueci-minha-senha" stylesheets="@../styles/estilo_button.css" text="Esqueci minha senha ?" />
+      <Button fx:id="esqueciSenha" layoutX="958.0" layoutY="635.0" mnemonicParsing="false" onAction="#actionEsqueciSenha" styleClass="esqueci-minha-senha" stylesheets="@../styles/estilo_button.css" text="Esqueci minha senha ?" />
     </children>
 </AnchorPane>

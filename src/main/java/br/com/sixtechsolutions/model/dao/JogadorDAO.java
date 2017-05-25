@@ -5,6 +5,8 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
@@ -68,11 +70,6 @@ public class JogadorDAO {
             if (resultado.next()) {
                 jogador.setLogin(resultado.getString("usuario"));
                 jogador.setSenha(resultado.getString("senha"));
-                jogador.setNome(resultado.getString("nome"));
-                jogador.setSexo("sexo");
-                jogador.setNivel(Integer.parseInt("nivel"));
-                jogador.setExperiencia(Integer.parseInt("experiencia"));
-                jogador.setIdPersonagem(Integer.parseInt("id_personagem"));
                 retorno = jogador;
             }
         } catch (SQLException ex) {
@@ -101,4 +98,61 @@ public class JogadorDAO {
         return retorno;
     }
 
+    public Jogador buscarDadosDoJogador(String login) {
+        String sql = "SELECT * FROM JOGADOR WHERE USUARIO=?";
+        Jogador retorno = new Jogador();
+        try {
+            PreparedStatement stmt = connection.prepareStatement(sql);
+            stmt.setString(1, login);
+            ResultSet resultado = stmt.executeQuery();
+            if (resultado.next()) {
+                retorno.setLogin(resultado.getString("USUARIO"));
+                retorno.setSenha(resultado.getString("SENHA"));
+                retorno.setNome(resultado.getString("NOME"));
+                retorno.setSexo(resultado.getString("SEXO"));
+                retorno.setNivel(Integer.parseInt(resultado.getString("NIVEL")));
+                retorno.setExperiencia(Integer.parseInt(resultado.getString("EXPERIENCIA")));
+                retorno.setIdPersonagem(Integer.parseInt(resultado.getString("ID_PERSONAGEM")));
+            }
+        } catch (SQLException ex) {
+            Logger.getLogger(JogadorDAO.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        return retorno;
+    }
+
+    public List<Jogador> listar() {
+        String sql = "SELECT * FROM JOGADA ORDER BY QTD_PONTOS DESC LIMIT 10";
+        List<Jogador> retorno = new ArrayList<>();
+        try {
+            PreparedStatement stmt = connection.prepareStatement(sql);
+            ResultSet resultado = stmt.executeQuery();
+            while (resultado.next()) {
+                Jogador jogador = new Jogador();
+                jogador.setNome(resultado.getString("NOME_USUARIO"));
+                jogador.setPontos(Integer.parseInt(resultado.getString("QTD_PONTOS")));
+                retorno.add(jogador);
+            }
+        } catch (SQLException ex) {
+            Logger.getLogger(JogadorDAO.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        return retorno;
+    }
+
+    public boolean inserirJogada(String nome, int qtdAcertos, int qtdErros, int qtdPontos) {
+        String comandoSQL = "INSERT INTO JOGADA(QTD_ACERTOS, QTD_ERROS, QTD_PONTOS, NOME_USUARIO)"
+                + " values (?,?,?,?)";
+        try {
+            PreparedStatement stmt = connection.prepareStatement(comandoSQL);
+            stmt.setString(1, String.valueOf(qtdAcertos));
+            stmt.setString(2, String.valueOf(qtdErros));
+            stmt.setString(3, String.valueOf(qtdPontos));
+            stmt.setString(4, nome);
+            stmt.execute();
+            stmt.close();
+            return true;
+        } catch (SQLException ex) {
+            Logger.getLogger(JogadorDAO.class.getName()).log(Level.SEVERE, null, ex);
+            return false;
+        }
+    }
 }

@@ -2,9 +2,7 @@ package br.com.sixtechsolutions.controller.logica;
 
 public class Dificuldade {
 
-    String dificuldade;
-
-    private float tempoExibicao = 5;
+    private static float tempoExibicao = 5;
 
     public float getTempoExibicao() {
         return tempoExibicao;

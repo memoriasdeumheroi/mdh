@@ -37,6 +37,17 @@ public class Jogada {
         }
     }
 
+    public void exibirTodosBotoesBloquados(Button[] btnA) {
+        for (int i = 0; i < personagem.getReferencia().length; i++) {
+            btnA[i].setDisable(false);
+            if (personagem.getReferencia(i) == 1) {
+                btnA[i].getStyleClass().set(1, "c1-" + personagem.getPersonagem());
+            } else {
+                btnA[i].getStyleClass().set(1, "c2-" + personagem.getPersonagemRival());
+            }
+        }
+    }
+
     public void cliclouBotao(Button[] btnlista, Button btnA, Label exibePontos, int btn) {
         btnlista[btn].setDisable(true);
         resultado.verificarSeAcertou(btn);

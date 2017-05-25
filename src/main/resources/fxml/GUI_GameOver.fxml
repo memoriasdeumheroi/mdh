@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="anchorPane" prefHeight="680.0" prefWidth="1200.0" styleClass="anchorpane" stylesheets="@../styles/estilo_conteiners.css" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.sixtechsolutions.controller.GameOverController">
+   <children>
+      <Label fx:id="lblGameOver" alignment="CENTER" layoutX="579.0" layoutY="22.0" prefHeight="227.0" prefWidth="596.0" text="GAME OVER" textFill="WHITE">
+         <font>
+            <Font name="Montserrat Bold" size="92.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblPontosLabel" layoutX="769.0" layoutY="240.0" text="PONTOS" textFill="WHITE">
+         <font>
+            <Font name="Montserrat Bold" size="25.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblPontos" layoutX="896.0" layoutY="240.0" text="0" textFill="WHITE">
+         <font>
+            <Font name="Montserrat Bold" size="25.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblImagemMarioSonic" layoutX="13.0" layoutY="22.0" prefHeight="628.0" prefWidth="653.0" styleClass="lbl-gameover-mario-sonic" stylesheets="@../styles/estilo_label.css" />
+      <Button fx:id="btnJogarNovamente" layoutX="746.0" layoutY="320.0" mnemonicParsing="false" onAction="#actionBtnJogarNovamente" prefHeight="40.0" prefWidth="280.0" styleClass="btn-dificuldade-nivel" stylesheets="@../styles/estilo_button.css" text="JOGAR NOVAMENTE" />
+      <Button fx:id="btnVoltarMenu" layoutX="747.0" layoutY="380.0" mnemonicParsing="false" onAction="#actionBtnVoltarMenu" prefHeight="40.0" prefWidth="280.0" styleClass="btn-dificuldade-nivel" stylesheets="@../styles/estilo_button.css" text="VOLTAR AO MENU" />
+   </children>
+</AnchorPane>

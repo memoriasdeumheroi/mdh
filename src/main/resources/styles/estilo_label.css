@@ -93,37 +93,37 @@
 }
 
 .lbl-versus-bomberman{
-    -fx-background-image: url("../img/lbl-versus-bomberman.png");
+    -fx-background-image: url("../img/lbl-versus-personagem-bomberman.png");
     -fx-background-repeat: no-repeat;
     -fx-background-position: center;
 }
 
 .lbl-versus-crash{
-    -fx-background-image: url("../img/lbl-versus-crash.png");
+    -fx-background-image: url("../img/lbl-versus-personagem-crash.png");
     -fx-background-repeat: no-repeat;
     -fx-background-position: center;
 }
 
 .lbl-versus-donkeykong{
-    -fx-background-image: url("../img/lbl-versus-donkeykong.png");
+    -fx-background-image: url("../img/lbl-versus-personagem-donkeykong.png");
     -fx-background-repeat: no-repeat;
     -fx-background-position: center;
 }
 
 .lbl-versus-dukenukem{
-    -fx-background-image: url("../img/lbl-versus-dukenukem.png");
+    -fx-background-image: url("../img/lbl-versus-personagem-dukenukem.png");
     -fx-background-repeat: no-repeat;
     -fx-background-position: center;
 }
 
 .lbl-versus-kratos{
-    -fx-background-image: url("../img/lbl-versus-kratos.png");
+    -fx-background-image: url("../img/lbl-versus-personagem-kratos.png");
     -fx-background-repeat: no-repeat;
     -fx-background-position: center;
 }
 
 .lbl-versus-laracroft{
-    -fx-background-image: url("../img/lbl-versus-laracroft.png");
+    -fx-background-image: url("../img/lbl-versus-personagem-laracroft.png");
     -fx-background-repeat: no-repeat;
     -fx-background-position: center;
 }
@@ -141,25 +141,25 @@
 }
 
 .lbl-versus-pacman{
-    -fx-background-image: url("../img/lbl-versus-pacman.png");
+    -fx-background-image: url("../img/lbl-versus-personagem-pacman.png");
     -fx-background-repeat: no-repeat;
     -fx-background-position: center;
 }
 
 .lbl-versus-ryu{
-    -fx-background-image: url("../img/lbl-versus-ryu.png");
+    -fx-background-image: url("../img/lbl-versus-personagem-ryu.png");
     -fx-background-repeat: no-repeat;
     -fx-background-position: center;
 }
 
 .lbl-versus-sonic{
-    -fx-background-image: url("../img/lbl-versus-sonic.png");
+    -fx-background-image: url("../img/lbl-versus-personagem-sonic.png");
     -fx-background-repeat: no-repeat;
     -fx-background-position: center;
 }
 
 .lbl-versus-zelda{
-    -fx-background-image: url("../img/lbl-versus-zelda.png");
+    -fx-background-image: url("../img/lbl-versus-personagem-zelda.png");
     -fx-background-repeat: no-repeat;
     -fx-background-position: center;
 }
@@ -168,6 +168,11 @@
 /*
     AVATARES DOS JOGADORES GUI_JODADOR
 */
+.lbl-jogada-vs{
+    -fx-background-image: url("../img/lbl-jogada-icone-vs.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+}
 
 .lbl-jogador-avatar-bomberman{
     -fx-background-image: url("../img/avatar-bomberman.jpg");
@@ -176,66 +181,72 @@
 }
 
 .lbl-jogador-avatar-crash{
-    -fx-background-image: url("../img/btn-avatar-crash.png");
+    -fx-background-image: url("../img/avatar-crash.png");
     -fx-background-repeat: no-repeat;
     -fx-background-position: center;
 }
 
 .lbl-jogador-avatar-donkeykong{
-    -fx-background-image: url("../img/btn-avatar-donkeykong.png");
+    -fx-background-image: url("../img/avatar-donkeykong.png");
     -fx-background-repeat: no-repeat;
     -fx-background-position: center;
 }
 
 .lbl-jogador-avatar-dukenukem{
-    -fx-background-image: url("../img/btn-avatar-dukenukem.png");
+    -fx-background-image: url("../img/avatar-dukenukem.png");
     -fx-background-repeat: no-repeat;
     -fx-background-position: center;
 }
 
 .lbl-jogador-avatar-kratos{
-    -fx-background-image: url("../img/btn-avatar-kratos.jpg");
+    -fx-background-image: url("../img/avatar-kratos.jpg");
     -fx-background-repeat: no-repeat;
     -fx-background-position: center;
 }
 
 .lbl-jogador-avatar-laracroft{
-    -fx-background-image: url("../img/btn-avatar-laracroft.png");
+    -fx-background-image: url("../img/avatar-laracroft.png");
     -fx-background-repeat: no-repeat;
     -fx-background-position: center;
 }
 .lbl-jogador-avatar-mario{
-    -fx-background-image: url("../img/btn-avatar-mario.png");
+    -fx-background-image: url("../img/avatar-mario.png");
     -fx-background-repeat: no-repeat;
     -fx-background-position: center;
 }
 
 .lbl-jogador-avatar-megaman{
-    -fx-background-image: url("../img/btn-avatar-megaman.png");
+    -fx-background-image: url("../img/avatar-megaman.png");
     -fx-background-repeat: no-repeat;
     -fx-background-position: center;
 }
 
 .lbl-jogador-avatar-pacman{
-    -fx-background-image: url("../img/btn-avatar-pacman.png");
+    -fx-background-image: url("../img/avatar-pacman.png");
     -fx-background-repeat: no-repeat;
     -fx-background-position: center;
 }
 
 .lbl-jogador-avatar-ryu{
-    -fx-background-image: url("../img/btn-avatar-ryu.png");
+    -fx-background-image: url("../img/avatar-ryu.png");
     -fx-background-repeat: no-repeat;
     -fx-background-position: center;
 }
 
 .lbl-jogador-avatar-sonic{
-    -fx-background-image: url("../img/btn-avatar-sonic.png");
+    -fx-background-image: url("../img/avatar-sonic.png");
     -fx-background-repeat: no-repeat;
     -fx-background-position: center;
 }
 
 .lbl-jogador-avatar-zelda{
-    -fx-background-image: url("../img/btn-avatar-zelda.png");
+    -fx-background-image: url("../img/avatar-zelda.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+}
+
+.lbl-gameover-mario-sonic {
+    -fx-background-image: url("../img/lbl-gameover-mario-sonic.png");
     -fx-background-repeat: no-repeat;
     -fx-background-position: center;
 }

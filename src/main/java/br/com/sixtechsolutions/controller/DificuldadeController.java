@@ -2,7 +2,10 @@ package br.com.sixtechsolutions.controller;
 
 import br.com.sixtechsolutions.CenaControlada;
 import br.com.sixtechsolutions.ControladorDeCenas;
+import br.com.sixtechsolutions.Main;
+import br.com.sixtechsolutions.controller.logica.Dificuldade;
 import br.com.sixtechsolutions.controller.logica.Personagem;
+import br.com.sixtechsolutions.controller.logica.Resultado;
 import java.net.URL;
 import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
@@ -15,7 +18,11 @@ import javafx.scene.control.ProgressBar;
 public class DificuldadeController implements Initializable, CenaControlada {
 
     ControladorDeCenas meuControlador;
-    private boolean selecionaNivel = false;
+    Personagem personagem = new Personagem();
+    Dificuldade dificuldade = new Dificuldade();
+    Resultado resultado = new Resultado();
+    private boolean personagemSelecionado;
+    private boolean dificuldadeSelecionado;
 
     @Override
     public void initialize(URL url, ResourceBundle rb) {
@@ -27,9 +34,6 @@ public class DificuldadeController implements Initializable, CenaControlada {
     public void defineCenaPai(ControladorDeCenas screenParent) {
         meuControlador = screenParent;
     }
-
-    private final Personagem personagem = new Personagem();
-    private boolean personagemSelecionado;
 
     @FXML
     private ProgressBar progressBarAtaque1;
@@ -132,27 +136,34 @@ public class DificuldadeController implements Initializable, CenaControlada {
 
     @FXML
     void actionBtnFacil(ActionEvent event) {
-
+        dificuldadeSelecionado = true;
+        dificuldade.setTempoExibicao(6);
     }
 
     @FXML
     void actionBtnNormal(ActionEvent event) {
-
+        dificuldadeSelecionado = true;
+        dificuldade.setTempoExibicao(5);
     }
 
     @FXML
     void actionBtnDificil(ActionEvent event) {
-
+        dificuldadeSelecionado = true;
+        dificuldade.setTempoExibicao(3.5f);
     }
 
     @FXML
     void actionBtnHeroi(ActionEvent event) {
-
+        dificuldadeSelecionado = true;
+        dificuldade.setTempoExibicao(3);
     }
 
     @FXML
     void actionBtnJogar(ActionEvent event) {
-
+        if (dificuldadeSelecionado == true && personagemSelecionado == true) {
+            meuControlador.loadScreen(Main.cenaVersus, Main.cenaVersusLocal);
+            meuControlador.setScreen(Main.cenaVersus);
+        }
     }
 
     @FXML
@@ -163,8 +174,7 @@ public class DificuldadeController implements Initializable, CenaControlada {
     @FXML
     void actionBtnBomberman(ActionEvent event) {
         personagem.setPersonagemRival("bomberman");
-        lblPersonagem2.getStyleClass().set(1, "btn-personagem-bomberman");
-        selecionaBtn(btnBomberman, "bomberman");
+        lblPersonagem2.getStyleClass().set(1, "lbl-personagem-bomberman");
         personagemSelecionado = true;
         progressBarAtaque2.setProgress(0.8);
         progressBarDefesa2.setProgress(0.2);
@@ -283,21 +293,23 @@ public class DificuldadeController implements Initializable, CenaControlada {
 
     public void pegaPersonagemPrincipal() {
         lblPersonagem1.getStyleClass().set(1, "lbl-personagem-" + personagem.getPersonagem());
+        System.out.println();
+        System.out.println("funcionou");
     }
 
     public void selecionaBtn(Button clicado, String nome) {
-        btnBomberman.getStyleClass().set(1, "btn-avatar-selecionado-bomberman");
-        btnCrash.getStyleClass().set(1, "btn-avatar-selecionado-bomberman");
-        btnDonkeyKong.getStyleClass().set(1, "btn-avatar-selecionado-bomberman");
-        btnDukeNukem.getStyleClass().set(1, "btn-avatar-selecionado-bomberman");
-        btnKratos.getStyleClass().set(1, "btn-avatar-selecionado-bomberman");
-        btnLaraCroft.getStyleClass().set(1, "btn-avatar-selecionado-bomberman");
-        btnMario.getStyleClass().set(1, "btn-avatar-selecionado-bomberman");
-        btnMegaman.getStyleClass().set(1, "btn-avatar-selecionado-bomberman");
-        btnPacman.getStyleClass().set(1, "btn-avatar-selecionado-bomberman");
-        btnRyu.getStyleClass().set(1, "btn-avatar-selecionado-bomberman");
-        btnSonic.getStyleClass().set(1, "btn-avatar-selecionado-bomberman");
-        btnZelda.getStyleClass().set(1, "btn-avatar-selecionado-bomberman");
+        btnBomberman.getStyleClass().set(1, "btn-avatar-bomberman");
+        btnCrash.getStyleClass().set(1, "btn-avatar-crash");
+        btnDonkeyKong.getStyleClass().set(1, "btn-avatar-donkeykong");
+        btnDukeNukem.getStyleClass().set(1, "btn-avatar-dukenukem");
+        btnKratos.getStyleClass().set(1, "btn-avatar-kratos");
+        btnLaraCroft.getStyleClass().set(1, "btn-avatar-laracroft");
+        btnMario.getStyleClass().set(1, "btn-avatar-mario");
+        btnMegaman.getStyleClass().set(1, "btn-avatar-megaman");
+        btnPacman.getStyleClass().set(1, "btn-avatar-pacman");
+        btnRyu.getStyleClass().set(1, "btn-avatar-ryu");
+        btnSonic.getStyleClass().set(1, "btn-avatar-sonic");
+        btnZelda.getStyleClass().set(1, "btn-avatar-zelda");
         clicado.getStyleClass().set(1, "btn-avatar-selecionado-" + nome);
     }
 
@@ -312,77 +324,77 @@ public class DificuldadeController implements Initializable, CenaControlada {
                     btnBomberman.setDisable(true);
                     break;
                 case "crash":
-                    btnCrash.getStyleClass().set(1, "btn-avatar-selecionado");
+                    btnCrash.getStyleClass().set(1, "btn-avatar-selecionado-crash");
                     progressBarAtaque1.setProgress(0.6);
                     progressBarDefesa1.setProgress(0.6);
                     progressBarAgilidade1.setProgress(0.3);
                     btnCrash.setDisable(true);
                     break;
                 case "donkeykong":
-                    btnDonkeyKong.getStyleClass().set(1, "btn-avatar-selecionado");
+                    btnDonkeyKong.getStyleClass().set(1, "btn-avatar-selecionado-donkeykong");
                     progressBarAtaque1.setProgress(0.9);
                     progressBarDefesa1.setProgress(0.4);
                     progressBarAgilidade1.setProgress(0.2);
                     btnDonkeyKong.setDisable(true);
                     break;
                 case "dukenukem":
-                    btnDukeNukem.getStyleClass().set(1, "btn-avatar-selecionado");
+                    btnDukeNukem.getStyleClass().set(1, "btn-avatar-selecionado-dukenukem");
                     progressBarAtaque1.setProgress(0.85);
                     progressBarDefesa1.setProgress(0.55);
                     progressBarAgilidade1.setProgress(0.33);
                     btnDukeNukem.setDisable(true);
                     break;
                 case "kratos":
-                    btnKratos.getStyleClass().set(1, "btn-avatar-selecionado");
+                    btnKratos.getStyleClass().set(1, "btn-avatar-selecionado-kratos");
                     progressBarAtaque1.setProgress(0.89);
                     progressBarDefesa1.setProgress(0.77);
                     progressBarAgilidade1.setProgress(0.66);
                     btnKratos.setDisable(true);
                     break;
                 case "laracroft":
-                    btnLaraCroft.getStyleClass().set(1, "btn-avatar-selecionado");
+                    btnLaraCroft.getStyleClass().set(1, "btn-avatar-selecionado-laracroft");
                     progressBarAtaque1.setProgress(0.81);
                     progressBarDefesa1.setProgress(0.44);
                     progressBarAgilidade1.setProgress(0.75);
                     btnLaraCroft.setDisable(true);
                     break;
                 case "mario":
-                    btnMario.getStyleClass().set(1, "btn-avatar-selecionado");
+                    btnMario.getStyleClass().set(1, "btn-avatar-selecionado-mario");
                     progressBarAtaque1.setProgress(0.70);
                     progressBarDefesa1.setProgress(0.20);
                     progressBarAgilidade1.setProgress(0.86);
                     btnMario.setDisable(true);
                     break;
                 case "megaman":
-                    btnMegaman.getStyleClass().set(1, "btn-avatar-selecionado");
+                    btnMegaman.getStyleClass().set(1, "btn-avatar-selecionado-megaman");
                     progressBarAtaque1.setProgress(0.74);
                     progressBarDefesa1.setProgress(0.33);
                     progressBarAgilidade1.setProgress(0.98);
                     btnMegaman.setDisable(true);
                     break;
                 case "pacman":
-                    btnPacman.getStyleClass().set(1, "btn-avatar-selecionado");
+                    btnPacman.getStyleClass().set(1, "btn-avatar-selecionado-pacman");
                     progressBarAtaque1.setProgress(0.60);
                     progressBarDefesa1.setProgress(0.07);
                     progressBarAgilidade1.setProgress(0.94);
                     btnPacman.setDisable(true);
                     break;
                 case "ryu":
-                    btnRyu.getStyleClass().set(1, "btn-avatar-selecionado");
+                    btnRyu.getStyleClass().set(1, "btn-avatar-selecionado-ryu");
                     progressBarAtaque1.setProgress(0.84);
                     progressBarDefesa1.setProgress(0.75);
                     progressBarAgilidade1.setProgress(0.70);
                     btnRyu.setDisable(true);
                     break;
                 case "sonic":
-                    btnSonic.getStyleClass().set(1, "btn-avatar-selecionado");
+                    btnSonic.getStyleClass().set(1, "btn-avatar-selecionado-sonic");
                     progressBarAtaque1.setProgress(0.39);
                     progressBarDefesa1.setProgress(0.33);
                     progressBarAgilidade1.setProgress(0.99);
                     btnSonic.setDisable(true);
                     break;
                 case "zelda":
-                    btnZelda.getStyleClass().set(1, "btn-avatar-selecionado");
+                    btnZelda.getStyleClass().set(1, "btn-avatar-selecionado-zelda");
                     progressBarAtaque1.setProgress(0.75);
                     progressBarDefesa1.setProgress(0.69);
                     progressBarAgilidade1.setProgress(0.74);

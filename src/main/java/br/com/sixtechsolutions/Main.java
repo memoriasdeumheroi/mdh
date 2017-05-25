@@ -20,7 +20,7 @@ public class Main extends Application {
     public static String cenaSobreLocal = "/fxml/GUI_Sobre.fxml";
 
     public static String cenaVersus = "versus";
-    public static String cenaMenuVersus = "/fxml/GUI_Versus.fxml";
+    public static String cenaVersusLocal = "/fxml/GUI_Versus.fxml";
 
     public static String cenaJogada = "jogada";
     public static String cenaJogadaLocal = "/fxml/GUI_Jogada.fxml";
@@ -46,21 +46,26 @@ public class Main extends Application {
     public static String cenaConfiguracoes = "configuracoes";
     public static String cenaConfiguracoesLocal = "/fxml/GUI_Configuracoes.fxml";
 
+    public static String cenaGameOver = "gameover";
+    public static String cenaGameOverLocal = "/fxml/GUI_GameOver.fxml";
+
+    public static String cenaEsqueciSenha = "esquecisenha";
+    public static String cenaEsqueciSenhaLocal = "/fxml/GUI_EsqueciSenha.fxml";
+
+    public static String cenaRankingGameOver = "rankinggameover";
+    public static String cenaRankingGameOverLocal = "/fxml/GUI_RankingGameOver.fxml";
+
     @Override
     public void start(Stage primaryStage) {
 
         ControladorDeCenas mainContainer = new ControladorDeCenas();
-        mainContainer.loadScreen(Main.cenaMenu, Main.cenaMenuLocal);
-        mainContainer.loadScreen(Main.cenaLogin, Main.cenaLoginLocal);
         mainContainer.loadScreen(Main.cenaSobre, Main.cenaSobreLocal);
+        mainContainer.loadScreen(Main.cenaEsqueciSenha, Main.cenaEsqueciSenhaLocal);
         mainContainer.loadScreen(Main.cenaIntro, Main.cenaIntroLocal);
         mainContainer.loadScreen(Main.cenaJogada, Main.cenaJogadaLocal);
-        mainContainer.loadScreen(Main.cenaRanking, Main.cenaRankingLocal);
         mainContainer.loadScreen(Main.cenaEscolha, Main.cenaEscolhaLocal);
         mainContainer.loadScreen(Main.cenaConteudo, Main.cenaConteudoLocal);
-        mainContainer.loadScreen(Main.cenaCadastro, Main.cenaCadastroLocal);
         mainContainer.loadScreen(Main.cenaConquistas, Main.cenaConquistasLocal);
-        mainContainer.loadScreen(Main.cenaDificuldade, Main.cenaDificuldadeLocal);
         mainContainer.loadScreen(Main.cenaConfiguracoes, Main.cenaConfiguracoesLocal);
 
         mainContainer.setScreen(cenaIntro);

@@ -5,9 +5,8 @@ import java.util.Random;
 public class Personagem {
 
     private static final int[] referencia = new int[12];
-    private String[] listapersonagens = new String[12];
-    private static String personagem = "bomberman";
-    private static String personagemRival = "laracroft";
+    public static String personagem = "mario";
+    public static String personagemRival = "sonic";
 
     Random random = new Random();
 
@@ -29,6 +28,7 @@ public class Personagem {
 
     public void setPersonagem(String personagem) {
         Personagem.personagem = personagem;
+        System.out.println(personagem);
     }
 
     public String getPersonagem() {

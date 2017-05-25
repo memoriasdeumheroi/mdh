@@ -18,7 +18,7 @@ public class Tempo extends Jogada {
         task = new TimerTask() {
             @Override
             public void run() {
-                if (contadorSegundos < dificuldade.getTempoExibicao()) {
+                if (contadorSegundos < 5) {
                     contadorSegundos++;
                     System.out.println("segundo = " + contadorSegundos);
                 } else {
@@ -40,5 +40,9 @@ public class Tempo extends Jogada {
 
     public void zerarTempo() {
         this.contadorSegundos = 0;
+    }
+
+    public void pararTempo() {
+
     }
 }
