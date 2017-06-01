@@ -163,6 +163,7 @@ public class DificuldadeController implements Initializable, CenaControlada {
         if (dificuldadeSelecionado == true && personagemSelecionado == true) {
             meuControlador.loadScreen(Main.cenaVersus, Main.cenaVersusLocal);
             meuControlador.setScreen(Main.cenaVersus);
+            meuControlador.unloadScreen(Main.cenaDificuldade);
         }
     }
 

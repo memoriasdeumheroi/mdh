@@ -24,7 +24,6 @@ import javafx.scene.layout.VBox;
 public class EsqueciSenhaController implements Initializable, CenaControlada {
 
     ControladorDeCenas meuControlador;
-    private String login;
     private String sexo;
     private int idPersonagem;
     private boolean confirmaClicksexo;
@@ -201,7 +200,9 @@ public class EsqueciSenhaController implements Initializable, CenaControlada {
     @FXML
     void actionBtnVoltar(ActionEvent event) {
         lblEstado.setText("");
+        meuControlador.loadScreen(Main.cenaLogin, Main.cenaLoginLocal);
         meuControlador.setScreen(Main.cenaLogin);
+        meuControlador.unloadScreen(Main.cenaEsqueciSenha);
     }
 
     @FXML

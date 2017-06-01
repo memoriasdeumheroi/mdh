@@ -51,14 +51,16 @@ public class GameOverController implements Initializable, CenaControlada {
 
     @FXML
     void actionBtnJogarNovamente(ActionEvent event) {
-        meuControlador.unloadScreen(Main.cenaJogada);
+        meuControlador.unloadScreen(Main.cenaGameOver);
+        meuControlador.loadScreen(Main.cenaMenu, Main.cenaMenuLocal);
         meuControlador.setScreen(Main.cenaDificuldade);
         resultado.zeraResultados();
     }
 
     @FXML
     void actionBtnVoltarMenu(ActionEvent event) {
-        meuControlador.unloadScreen(Main.cenaJogada);
+        meuControlador.unloadScreen(Main.cenaGameOver);
+        meuControlador.loadScreen(Main.cenaMenu, Main.cenaMenuLocal);
         meuControlador.setScreen(Main.cenaMenu);
         resultado.zeraResultados();
     }

@@ -182,7 +182,9 @@ public class CadastrarController implements Initializable, CenaControlada {
         passwordSenha.setText("");
         passwordConfirma.setText("");
         visualizarDadosPersonagem(false);
+        meuControlador.loadScreen(Main.cenaLogin, Main.cenaLoginLocal);
         meuControlador.setScreen(Main.cenaLogin);
+        meuControlador.unloadScreen(Main.cenaCadastro);
     }
 
     @FXML

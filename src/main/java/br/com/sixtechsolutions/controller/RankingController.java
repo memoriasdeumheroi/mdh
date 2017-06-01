@@ -241,11 +241,14 @@ public class RankingController implements Initializable, CenaControlada {
     void actionBtnJogar(ActionEvent event) {
         meuControlador.loadScreen(Main.cenaDificuldade, Main.cenaDificuldadeLocal);
         meuControlador.setScreen(Main.cenaDificuldade);
+        meuControlador.unloadScreen(Main.cenaRanking);
     }
 
     @FXML
     void actionBtnMenu(ActionEvent event) {
+        meuControlador.loadScreen(Main.cenaMenu, Main.cenaMenuLocal);
         meuControlador.setScreen(Main.cenaMenu);
+        meuControlador.unloadScreen(Main.cenaRanking);
         lblEstado.setVisible(false);
     }
 
@@ -262,7 +265,9 @@ public class RankingController implements Initializable, CenaControlada {
 
     @FXML
     void actionBtnSair(ActionEvent event) {
+        meuControlador.loadScreen(Main.cenaLogin, Main.cenaLoginLocal);
         meuControlador.setScreen(Main.cenaLogin);
+        meuControlador.unloadScreen(Main.cenaRanking);
         lblEstado.setVisible(false);
     }
 

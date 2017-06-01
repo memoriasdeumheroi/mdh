@@ -54,6 +54,7 @@ public class VersusController implements Initializable, CenaControlada {
                 } else {
                     meuControlador.loadScreen(Main.cenaJogada, Main.cenaJogadaLocal);
                     meuControlador.setScreen(Main.cenaJogada);
+                    meuControlador.unloadScreen(Main.cenaVersus);
                     System.out.println("Terminaou tempo!");
                     timer.cancel();
                 }
