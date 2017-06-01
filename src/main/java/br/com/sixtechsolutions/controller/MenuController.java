@@ -115,6 +115,7 @@ public class MenuController implements Initializable, CenaControlada {
     void actionBtnJogar(ActionEvent event) {
         meuControlador.loadScreen(Main.cenaDificuldade, Main.cenaDificuldadeLocal);
         meuControlador.setScreen(Main.cenaDificuldade);
+        meuControlador.unloadScreen(Main.cenaMenu);
         lblEstado.setVisible(false);
     }
 
@@ -122,6 +123,7 @@ public class MenuController implements Initializable, CenaControlada {
     void actionBtnMelhoresScores(ActionEvent event) {
         meuControlador.loadScreen(Main.cenaRanking, Main.cenaRankingLocal);
         meuControlador.setScreen(Main.cenaRanking);
+        meuControlador.unloadScreen(Main.cenaMenu);
     }
 
     @FXML
@@ -139,7 +141,9 @@ public class MenuController implements Initializable, CenaControlada {
 
     @FXML
     void actionBtnSair(ActionEvent event) {
+        meuControlador.loadScreen(Main.cenaLogin, Main.cenaLoginLocal);
         meuControlador.setScreen(Main.cenaLogin);
+        meuControlador.unloadScreen(Main.cenaMenu);
     }
 
     @FXML

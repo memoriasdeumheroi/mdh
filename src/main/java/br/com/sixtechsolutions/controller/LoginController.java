@@ -95,13 +95,16 @@ public class LoginController implements Initializable, CenaControlada {
 
     @FXML
     void actionEsqueciSenha(ActionEvent event) {
+        meuControlador.loadScreen(Main.cenaEsqueciSenha, Main.cenaEsqueciSenhaLocal);
         meuControlador.setScreen(Main.cenaEsqueciSenha);
+        meuControlador.unloadScreen(Main.cenaLogin);
     }
 
     @FXML
     public void btnCadastrarHeroi(ActionEvent event) throws IOException, SQLException {
         meuControlador.loadScreen(Main.cenaCadastro, Main.cenaCadastroLocal);
         meuControlador.setScreen(Main.cenaCadastro);
+        meuControlador.unloadScreen(Main.cenaLogin);
     }
 
     @FXML
@@ -122,6 +125,7 @@ public class LoginController implements Initializable, CenaControlada {
                 dados.pegarDadosDoJogador(txtNomeJogador.getText());
                 meuControlador.loadScreen(Main.cenaMenu, Main.cenaMenuLocal);
                 meuControlador.setScreen(Main.cenaMenu);
+                meuControlador.unloadScreen(Main.cenaLogin);
                 txtNomeJogador.setText("");
                 txtSenhaJogador.setText("");
                 paneAlert.setVisible(false);

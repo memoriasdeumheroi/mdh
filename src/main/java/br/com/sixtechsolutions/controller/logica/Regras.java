@@ -73,6 +73,7 @@ public class Regras extends Tempo {
                         resultado.getTotalErros(), resultado.getPontos());
                 meuControlador.loadScreen(Main.cenaGameOver, Main.cenaGameOverLocal);
                 meuControlador.setScreen(Main.cenaGameOver);
+                meuControlador.unloadScreen(Main.cenaJogada);
                 database.desconectar(connection);
                 timer.cancel();
             }

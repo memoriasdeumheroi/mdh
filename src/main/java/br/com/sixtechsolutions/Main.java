@@ -59,15 +59,8 @@ public class Main extends Application {
     public void start(Stage primaryStage) {
 
         ControladorDeCenas mainContainer = new ControladorDeCenas();
-        mainContainer.loadScreen(Main.cenaSobre, Main.cenaSobreLocal);
-        mainContainer.loadScreen(Main.cenaEsqueciSenha, Main.cenaEsqueciSenhaLocal);
+        
         mainContainer.loadScreen(Main.cenaIntro, Main.cenaIntroLocal);
-        mainContainer.loadScreen(Main.cenaJogada, Main.cenaJogadaLocal);
-        mainContainer.loadScreen(Main.cenaEscolha, Main.cenaEscolhaLocal);
-        mainContainer.loadScreen(Main.cenaConteudo, Main.cenaConteudoLocal);
-        mainContainer.loadScreen(Main.cenaConquistas, Main.cenaConquistasLocal);
-        mainContainer.loadScreen(Main.cenaConfiguracoes, Main.cenaConfiguracoesLocal);
-
         mainContainer.setScreen(cenaIntro);
 
         Group root = new Group();

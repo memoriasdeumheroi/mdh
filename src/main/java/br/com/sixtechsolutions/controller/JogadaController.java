@@ -21,8 +21,6 @@ public class JogadaController extends Regras implements Initializable, CenaContr
 
     ControladorDeCenas meuControlador;
     DadosJogador dados = new DadosJogador();
-    private long tempo = (1000 * 5);
-    private int contadorSegundos = 0;
     Timer timer;
     TimerTask task;
     Button[] listabtn = new Button[12];

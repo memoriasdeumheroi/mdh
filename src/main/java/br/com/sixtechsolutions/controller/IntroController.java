@@ -18,7 +18,7 @@ public class IntroController implements Initializable, CenaControlada {
 
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-        // TODO
+        
     }
 
     @Override
@@ -39,6 +39,7 @@ public class IntroController implements Initializable, CenaControlada {
     public void actionBtnIniciar(ActionEvent event) {
         meuControlador.loadScreen(Main.cenaLogin, Main.cenaLoginLocal);
         meuControlador.setScreen(Main.cenaLogin);
+        meuControlador.unloadScreen(Main.cenaIntro);
     }
 
 }
